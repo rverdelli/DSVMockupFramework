@@ -32,17 +32,17 @@ namespace IMOMS_Display_Mockup_Framework
             for(int i = 0; i < availableComponents.Count; i++)
                 availableComponents[i] = Path.GetFileNameWithoutExtension(availableComponents[i]);
 
-            addComponentsCB.Items.AddRange(availableComponents.ToArray());
+            updateAvailableComponentsComboBox();
 
             /*Initialize grid view configurations*/
             selectedComponentsGridView.AutoGenerateColumns = false;
             selectedComponentsGridView.DataSource = selectedComponents;
 
-            selectedComponentsGridView.Columns[0].DataPropertyName = "OrderID";
-            selectedComponentsGridView.Columns[1].DataPropertyName = "ComponentId";
-            selectedComponentsGridView.Columns[2].DataPropertyName = "MoveUp";
-            selectedComponentsGridView.Columns[3].DataPropertyName = "MoveDown";
-            selectedComponentsGridView.Columns[4].DataPropertyName = "Remove";
+            selectedComponentsGridView.Columns[Config.OrderIdColumnIndex].DataPropertyName = "OrderID";
+            selectedComponentsGridView.Columns[Config.ComponentIdColumnIndex].DataPropertyName = "ComponentId";
+            selectedComponentsGridView.Columns[Config.MoveUpColumnIndex].DataPropertyName = "MoveUp";
+            selectedComponentsGridView.Columns[Config.MoveDownColumnIndex].DataPropertyName = "MoveDown";
+            selectedComponentsGridView.Columns[Config.RemoveColumnIndex].DataPropertyName = "Remove";
 
         }
 
@@ -60,6 +60,90 @@ namespace IMOMS_Display_Mockup_Framework
             selectedComponents.Add(sc);
 
             selectedComponentsGridView.Update();
+        }
+
+        private void selectedComponentsGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            switch (e.ColumnIndex)
+            {
+                case Config.MoveUpColumnIndex:
+                    MoveRowUp(e.RowIndex);
+                    break;
+
+                case Config.MoveDownColumnIndex:
+                    MoveRowDown(e.RowIndex);
+                    break;
+
+                case Config.RemoveColumnIndex:
+                    RemoveRow(e.RowIndex);
+                    break;
+
+                default:
+                    break;
+
+            }
+        }
+
+        private void MoveRowUp(int rowIndex)
+        {
+            if (rowIndex == 0)
+                return;
+
+            string aux = selectedComponents[rowIndex].ComponentId;
+            selectedComponents[rowIndex].ComponentId = selectedComponents[rowIndex - 1].ComponentId;
+            selectedComponents[rowIndex - 1].ComponentId = aux;
+
+            selectedComponentsGridView.Update();
+            selectedComponentsGridView.Refresh();
+
+            return;
+        }
+
+        private void MoveRowDown(int rowIndex)
+        {
+            if (rowIndex == selectedComponents.Count - 1)
+                return;
+
+            string aux = selectedComponents[rowIndex].ComponentId;
+            selectedComponents[rowIndex].ComponentId = selectedComponents[rowIndex + 1].ComponentId;
+            selectedComponents[rowIndex + 1].ComponentId = aux;
+
+            selectedComponentsGridView.Update();
+            selectedComponentsGridView.Refresh();
+
+            return;
+        }
+
+        private void RemoveRow(int rowIndex)
+        {
+            availableComponents.Add(selectedComponents[rowIndex].ComponentId);
+            availableComponents.OrderBy(x => x.ToString());
+            updateAvailableComponentsComboBox();
+
+            selectedComponents.RemoveAt(rowIndex);
+            for (int i = 0; i < selectedComponents.Count; i++)
+                selectedComponents[i].OrderID = i+1;
+
+            selectedComponentsGridView.Update();
+            selectedComponentsGridView.Refresh();
+
+            return;
+        }
+
+        private void updateAvailableComponentsComboBox()
+        {
+            addComponentsCB.Items.Clear();
+            addComponentsCB.Items.AddRange(availableComponents.ToArray());
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
