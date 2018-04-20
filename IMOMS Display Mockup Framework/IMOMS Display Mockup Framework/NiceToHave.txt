@@ -1,0 +1,2 @@
+﻿Display config form
+	Make the autocomplete *string* instead of string*
