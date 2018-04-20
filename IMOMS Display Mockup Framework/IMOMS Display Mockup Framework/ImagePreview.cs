@@ -24,7 +24,7 @@ namespace IMOMS_Display_Mockup_Framework
             
             Bitmap img_overlay = new Bitmap("Components/comp01.png");
             img_overlay = DsvDisplay.resizeToComponentSize(img_overlay);
-            MessageBox.Show("img_overlay dimention is:" + img_overlay.Size.ToString());//debug without breackpoint :)
+            MessageBox.Show("img_overlay dimention is:" + img_overlay.Size.ToString());//debug without breakpoint :)
 
             List<Bitmap> prova = new List<Bitmap>();
             prova.Add(img_overlay);
