@@ -23,9 +23,9 @@ namespace IMOMS_Display_Mockup_Framework
 
         }
 
-        public DisplayConfig(string configFileFulPath)
+        public DisplayConfig(string configFileFullPath)
         {
-            if (!File.Exists(configFileFulPath))
+            if (!File.Exists(configFileFullPath))
             {
                 MessageBox.Show("The selected config file does not exist", "ERROR");
                 return;
@@ -34,7 +34,7 @@ namespace IMOMS_Display_Mockup_Framework
             InitializeComponent();
             checkCompFolderExistence();
 
-            StreamReader sr = new StreamReader(configFileFulPath);
+            StreamReader sr = new StreamReader(configFileFullPath);
 
             string displayUniqueIdentifier = sr.ReadLine();
             displayUniqueIdentifierTextBox.Text = displayUniqueIdentifier;
@@ -209,7 +209,7 @@ namespace IMOMS_Display_Mockup_Framework
         {
             string displayUniqueIdentifier = displayUniqueIdentifierTextBox.Text;
             if (displayUniqueIdentifier == "")
-                MessageBox.Show("Display unique identified cannot be blank", "ERROR");
+                MessageBox.Show("Display unique identifier cannot be blank", "ERROR");
 
             if (selectedComponents.Count == 0)
                 MessageBox.Show("No components selected, please select at least one component", "ERROR");
@@ -245,7 +245,7 @@ namespace IMOMS_Display_Mockup_Framework
             this.Close();
 
             DsvDisplay.createDisplayFromConfiguration(configFileFullPath);
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayResult"]);
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]);
         }
     }
 }

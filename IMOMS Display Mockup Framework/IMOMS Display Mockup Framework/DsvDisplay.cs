@@ -71,9 +71,9 @@ namespace IMOMS_Display_Mockup_Framework
                 }
                 
                 Display = setComponents(compCallReady);
-                fileName = ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+                fileName = ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-                Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName);
+                Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
                 Display.Save(fileName); //maybe MISSING FORMAT 
 
                 slideNumber++;
@@ -92,9 +92,9 @@ namespace IMOMS_Display_Mockup_Framework
                 }
             }
             Display = setComponents(compCallReady);
-            fileName = ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+            fileName = ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-            Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName);
+            Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
             Display.Save(fileName); //maybe MISSING FORMAT 
 
             slideNumber++;

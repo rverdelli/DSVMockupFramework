@@ -1,6 +1,6 @@
 ﻿namespace IMOMS_Display_Mockup_Framework
 {
-    partial class DisplayConfig
+    partial class DashboardConfig
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.displayUniqueIdentifierTextBox = new System.Windows.Forms.TextBox();
+            this.dashboardUniqueIdentifierTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.addComponentsCB = new System.Windows.Forms.ComboBox();
-            this.selectedComponentsGridView = new System.Windows.Forms.DataGridView();
+            this.addDisplaysCB = new System.Windows.Forms.ComboBox();
+            this.selectedDisplaysGridView = new System.Windows.Forms.DataGridView();
             this.cancelButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.OrderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComponentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DisplayID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoveUp = new System.Windows.Forms.DataGridViewButtonColumn();
             this.MoveDown = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.selectedComponentsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedDisplaysGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,58 +48,58 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Display unique identifier:";
+            this.label1.Text = "Dashboard unique identifier:";
             // 
-            // displayUniqueIdentifierTextBox
+            // dashboardUniqueIdentifierTextBox
             // 
-            this.displayUniqueIdentifierTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dashboardUniqueIdentifierTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.displayUniqueIdentifierTextBox.Location = new System.Drawing.Point(141, 13);
-            this.displayUniqueIdentifierTextBox.Name = "displayUniqueIdentifierTextBox";
-            this.displayUniqueIdentifierTextBox.Size = new System.Drawing.Size(372, 20);
-            this.displayUniqueIdentifierTextBox.TabIndex = 1;
+            this.dashboardUniqueIdentifierTextBox.Location = new System.Drawing.Point(158, 13);
+            this.dashboardUniqueIdentifierTextBox.Name = "dashboardUniqueIdentifierTextBox";
+            this.dashboardUniqueIdentifierTextBox.Size = new System.Drawing.Size(355, 20);
+            this.dashboardUniqueIdentifierTextBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Add component:";
+            this.label2.Text = "Add display:";
             // 
-            // addComponentsCB
+            // addDisplaysCB
             // 
-            this.addComponentsCB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.addDisplaysCB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addComponentsCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.addComponentsCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.addComponentsCB.FormattingEnabled = true;
-            this.addComponentsCB.Location = new System.Drawing.Point(141, 46);
-            this.addComponentsCB.Name = "addComponentsCB";
-            this.addComponentsCB.Size = new System.Drawing.Size(372, 21);
-            this.addComponentsCB.TabIndex = 3;
-            this.addComponentsCB.SelectedIndexChanged += new System.EventHandler(this.addComponentsCB_SelectedIndexChanged);
+            this.addDisplaysCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.addDisplaysCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.addDisplaysCB.FormattingEnabled = true;
+            this.addDisplaysCB.Location = new System.Drawing.Point(158, 46);
+            this.addDisplaysCB.Name = "addDisplaysCB";
+            this.addDisplaysCB.Size = new System.Drawing.Size(355, 21);
+            this.addDisplaysCB.TabIndex = 3;
+            this.addDisplaysCB.SelectedIndexChanged += new System.EventHandler(this.addDisplaysCB_SelectedIndexChanged);
             // 
-            // selectedComponentsGridView
+            // selectedDisplaysGridView
             // 
-            this.selectedComponentsGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.selectedDisplaysGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.selectedComponentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.selectedComponentsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.selectedDisplaysGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.selectedDisplaysGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderID,
-            this.ComponentID,
+            this.DisplayID,
             this.MoveUp,
             this.MoveDown,
             this.Remove});
-            this.selectedComponentsGridView.Location = new System.Drawing.Point(16, 86);
-            this.selectedComponentsGridView.Name = "selectedComponentsGridView";
-            this.selectedComponentsGridView.Size = new System.Drawing.Size(497, 284);
-            this.selectedComponentsGridView.TabIndex = 4;
-            this.selectedComponentsGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectedComponentsGridView_CellClick);
+            this.selectedDisplaysGridView.Location = new System.Drawing.Point(16, 86);
+            this.selectedDisplaysGridView.Name = "selectedDisplaysGridView";
+            this.selectedDisplaysGridView.Size = new System.Drawing.Size(497, 284);
+            this.selectedDisplaysGridView.TabIndex = 4;
+            this.selectedDisplaysGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectedDisplaysGridView_CellClick);
             // 
             // cancelButton
             // 
@@ -130,12 +130,12 @@
             this.OrderID.ReadOnly = true;
             this.OrderID.Width = 30;
             // 
-            // ComponentID
+            // DisplayID
             // 
-            this.ComponentID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ComponentID.HeaderText = "Component ID";
-            this.ComponentID.Name = "ComponentID";
-            this.ComponentID.ReadOnly = true;
+            this.DisplayID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DisplayID.HeaderText = "Component ID";
+            this.DisplayID.Name = "DisplayID";
+            this.DisplayID.ReadOnly = true;
             // 
             // MoveUp
             // 
@@ -158,21 +158,21 @@
             this.Remove.ReadOnly = true;
             this.Remove.Width = 55;
             // 
-            // DisplayConfig
+            // DashboardConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 411);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.selectedComponentsGridView);
-            this.Controls.Add(this.addComponentsCB);
+            this.Controls.Add(this.selectedDisplaysGridView);
+            this.Controls.Add(this.addDisplaysCB);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.displayUniqueIdentifierTextBox);
+            this.Controls.Add(this.dashboardUniqueIdentifierTextBox);
             this.Controls.Add(this.label1);
-            this.Name = "DisplayConfig";
+            this.Name = "DashboardConfig";
             this.Text = "DisplayConfig";
-            ((System.ComponentModel.ISupportInitialize)(this.selectedComponentsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedDisplaysGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,14 +181,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox displayUniqueIdentifierTextBox;
+        private System.Windows.Forms.TextBox dashboardUniqueIdentifierTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox addComponentsCB;
-        private System.Windows.Forms.DataGridView selectedComponentsGridView;
+        private System.Windows.Forms.ComboBox addDisplaysCB;
+        private System.Windows.Forms.DataGridView selectedDisplaysGridView;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ComponentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DisplayID;
         private System.Windows.Forms.DataGridViewButtonColumn MoveUp;
         private System.Windows.Forms.DataGridViewButtonColumn MoveDown;
         private System.Windows.Forms.DataGridViewButtonColumn Remove;

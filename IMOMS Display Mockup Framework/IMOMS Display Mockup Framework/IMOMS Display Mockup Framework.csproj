@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="Forms\DashboardConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardConfig.Designer.cs">
+      <DependentUpon>DashboardConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DisplayConfig.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,28 +61,32 @@
       <DependentUpon>DisplayConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="DsvDisplay.cs" />
-    <Compile Include="imom Display Mockup Framework.cs">
+    <Compile Include="Forms\imom Display Mockup Framework.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="imom Display Mockup Framework.Designer.cs">
+    <Compile Include="Forms\imom Display Mockup Framework.Designer.cs">
       <DependentUpon>imom Display Mockup Framework.cs</DependentUpon>
     </Compile>
-    <Compile Include="ImagePreview.cs">
+    <Compile Include="Forms\ImagePreview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ImagePreview.Designer.cs">
+    <Compile Include="Forms\ImagePreview.Designer.cs">
       <DependentUpon>ImagePreview.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectedDisplays.cs" />
     <Compile Include="SelectedComponent.cs" />
+    <EmbeddedResource Include="Forms\DashboardConfig.resx">
+      <DependentUpon>DashboardConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DisplayConfig.resx">
       <DependentUpon>DisplayConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="imom Display Mockup Framework.resx">
+    <EmbeddedResource Include="Forms\imom Display Mockup Framework.resx">
       <DependentUpon>imom Display Mockup Framework.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ImagePreview.resx">
+    <EmbeddedResource Include="Forms\ImagePreview.resx">
       <DependentUpon>ImagePreview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

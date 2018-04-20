@@ -16,7 +16,7 @@ namespace IMOMS_Display_Mockup_Framework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new imomsDisplayMockupFramework());
         }
     }
 }

@@ -13,12 +13,12 @@ using System.Windows.Forms;
 
 namespace IMOMS_Display_Mockup_Framework
 {
-    public partial class Form1 : Form
+    public partial class imomsDisplayMockupFramework : Form
     {
         List<string> availableDisplays = new List<string>();
         private string displayConfigFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"];
 
-        public Form1()
+        public imomsDisplayMockupFramework()
         {
             InitializeComponent();
 
@@ -69,7 +69,12 @@ namespace IMOMS_Display_Mockup_Framework
             foreach(string displayConfigFile in availableDisplays)
                 DsvDisplay.createDisplayFromConfiguration(displayConfigFolder + "\\" + displayConfigFile + ".csv.");
 
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayResult"]);
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]);
+        }
+
+        private void createDashboardButton_Click(object sender, EventArgs e)
+        {
+            new DashboardConfig().Show();
         }
     }
 }
