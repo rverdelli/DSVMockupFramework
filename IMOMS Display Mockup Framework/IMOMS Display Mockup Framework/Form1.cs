@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -58,7 +59,16 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void regenerateDisplaysButton_Click(object sender, EventArgs e)
         {
+            DialogResult dr = MessageBox.Show("This will regenerate all displays images based on displays' config files, proceed?", "PROMPT", MessageBoxButtons.OKCancel);
 
+            if (dr == DialogResult.Cancel)
+                return;
+
+            refreshDisplaysList();
+            foreach(string displayConfigFile in availableDisplays)
+                DsvDisplay.createDisplayFromConfiguration(displayConfigFolder + "\\" + displayConfigFile + ".csv.");
+
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayResult"]);
         }
     }
 }
