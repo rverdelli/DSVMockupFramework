@@ -11,31 +11,95 @@ namespace IMOMS_Display_Mockup_Framework
 {
     public partial class DisplayConfig : Form
     {
+        private string compFolder = ConfigurationManager.AppSettings["CompFolder"];
         private List<string> availableComponents;
         private BindingList<SelectedComponent> selectedComponents = new BindingList<SelectedComponent>();
 
         public DisplayConfig()
         {
             InitializeComponent();
+            initializeComboBox();
+            initializeGridView();
 
-            /*Get components list*/
-            string compFolder = ConfigurationManager.AppSettings["CompFolder"];
+        }
 
-            if(!Directory.Exists(compFolder))
+        public DisplayConfig(string configFileFulPath)
+        {
+            if (!File.Exists(configFileFulPath))
+            {
+                MessageBox.Show("The selected config file does not exist", "ERROR");
+                return;
+            }
+
+            InitializeComponent();
+            checkCompFolderExistence();
+
+            StreamReader sr = new StreamReader(configFileFulPath);
+
+            string displayUniqueIdentifier = sr.ReadLine();
+            displayUniqueIdentifierTextBox.Text = displayUniqueIdentifier;
+
+            sr.ReadLine();
+
+            for(int i = 1; !sr.EndOfStream; i++)
+            {
+                string line = sr.ReadLine();
+                selectedComponents.Add(new SelectedComponent(i, line));
+            }
+            sr.Close();
+
+            initializeComboBox();
+            initializeGridView();
+        }
+
+        private void checkCompFolderExistence()
+        {
+            if (!Directory.Exists(compFolder))
             {
                 MessageBox.Show("Components folder not found, please create the folder " + compFolder + " and put components images in it.", "ERROR");
                 Environment.Exit(-1);
             }
+        }
 
+        private void initializeComboBox()
+        {
             availableComponents = Directory.GetFiles(compFolder).ToList();
 
-            /*Populate combo box*/
-            for(int i = 0; i < availableComponents.Count; i++)
+            for (int i = 0; i < availableComponents.Count; i++)
                 availableComponents[i] = Path.GetFileNameWithoutExtension(availableComponents[i]);
+
+            List<string> componentsNotAvailable = new List<string>();
+            for(int i = 0; i < selectedComponents.Count;)
+            {
+                bool imageAvailable = false;
+                for(int j = 0; j < availableComponents.Count;j++)
+                {
+                    if (selectedComponents[i].ComponentId.Equals(availableComponents[j]))
+                    {
+                        imageAvailable = true;
+                        availableComponents.RemoveAt(j);
+                        break;
+                    }
+                }
+
+                if (!imageAvailable)
+                {
+                    componentsNotAvailable.Add(selectedComponents[i].ComponentId);
+                    selectedComponents.RemoveAt(i);
+                }
+                else
+                    i++;
+
+            }
 
             updateAvailableComponentsComboBox();
 
-            /*Initialize grid view configurations*/
+            if (componentsNotAvailable.Count > 0)
+                MessageBox.Show("The following components were not found in the components image folder and they were removed from the display:\n\n - " + componentsNotAvailable.Aggregate((i, j) => i + "\n - " + j) + "\n\nSaving this new configuration will exclude these components from the display, these operation is not revertable.");
+        }
+
+        private void initializeGridView()
+        {
             selectedComponentsGridView.AutoGenerateColumns = false;
             selectedComponentsGridView.DataSource = selectedComponents;
 
@@ -44,7 +108,6 @@ namespace IMOMS_Display_Mockup_Framework
             selectedComponentsGridView.Columns[Config.MoveUpColumnIndex].DataPropertyName = "MoveUp";
             selectedComponentsGridView.Columns[Config.MoveDownColumnIndex].DataPropertyName = "MoveDown";
             selectedComponentsGridView.Columns[Config.RemoveColumnIndex].DataPropertyName = "Remove";
-
         }
 
         private void addComponentsCB_SelectedIndexChanged(object sender, EventArgs e)
@@ -148,14 +211,21 @@ namespace IMOMS_Display_Mockup_Framework
             if (displayUniqueIdentifier == "")
                 MessageBox.Show("Display unique identified cannot be blank", "ERROR");
 
+            if (selectedComponents.Count == 0)
+                MessageBox.Show("No components selected, please select at least one component", "ERROR");
+
             string displayConfigFilesFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"]; ;
             string configFileFullPath = displayConfigFilesFolder + "\\" + displayUniqueIdentifier + ".csv";
 
             if (!Directory.Exists(displayConfigFilesFolder))
                 Directory.CreateDirectory(displayConfigFilesFolder);
 
-            if(File.Exists(configFileFullPath))
-                MessageBox.Show("Display unique identifier already exists: " + configFileFullPath, "ERROR");
+            if (File.Exists(configFileFullPath))
+            {
+                DialogResult dr = MessageBox.Show("Display unique identifier already exists, the file will be overwritten", "Prompt", MessageBoxButtons.OKCancel);
+                if (dr == DialogResult.Cancel)
+                    return;
+            }
 
             File.Create(configFileFullPath).Close();
             StreamWriter sw = new StreamWriter(configFileFullPath);
