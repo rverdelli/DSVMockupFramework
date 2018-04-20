@@ -22,5 +22,11 @@ namespace IMOMS_Display_Mockup_Framework
             Form f2 = new ImagePreview();
             f2.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form fRob = new DisplayConfig();
+            fRob.Show();
+        }
     }
 }

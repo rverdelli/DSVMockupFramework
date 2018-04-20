@@ -18,19 +18,19 @@ namespace IMOMS_Display_Mockup_Framework
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Bitmap BackgroundIMOMS = new Bitmap("background/IMOMS.png");
-            pictureBox1.Image = (Image)BackgroundIMOMS;
-            
+        {   
+            //Create an image list START 
             Bitmap img_overlay = new Bitmap("Components/comp01.png");
             img_overlay = DsvDisplay.resizeToComponentSize(img_overlay);
-            MessageBox.Show("img_overlay dimention is:" + img_overlay.Size.ToString());//debug without breakpoint :)
+            Queue<Bitmap> prova = new Queue<Bitmap>();
+            prova.Enqueue(img_overlay);
+            prova.Enqueue(img_overlay);
+            prova.Enqueue(img_overlay);
 
-            List<Bitmap> prova = new List<Bitmap>();
-            prova.Add(img_overlay);
+            // Create a list END
+
             Bitmap Result = DsvDisplay.setComponents(prova);
             pictureBox1.Image = (Image)Result;
-
         }
     }
 }
