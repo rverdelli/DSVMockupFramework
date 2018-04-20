@@ -13,8 +13,6 @@ namespace IMOMS_Display_Mockup_Framework
         public static Size ComponentSize = new Size(300, 150); //FUTURE Read from configuration
         public static Size DisplaySize = new Size(1038, 520);//FUTURE Read from configuration
 
-        //IDictionary<string, Point> dict = new Dictionary<string, int>();
-        
     }
     class DsvDisplay
     {
