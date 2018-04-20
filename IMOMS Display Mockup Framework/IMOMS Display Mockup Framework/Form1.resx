@@ -236,21 +236,20 @@
   </data>
   <data name="refreshDisplayListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAC0klEQVQ4T5WS2U8TYRTF+UuQ
-        0n2jLSAalxDEhCcSgj6J4UWjEZ8MFIG44IYLRpCyBShKlAImBhBKqQiUtYAaECjFRCSRpSFVoaVAiZDj
-        nZrS1hlMfPj13u+ce0+/zEwYgP+ibbYVrnUXtdw+p/gv4g0JyHqZSS23zyn62djZwKcfEzAvdsL0zYSm
-        uUbwdWKEFwtQatLRCHuHJTCs/3Kj0l6BxMZECMqkiCgWIuKJEDyqvCIRVaJEiIY+A42H7oYcGBxbDqS0
-        pfoWIspEiKwQg19OlBJ0O19lKGOQwDJpobV9Ard3t3G2Kw3hlUIcoED+bREUt5QQFUoRWSKmcEkoVRIo
-        9SqM2EdonSPwxXwdwnV8nMxKQGmNDtYRK+z2WUxNTaGw5SEEtVIIqqQQPqM/eC4G76kQyuwo3Cu5C6fT
-        SRF/BSYZknA5JwNLi0s+M5jK2XJE1kvAqxVDdEeC09dOobquGnNf5kJm9xqXdw3F1UVwu9x0DAz4Se9M
-        R7Q2BnmP89Df3w/Puodk9hxL2I+x8TG6zVdquX0/nGIwY2ujaJloppbb9+54qQTOIaYfh9eBpoUGpA2d
-        gdioxMX8CySz51a2V5DZeAVud+Ax7Zlbu5sYWbXixvR1HDYfg6SVPpc2ol6O5mb2DafdU0geTcb5m+dC
-        PN+Pc9OJ7I9aSM0qiNujIDWqIOsgTESzCtkdWWhbegPL9168WmiEdlILTV+c74Pv6e5hBzLYl204bo6H
-        7J0asreaAF0aSC1qKKgqfJoa0j41hK/luFqQQ6uBMIaQw9D8EFTdByHvjYa8h2DqQBDD0ZANaiDWy5H7
-        IBerP1dp7R+BDKbPRigHYv7QFYM4wyFoGmIRa4hDgu4EMh5dQruxHd6t0LfrhyUw6D/UQDEei6P6Ixge
-        HIbNZsPMzAyWl5bJZs8Hwyky3H9fgNT8FGq5/f3gFBk8mx5YR63UcvvcIOw31vthNm6dXtsAAAAASUVO
-        RK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALSSURBVDhPlZLZTxNhFMX5S5DSfaMtIBqXEMSEJxKC
+        PonhRaMRnwwUgbjghgtGkLIFKEqUAiYGEEqpCJS1gBoQKMVEJJGlIVWhpUCJkOOdmtLWGUx8+PXe75x7
+        T7/MTBiA/6JtthWudRe13D6n+C/iDQnIeplJLbfPKfrZ2NnApx8TMC92wvTNhKa5RvB1YoQXC1Bq0tEI
+        e4clMKz/cqPSXoHExkQIyqSIKBYi4okQPKq8IhFVokSIhj4DjYfuhhwYHFsOpLSl+hYiykSIrBCDX06U
+        EnQ7X2UoY5DAMmmhtX0Ct3e3cbYrDeGVQhygQP5tERS3lBAVShFZIqZwSShVEij1KozYR2idI/DFfB3C
+        dXyczEpAaY0O1hEr7PZZTE1NobDlIQS1UgiqpBA+oz94LgbvqRDK7CjcK7kLp9NJEX8FJhmScDknA0uL
+        Sz4zmMrZckTWS8CrFUN0R4LT106huq4ac1/mQmb3Gpd3DcXVRXC73HQMDPhJ70xHtDYGeY/z0N/fD8+6
+        h2T2HEvYj7HxMbrNV2q5fT+cYjBja6NomWimltv37nipBM4hph+H14GmhQakDZ2B2KjExfwLJLPnVrZX
+        kNl4BW534DHtmVu7mxhZteLG9HUcNh+DpJU+lzaiXo7mZvYNp91TSB5Nxvmb50I8349z04nsj1pIzSqI
+        26MgNaog6yBMRLMK2R1ZaFt6A8v3XrxaaIR2UgtNX5zvg+/p7mEHMtiXbThujofsnRqyt5oAXRpILWoo
+        qCp8mhrSPjWEr+W4WpBDq4EwhpDD0PwQVN0HIe+NhryHYOpAEMPRkA1qINbLkfsgF6s/V2ntH4EMps9G
+        KAdi/tAVgzjDIWgaYhFriEOC7gQyHl1Cu7Ed3q3Qt+uHJTDoP9RAMR6Lo/ojGB4chs1mw8zMDJaXlslm
+        zwfDKTLcf1+A1PwUarn9/eAUGTybHlhHrdRy+9wg7DfW+2E2bp1e2wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="refreshDisplayListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">

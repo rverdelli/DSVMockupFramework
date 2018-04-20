@@ -75,6 +75,7 @@
             resources.ApplyResources(this.regenerateDisplaysButton, "regenerateDisplaysButton");
             this.regenerateDisplaysButton.Name = "regenerateDisplaysButton";
             this.regenerateDisplaysButton.UseVisualStyleBackColor = true;
+            this.regenerateDisplaysButton.Click += new System.EventHandler(this.regenerateDisplaysButton_Click);
             // 
             // Form1
             // 

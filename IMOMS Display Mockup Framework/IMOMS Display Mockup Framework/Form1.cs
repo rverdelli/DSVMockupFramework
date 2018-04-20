@@ -55,5 +55,10 @@ namespace IMOMS_Display_Mockup_Framework
         {
             refreshDisplaysList();
         }
+
+        private void regenerateDisplaysButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
