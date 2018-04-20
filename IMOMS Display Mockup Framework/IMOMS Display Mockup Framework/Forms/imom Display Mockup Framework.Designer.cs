@@ -45,12 +45,12 @@
             this.loadDashboardComboBox = new System.Windows.Forms.ComboBox();
             this.openDisplaysFolderButton = new System.Windows.Forms.Button();
             this.openDashboardsFolderButton = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.foldersGroupBox = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.displaysGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.foldersGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // newDisplay
@@ -159,15 +159,15 @@
             this.openDashboardsFolderButton.UseVisualStyleBackColor = true;
             this.openDashboardsFolderButton.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
             // 
-            // groupBox2
+            // foldersGroupBox
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.openDisplaysFolderButton);
-            this.groupBox2.Controls.Add(this.openDashboardsFolderButton);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            resources.ApplyResources(this.foldersGroupBox, "foldersGroupBox");
+            this.foldersGroupBox.Controls.Add(this.button2);
+            this.foldersGroupBox.Controls.Add(this.button1);
+            this.foldersGroupBox.Controls.Add(this.openDisplaysFolderButton);
+            this.foldersGroupBox.Controls.Add(this.openDashboardsFolderButton);
+            this.foldersGroupBox.Name = "foldersGroupBox";
+            this.foldersGroupBox.TabStop = false;
             // 
             // button2
             // 
@@ -187,7 +187,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.foldersGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.displaysGroupBox);
             this.Name = "imomsDisplayMockupFramework";
@@ -195,7 +195,7 @@
             this.displaysGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.foldersGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -216,7 +216,7 @@
         private System.Windows.Forms.ComboBox loadDashboardComboBox;
         private System.Windows.Forms.Button openDisplaysFolderButton;
         private System.Windows.Forms.Button openDashboardsFolderButton;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox foldersGroupBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
     }

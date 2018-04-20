@@ -129,13 +129,13 @@
     <value>NoControl</value>
   </data>
   <data name="newDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 22</value>
+    <value>5, 18</value>
   </data>
   <data name="newDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 38</value>
+    <value>334, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
@@ -163,13 +163,10 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDisplayComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 70</value>
-  </data>
-  <data name="loadDisplayComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>119, 57</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 25</value>
+    <value>190, 21</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -193,13 +190,10 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDisplayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 74</value>
-  </data>
-  <data name="loadDisplayLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 60</value>
   </data>
   <data name="loadDisplayLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 17</value>
+    <value>107, 13</value>
   </data>
   <data name="loadDisplayLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -244,13 +238,10 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 69</value>
-  </data>
-  <data name="refreshDisplayListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>316, 56</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 28</value>
+    <value>23, 23</value>
   </data>
   <data name="refreshDisplayListButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -274,13 +265,10 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="regenerateDisplaysButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 106</value>
-  </data>
-  <data name="regenerateDisplaysButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 86</value>
   </data>
   <data name="regenerateDisplaysButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 38</value>
+    <value>334, 31</value>
   </data>
   <data name="regenerateDisplaysButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -627,16 +615,10 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="displaysGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 15</value>
-  </data>
-  <data name="displaysGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="displaysGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>15, 12</value>
   </data>
   <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 160</value>
+    <value>344, 130</value>
   </data>
   <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -695,16 +677,16 @@
   <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;refreshDashboardsList.Name" xml:space="preserve">
-    <value>refreshDashboardsList</value>
+  <data name="&gt;&gt;refreshDashboardsListButton.Name" xml:space="preserve">
+    <value>refreshDashboardsListButton</value>
   </data>
-  <data name="&gt;&gt;refreshDashboardsList.Type" xml:space="preserve">
+  <data name="&gt;&gt;refreshDashboardsListButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;refreshDashboardsList.Parent" xml:space="preserve">
+  <data name="&gt;&gt;refreshDashboardsListButton.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;refreshDashboardsList.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;refreshDashboardsListButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;loadDashboardComboBox.Name" xml:space="preserve">
@@ -723,16 +705,10 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 182</value>
-  </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>15, 148</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 160</value>
+    <value>344, 130</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -762,13 +738,13 @@
     <value>NoControl</value>
   </data>
   <data name="createDashboardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 22</value>
+    <value>5, 18</value>
   </data>
   <data name="createDashboardButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 38</value>
+    <value>334, 31</value>
   </data>
   <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -798,13 +774,10 @@
     <value>NoControl</value>
   </data>
   <data name="regenerateDashboardsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 106</value>
-  </data>
-  <data name="regenerateDashboardsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 86</value>
   </data>
   <data name="regenerateDashboardsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>445, 38</value>
+    <value>334, 31</value>
   </data>
   <data name="regenerateDashboardsButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -834,13 +807,10 @@
     <value>NoControl</value>
   </data>
   <data name="loadDashboardLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 74</value>
-  </data>
-  <data name="loadDashboardLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>6, 60</value>
   </data>
   <data name="loadDashboardLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 17</value>
+    <value>125, 13</value>
   </data>
   <data name="loadDashboardLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -888,14 +858,13 @@
     <value>NoControl</value>
   </data>
   <data name="refreshDashboardsListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 69</value>
+    <value>316, 56</value>
+  </data>
+  <data name="refreshDashboardsListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="refreshDashboardsListButton.Size" type="System.Drawing.Size, System.Drawing">
-  <data name="refreshDashboardsList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="refreshDashboardsList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 28</value>
+    <value>23, 23</value>
   </data>
   <data name="refreshDashboardsListButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -919,13 +888,10 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDashboardComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 70</value>
-  </data>
-  <data name="loadDashboardComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>137, 57</value>
   </data>
   <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 25</value>
+    <value>172, 21</value>
   </data>
   <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -964,13 +930,10 @@
     <value>MiddleRight</value>
   </data>
   <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 23</value>
-  </data>
-  <data name="openDisplaysFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>9, 19</value>
   </data>
   <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>163, 31</value>
   </data>
   <data name="openDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -985,10 +948,13 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openDisplaysFolderButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>foldersGroupBox</value>
   </data>
   <data name="&gt;&gt;openDisplaysFolderButton.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="openDashboardsFolderButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="openDashboardsFolderButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -1012,13 +978,10 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="openDashboardsFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>176, 19</value>
   </data>
   <data name="openDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>163, 31</value>
   </data>
   <data name="openDashboardsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1033,61 +996,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openDashboardsFolderButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>foldersGroupBox</value>
   </data>
   <data name="&gt;&gt;openDashboardsFolderButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="foldersGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 284</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 101</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Folders</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -1114,13 +1032,10 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 69</value>
-  </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>176, 56</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>163, 31</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1135,7 +1050,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>foldersGroupBox</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1165,13 +1080,10 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 69</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>9, 56</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>163, 31</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1186,52 +1098,46 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>foldersGroupBox</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="foldersGroupBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 350</value>
+  <data name="foldersGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 284</value>
   </data>
-  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="foldersGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 101</value>
   </data>
-  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 124</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="foldersGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
+  <data name="foldersGroupBox.Text" xml:space="preserve">
     <value>Folders</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;foldersGroupBox.Name" xml:space="preserve">
+    <value>foldersGroupBox</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;foldersGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;foldersGroupBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;foldersGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>495, 489</value>
+    <value>371, 397</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1545,7 +1451,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>IMOMS Mockup Framework v0.1</value>

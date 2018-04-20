@@ -55,6 +55,11 @@ namespace IMOMS_Display_Mockup_Framework
         {
             new DisplayConfig().Show();
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form f2 = new ImagePreview();
+            f2.Show();
+        }
 
         private void loadDisplayComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
