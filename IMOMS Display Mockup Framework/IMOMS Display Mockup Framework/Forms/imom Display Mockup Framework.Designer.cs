@@ -150,12 +150,14 @@
             resources.ApplyResources(this.openDisplaysFolderButton, "openDisplaysFolderButton");
             this.openDisplaysFolderButton.Name = "openDisplaysFolderButton";
             this.openDisplaysFolderButton.UseVisualStyleBackColor = true;
+            this.openDisplaysFolderButton.Click += new System.EventHandler(this.openDisplaysFolderButton_Click);
             // 
             // openDashboardsFolderButton
             // 
             resources.ApplyResources(this.openDashboardsFolderButton, "openDashboardsFolderButton");
             this.openDashboardsFolderButton.Name = "openDashboardsFolderButton";
             this.openDashboardsFolderButton.UseVisualStyleBackColor = true;
+            this.openDashboardsFolderButton.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
             // 
             // groupBox2
             // 
@@ -172,12 +174,14 @@
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // imomsDisplayMockupFramework
             // 

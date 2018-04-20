@@ -94,5 +94,25 @@ namespace IMOMS_Display_Mockup_Framework
         {
             new DashboardConfig().Show();
         }
+
+        private void openDashboardsFolderButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DashboardConfigFilesFolder"]);
+        }
+
+        private void openDisplaysFolderButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]); 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["CompFolder"]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayConfigFilesFolder"]); 
+        }
     }
 }
