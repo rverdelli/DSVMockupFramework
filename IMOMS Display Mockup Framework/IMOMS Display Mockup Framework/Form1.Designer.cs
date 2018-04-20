@@ -31,9 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.newDisplay = new System.Windows.Forms.Button();
+            this.loadDisplayComboBox = new System.Windows.Forms.ComboBox();
+            this.loadDisplayLabel = new System.Windows.Forms.Label();
+            this.refreshDisplayListButton = new System.Windows.Forms.Button();
+            this.regenerateDisplaysButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
@@ -44,62 +46,66 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
+            // newDisplay
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Items.AddRange(new object[] {
-            resources.GetString("listBox1.Items"),
-            resources.GetString("listBox1.Items1"),
-            resources.GetString("listBox1.Items2"),
-            resources.GetString("listBox1.Items3"),
-            resources.GetString("listBox1.Items4"),
-            resources.GetString("listBox1.Items5"),
-            resources.GetString("listBox1.Items6"),
-            resources.GetString("listBox1.Items7")});
-            this.listBox1.Name = "listBox1";
+            resources.ApplyResources(this.newDisplay, "newDisplay");
+            this.newDisplay.Name = "newDisplay";
+            this.newDisplay.UseVisualStyleBackColor = true;
+            this.newDisplay.Click += new System.EventHandler(this.newDisplay_Click);
             // 
-            // comboBox1
+            // loadDisplayComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
+            resources.ApplyResources(this.loadDisplayComboBox, "loadDisplayComboBox");
+            this.loadDisplayComboBox.FormattingEnabled = true;
+            this.loadDisplayComboBox.Name = "loadDisplayComboBox";
+            this.loadDisplayComboBox.SelectedIndexChanged += new System.EventHandler(this.loadDisplayComboBox_SelectedIndexChanged);
             // 
-            // button2
+            // loadDisplayLabel
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.loadDisplayLabel, "loadDisplayLabel");
+            this.loadDisplayLabel.Name = "loadDisplayLabel";
             // 
             // notifyIcon1
+            // refreshDisplayListButton
             // 
             resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            // 
+            // 
+            resources.ApplyResources(this.refreshDisplayListButton, "refreshDisplayListButton");
+            this.refreshDisplayListButton.Name = "refreshDisplayListButton";
+            this.refreshDisplayListButton.UseVisualStyleBackColor = true;
+            this.refreshDisplayListButton.Click += new System.EventHandler(this.refreshDisplayListButton_Click);
+            // 
+            // regenerateDisplaysButton
+            // 
+            resources.ApplyResources(this.regenerateDisplaysButton, "regenerateDisplaysButton");
+            this.regenerateDisplaysButton.Name = "regenerateDisplaysButton";
+            this.regenerateDisplaysButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.regenerateDisplaysButton);
+            this.Controls.Add(this.refreshDisplayListButton);
+            this.Controls.Add(this.loadDisplayLabel);
+            this.Controls.Add(this.loadDisplayComboBox);
+            this.Controls.Add(this.newDisplay);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button newDisplay;
+        private System.Windows.Forms.ComboBox loadDisplayComboBox;
+        private System.Windows.Forms.Label loadDisplayLabel;
+        private System.Windows.Forms.Button refreshDisplayListButton;
+        private System.Windows.Forms.Button regenerateDisplaysButton;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

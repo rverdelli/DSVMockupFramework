@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +14,25 @@ namespace IMOMS_Display_Mockup_Framework
 {
     public partial class Form1 : Form
     {
+        List<string> availableDisplays = new List<string>();
+        private string displayConfigFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"];
+
         public Form1()
         {
             InitializeComponent();
+
+            refreshDisplaysList();
+        }
+
+        public void refreshDisplaysList()
+        {
+            availableDisplays = Directory.GetFiles(displayConfigFolder).ToList();
+
+            for (int i = 0; i < availableDisplays.Count; i++)
+                availableDisplays[i] = Path.GetFileNameWithoutExtension(availableDisplays[i]);
+
+            loadDisplayComboBox.Items.Clear();
+            loadDisplayComboBox.Items.AddRange(availableDisplays.ToArray());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,10 +41,19 @@ namespace IMOMS_Display_Mockup_Framework
             f2.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void newDisplay_Click(object sender, EventArgs e)
         {
-            Form fRob = new DisplayConfig(@"C:\DSVMockupFramework\DisplayConfigFilesFolder\qwe.csv");
-            fRob.Show();
+            new DisplayConfig().Show();
+        }
+
+        private void loadDisplayComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            new DisplayConfig(displayConfigFolder + "\\" + loadDisplayComboBox.Text + ".csv").Show();
+        }
+
+        private void refreshDisplayListButton_Click(object sender, EventArgs e)
+        {
+            refreshDisplaysList();
         }
     }
 }
