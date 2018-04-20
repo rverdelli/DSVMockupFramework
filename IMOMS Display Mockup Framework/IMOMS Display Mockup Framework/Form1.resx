@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 53</value>
+    <value>11, 331</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 73</value>
+    <value>118, 59</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
@@ -141,125 +145,170 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
-  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="newDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="listBox1.Items" xml:space="preserve">
-    <value>aaa</value>
-  </data>
-  <data name="listBox1.Items1" xml:space="preserve">
-    <value>bbb</value>
-  </data>
-  <data name="listBox1.Items2" xml:space="preserve">
-    <value>ccc</value>
-  </data>
-  <data name="listBox1.Items3" xml:space="preserve">
-    <value>ddd</value>
-  </data>
-  <data name="listBox1.Items4" xml:space="preserve">
-    <value>eee</value>
-  </data>
-  <data name="listBox1.Items5" xml:space="preserve">
-    <value>prova</value>
-  </data>
-  <data name="listBox1.Items6" xml:space="preserve">
-    <value>ancora</value>
-  </data>
-  <data name="listBox1.Items7" xml:space="preserve">
-    <value>una prova con spazi</value>
-  </data>
-  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 128</value>
-  </data>
-  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 148</value>
-  </data>
-  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
-    <value>listBox1</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>prova</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>piu di una riga</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>aaa</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>bcd</value>
-  </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 334</value>
-  </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
-  </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="newDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 211</value>
+  <data name="newDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 11</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 73</value>
+  <data name="newDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 31</value>
+  </data>
+  <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Debug Robi</value>
+  <data name="newDisplay.Text" xml:space="preserve">
+    <value>Create New Display</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;newDisplay.Name" xml:space="preserve">
+    <value>newDisplay</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;newDisplay.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;newDisplay.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;newDisplay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="loadDisplayComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="loadDisplayComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 53</value>
+  </data>
+  <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 21</value>
+  </data>
+  <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayComboBox.Name" xml:space="preserve">
+    <value>loadDisplayComboBox</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="loadDisplayLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="loadDisplayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 56</value>
+  </data>
+  <data name="loadDisplayLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="loadDisplayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="loadDisplayLabel.Text" xml:space="preserve">
+    <value>Load existing display:</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayLabel.Name" xml:space="preserve">
+    <value>loadDisplayLabel</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loadDisplayLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="refreshDisplayListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="refreshDisplayListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAC0klEQVQ4T5WS2U8TYRTF+UuQ
+        0n2jLSAalxDEhCcSgj6J4UWjEZ8MFIG44IYLRpCyBShKlAImBhBKqQiUtYAaECjFRCSRpSFVoaVAiZDj
+        nZrS1hlMfPj13u+ce0+/zEwYgP+ibbYVrnUXtdw+p/gv4g0JyHqZSS23zyn62djZwKcfEzAvdsL0zYSm
+        uUbwdWKEFwtQatLRCHuHJTCs/3Kj0l6BxMZECMqkiCgWIuKJEDyqvCIRVaJEiIY+A42H7oYcGBxbDqS0
+        pfoWIspEiKwQg19OlBJ0O19lKGOQwDJpobV9Ard3t3G2Kw3hlUIcoED+bREUt5QQFUoRWSKmcEkoVRIo
+        9SqM2EdonSPwxXwdwnV8nMxKQGmNDtYRK+z2WUxNTaGw5SEEtVIIqqQQPqM/eC4G76kQyuwo3Cu5C6fT
+        SRF/BSYZknA5JwNLi0s+M5jK2XJE1kvAqxVDdEeC09dOobquGnNf5kJm9xqXdw3F1UVwu9x0DAz4Se9M
+        R7Q2BnmP89Df3w/Puodk9hxL2I+x8TG6zVdquX0/nGIwY2ujaJloppbb9+54qQTOIaYfh9eBpoUGpA2d
+        gdioxMX8CySz51a2V5DZeAVud+Ax7Zlbu5sYWbXixvR1HDYfg6SVPpc2ol6O5mb2DafdU0geTcb5m+dC
+        PN+Pc9OJ7I9aSM0qiNujIDWqIOsgTESzCtkdWWhbegPL9168WmiEdlILTV+c74Pv6e5hBzLYl204bo6H
+        7J0asreaAF0aSC1qKKgqfJoa0j41hK/luFqQQ6uBMIaQw9D8EFTdByHvjYa8h2DqQBDD0ZANaiDWy5H7
+        IBerP1dp7R+BDKbPRigHYv7QFYM4wyFoGmIRa4hDgu4EMh5dQruxHd6t0LfrhyUw6D/UQDEei6P6Ixge
+        HIbNZsPMzAyWl5bJZs8Hwyky3H9fgNT8FGq5/f3gFBk8mx5YR63UcvvcIOw31vthNm6dXtsAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="refreshDisplayListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 52</value>
+  </data>
+  <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="refreshDisplayListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;refreshDisplayListButton.Name" xml:space="preserve">
+    <value>refreshDisplayListButton</value>
+  </data>
+  <data name="&gt;&gt;refreshDisplayListButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;refreshDisplayListButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;refreshDisplayListButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="regenerateDisplaysButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 85</value>
+  </data>
+  <data name="regenerateDisplaysButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 31</value>
+  </data>
+  <data name="regenerateDisplaysButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="regenerateDisplaysButton.Text" xml:space="preserve">
+    <value>Regenerate all displays</value>
+  </data>
+  <data name="&gt;&gt;regenerateDisplaysButton.Name" xml:space="preserve">
+    <value>regenerateDisplaysButton</value>
+  </data>
+  <data name="&gt;&gt;regenerateDisplaysButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regenerateDisplaysButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;regenerateDisplaysButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>754, 494</value>
+    <value>371, 401</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -571,6 +620,9 @@
         AfD///gAAAAB8P///gAAAAHw////wAAAAfD////wAAAB8P////wAAAHw/////wAAAfD/////wAAB8P//
         ///4AAHw//////4AAfD//////4AB8P//////4AHw///////4AfD///////8B8P///////8Hw
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>IMOMS Mockup Framework v0.1</value>

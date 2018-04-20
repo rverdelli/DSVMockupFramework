@@ -104,5 +104,8 @@
   <ItemGroup>
     <Content Include="NiceToHave.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Media\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
