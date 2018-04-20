@@ -34,6 +34,7 @@ namespace IMOMS_Display_Mockup_Framework
 
             loadDisplayComboBox.Items.Clear();
             loadDisplayComboBox.Items.AddRange(availableDisplays.ToArray());
+            loadDisplayComboBox.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)

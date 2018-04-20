@@ -117,51 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 331</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 59</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Debug Simo</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="newDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="newDisplay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="newDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="newDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 11</value>
+    <value>5, 18</value>
   </data>
   <data name="newDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 31</value>
+    <value>334, 31</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -175,19 +151,19 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;newDisplay.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;newDisplay.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="loadDisplayComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="loadDisplayComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 53</value>
+    <value>119, 57</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 21</value>
+    <value>190, 21</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -199,16 +175,19 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;loadDisplayComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;loadDisplayComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="loadDisplayLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="loadDisplayLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
   <data name="loadDisplayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 56</value>
+    <value>6, 60</value>
   </data>
   <data name="loadDisplayLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 13</value>
@@ -226,7 +205,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;loadDisplayLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;loadDisplayLabel.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -256,7 +235,7 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 52</value>
+    <value>316, 56</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
@@ -271,16 +250,22 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;refreshDisplayListButton.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;refreshDisplayListButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
+  </data>
+  <data name="regenerateDisplaysButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="regenerateDisplaysButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="regenerateDisplaysButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 85</value>
+    <value>5, 86</value>
   </data>
   <data name="regenerateDisplaysButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 31</value>
+    <value>334, 31</value>
   </data>
   <data name="regenerateDisplaysButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -295,10 +280,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;regenerateDisplaysButton.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;regenerateDisplaysButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -620,6 +605,453 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="displaysGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="displaysGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="displaysGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 12</value>
+  </data>
+  <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 130</value>
+  </data>
+  <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="displaysGroupBox.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="&gt;&gt;displaysGroupBox.Name" xml:space="preserve">
+    <value>displaysGroupBox</value>
+  </data>
+  <data name="&gt;&gt;displaysGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;displaysGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="createDashboardButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="createDashboardButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="createDashboardButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="createDashboardButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 18</value>
+  </data>
+  <data name="createDashboardButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 31</value>
+  </data>
+  <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="createDashboardButton.Text" xml:space="preserve">
+    <value>Create New Dashboard</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Name" xml:space="preserve">
+    <value>createDashboardButton</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="regenerateDashboardsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="regenerateDashboardsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="regenerateDashboardsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="regenerateDashboardsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 86</value>
+  </data>
+  <data name="regenerateDashboardsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 31</value>
+  </data>
+  <data name="regenerateDashboardsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="regenerateDashboardsButton.Text" xml:space="preserve">
+    <value>Regenerate all dashboards</value>
+  </data>
+  <data name="&gt;&gt;regenerateDashboardsButton.Name" xml:space="preserve">
+    <value>regenerateDashboardsButton</value>
+  </data>
+  <data name="&gt;&gt;regenerateDashboardsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regenerateDashboardsButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;regenerateDashboardsButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="loadDashboardLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="loadDashboardLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="loadDashboardLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="loadDashboardLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="loadDashboardLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="loadDashboardLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="loadDashboardLabel.Text" xml:space="preserve">
+    <value>Load existing dashboard:</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Name" xml:space="preserve">
+    <value>loadDashboardLabel</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="refreshDashboardsList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="refreshDashboardsList.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALSSURBVDhPlZLZTxNhFMX5S5DSfaMtIBqXEMSEJxKC
+        PonhRaMRnwwUgbjghgtGkLIFKEqUAiYGEEqpCJS1gBoQKMVEJJGlIVWhpUCJkOOdmtLWGUx8+PXe75x7
+        T7/MTBiA/6JtthWudRe13D6n+C/iDQnIeplJLbfPKfrZ2NnApx8TMC92wvTNhKa5RvB1YoQXC1Bq0tEI
+        e4clMKz/cqPSXoHExkQIyqSIKBYi4okQPKq8IhFVokSIhj4DjYfuhhwYHFsOpLSl+hYiykSIrBCDX06U
+        EnQ7X2UoY5DAMmmhtX0Ct3e3cbYrDeGVQhygQP5tERS3lBAVShFZIqZwSShVEij1KozYR2idI/DFfB3C
+        dXyczEpAaY0O1hEr7PZZTE1NobDlIQS1UgiqpBA+oz94LgbvqRDK7CjcK7kLp9NJEX8FJhmScDknA0uL
+        Sz4zmMrZckTWS8CrFUN0R4LT106huq4ac1/mQmb3Gpd3DcXVRXC73HQMDPhJ70xHtDYGeY/z0N/fD8+6
+        h2T2HEvYj7HxMbrNV2q5fT+cYjBja6NomWimltv37nipBM4hph+H14GmhQakDZ2B2KjExfwLJLPnVrZX
+        kNl4BW534DHtmVu7mxhZteLG9HUcNh+DpJU+lzaiXo7mZvYNp91TSB5Nxvmb50I8349z04nsj1pIzSqI
+        26MgNaog6yBMRLMK2R1ZaFt6A8v3XrxaaIR2UgtNX5zvg+/p7mEHMtiXbThujofsnRqyt5oAXRpILWoo
+        qCp8mhrSPjWEr+W4WpBDq4EwhpDD0PwQVN0HIe+NhryHYOpAEMPRkA1qINbLkfsgF6s/V2ntH4EMps9G
+        KAdi/tAVgzjDIWgaYhFriEOC7gQyHl1Cu7Ed3q3Qt+uHJTDoP9RAMR6Lo/ojGB4chs1mw8zMDJaXlslm
+        zwfDKTLcf1+A1PwUarn9/eAUGTybHlhHrdRy+9wg7DfW+2E2bp1e2wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="refreshDashboardsList.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="refreshDashboardsList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="refreshDashboardsList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 56</value>
+  </data>
+  <data name="refreshDashboardsList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="refreshDashboardsList.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsList.Name" xml:space="preserve">
+    <value>refreshDashboardsList</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsList.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="loadDashboardComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="loadDashboardComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 57</value>
+  </data>
+  <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 21</value>
+  </data>
+  <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Name" xml:space="preserve">
+    <value>loadDashboardComboBox</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 148</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 130</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="openDisplaysFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="openDisplaysFolderButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="openDisplaysFolderButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
+        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
+        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
+        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
+        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
+        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
+        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
+        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
+</value>
+  </data>
+  <data name="openDisplaysFolderButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 31</value>
+  </data>
+  <data name="openDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="openDisplaysFolderButton.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Name" xml:space="preserve">
+    <value>openDisplaysFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="openDashboardsFolderButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="openDashboardsFolderButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
+        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
+        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
+        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
+        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
+        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
+        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
+        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
+</value>
+  </data>
+  <data name="openDashboardsFolderButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="openDashboardsFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="openDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 19</value>
+  </data>
+  <data name="openDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 31</value>
+  </data>
+  <data name="openDashboardsFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="openDashboardsFolderButton.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFolderButton.Name" xml:space="preserve">
+    <value>openDashboardsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFolderButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFolderButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
+        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
+        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
+        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
+        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
+        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
+        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
+        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
+</value>
+  </data>
+  <data name="button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 56</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 31</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Config files</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
+        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
+        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
+        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
+        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
+        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
+        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
+        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
+</value>
+  </data>
+  <data name="button1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 56</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 31</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 284</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 96</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -627,7 +1059,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>371, 401</value>
+    <value>371, 393</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

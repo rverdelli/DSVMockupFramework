@@ -55,11 +55,11 @@
       <DependentUpon>DisplayConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="DsvDisplay.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="imom Display Mockup Framework.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="imom Display Mockup Framework.Designer.cs">
+      <DependentUpon>imom Display Mockup Framework.cs</DependentUpon>
     </Compile>
     <Compile Include="ImagePreview.cs">
       <SubType>Form</SubType>
@@ -73,8 +73,8 @@
     <EmbeddedResource Include="Forms\DisplayConfig.resx">
       <DependentUpon>DisplayConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="imom Display Mockup Framework.resx">
+      <DependentUpon>imom Display Mockup Framework.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImagePreview.resx">
       <DependentUpon>ImagePreview.cs</DependentUpon>
