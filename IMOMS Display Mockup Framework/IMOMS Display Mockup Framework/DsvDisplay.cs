@@ -4,34 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Configuration;
 
 namespace IMOMS_Display_Mockup_Framework
 {
     class IMOMSGlobalCongigs
     {
         //Configurable parameters here
-        public static Size ComponentSize = new Size(300, 150); //FUTURE Read from configuration
-        public static Size DisplaySize = new Size(1038, 520);//FUTURE Read from configuration
+        public static Size ComponentSize = new Size(int.Parse(ConfigurationManager.AppSettings["CompHeight"]), int.Parse(ConfigurationManager.AppSettings["CompWidth"]));
+        public static Size DisplaySize = new Size(int.Parse(ConfigurationManager.AppSettings["DispHeight"]), int.Parse(ConfigurationManager.AppSettings["DispHeight"]));
 
     }
     class DsvDisplay
     {
-
+        //Configurable parameters here
+        public static Size ComponentSize = new Size(int.Parse(ConfigurationManager.AppSettings["CompHeight"]), int.Parse(ConfigurationManager.AppSettings["CompWidth"]));
+        public static Size DisplaySize = new Size(int.Parse(ConfigurationManager.AppSettings["DispWidth"]), int.Parse(ConfigurationManager.AppSettings["DispHeight"]));
 
         //Methods here:
         [Obsolete("this Method should be avoided, Quality Impact Warning ")]
         public static Bitmap resizeToComponentSize(Bitmap source) => new Bitmap(source, IMOMSGlobalCongigs.ComponentSize);
 
-        public static Bitmap setComponents(List<Bitmap> Components)
+
+        //Set this to private once the setComponents(List<String>) will be available
+        public static Bitmap setComponents(Queue<Bitmap> Components)
         {
-            Bitmap BackgroundIMOMS = new Bitmap("background/IMOMS.png");
-            Bitmap FirstOneToBeReplaced = Components.ElementAt(0);
-            Bitmap ResultImage = new Bitmap(BackgroundIMOMS.Width, BackgroundIMOMS.Height);//stesse dimensioni bground
+            Bitmap BackgroundIMOMS = new Bitmap(ConfigurationManager.AppSettings["BackgorundImage"]);            
+            Bitmap ResultImage = new Bitmap(DisplaySize.Width, DisplaySize.Height);//Size from config (DispHeight, DispWindth)
+
+            int[] cols = new int[3];
+            cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
+            cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
+            cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
+
+            int[] rows = new int[2];
+            rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
+            rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
 
             using (Graphics gr = Graphics.FromImage(ResultImage))
             {
-                gr.DrawImage((Image)BackgroundIMOMS, 0,0,1038,520);
-                gr.DrawImage(FirstOneToBeReplaced, new Point(50, 50));
+                gr.DrawImage((Image)BackgroundIMOMS, 0,0, DisplaySize.Width, DisplaySize.Height);
+                for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
+                {
+                    for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
+                    {
+                        if (Components.Count > 0)
+                        {
+                            gr.DrawImage((Image)Components.Dequeue(), new Point(cols[c], rows[r]));
+                        }
+                    }
+                }
+               // gr.DrawImage(, new Point(50, 50));
             }
             ResultImage.Save("dentro metodo.png");
             return ResultImage;
