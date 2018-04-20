@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace IMOMS_Display_Mockup_Framework
 {
@@ -172,6 +173,9 @@ namespace IMOMS_Display_Mockup_Framework
 
             sw.Close();
             this.Close();
+
+            DsvDisplay.createDisplayFromConfiguration(configFileFullPath);
+            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayResult"]);
         }
     }
 }

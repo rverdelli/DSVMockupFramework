@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Configuration;
 using System.ComponentModel;
 using System.Windows.Forms;
+using System.IO;
 
 namespace IMOMS_Display_Mockup_Framework
 {
@@ -27,6 +28,20 @@ namespace IMOMS_Display_Mockup_Framework
         [Obsolete("this Method should be avoided, Quality Impact Warning ")]
         public static Bitmap resizeToComponentSize(Bitmap source) => new Bitmap(source, IMOMSGlobalCongigs.ComponentSize);
 
+        public static void createDisplayFromConfiguration(string filename)
+        {
+            //Read configuration and prepare the arguments for createDisplay
+            string path = ConfigurationManager.AppSettings["CompFolder"];
+            String Config = File.ReadAllText(filename);
+            List<string> lines = new List<string>(Config.Split(new[] { Environment.NewLine },StringSplitOptions.None));
+            lines.RemoveAt(1);
+            for (int i = 1; i < lines.Count; i++)
+            {
+                lines[i] = path + "\\" + lines[i] + ".png";
+            }
+            //call createDisplay with componentsPath\fullname.png and displayName
+            createDisplay(lines.GetRange(1, lines.Count-1), lines.ElementAt(0));
+        }
 
         [Description("Create the displays Images from a list on n components")]
         public static int createDisplay(List<string> components, string displayName)
@@ -34,6 +49,8 @@ namespace IMOMS_Display_Mockup_Framework
             Queue<Bitmap> compCallReady = new Queue<Bitmap>();
 
             int slideNumber = 1;
+            string fileName;
+            Bitmap Display;
             //Render images in groups of 6 components 
             while (components.Count > 6)
             {
@@ -48,13 +65,17 @@ namespace IMOMS_Display_Mockup_Framework
                     }
                     catch (System.IO.FileNotFoundException ex)
                     {
-                        MessageBox.Show("File: " + compDisplay.ElementAt(i) + "was not found", "Error :(");
+                        MessageBox.Show("File: " + compDisplay.ElementAt(i) + " was not found", "Error :(");
                     }
                     
                 }
                 
-                Bitmap Display = setComponents(compCallReady);
-                Display.Save(displayName + slideNumber.ToString()); //maybe MISSING FORMAT 
+                Display = setComponents(compCallReady);
+                fileName = ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+
+                Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName);
+                Display.Save(fileName); //maybe MISSING FORMAT 
+
                 slideNumber++;
                 compCallReady.Clear();//reset
             }
@@ -70,6 +91,14 @@ namespace IMOMS_Display_Mockup_Framework
                     MessageBox.Show("File: " + components.ElementAt(i) + "was not found", "Error :(");
                 }
             }
+            Display = setComponents(compCallReady);
+            fileName = ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+
+            Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayResult"] + "\\" + displayName);
+            Display.Save(fileName); //maybe MISSING FORMAT 
+
+            slideNumber++;
+            compCallReady.Clear();//reset
             return 1;
         }
 
