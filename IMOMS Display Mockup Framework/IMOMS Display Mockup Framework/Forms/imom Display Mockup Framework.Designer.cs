@@ -41,7 +41,7 @@
             this.createDashboardButton = new System.Windows.Forms.Button();
             this.regenerateDashboardsButton = new System.Windows.Forms.Button();
             this.loadDashboardLabel = new System.Windows.Forms.Label();
-            this.refreshDashboardsList = new System.Windows.Forms.Button();
+            this.refreshDashboardsListButton = new System.Windows.Forms.Button();
             this.loadDashboardComboBox = new System.Windows.Forms.ComboBox();
             this.openDisplaysFolderButton = new System.Windows.Forms.Button();
             this.openDashboardsFolderButton = new System.Windows.Forms.Button();
@@ -108,7 +108,7 @@
             this.groupBox1.Controls.Add(this.createDashboardButton);
             this.groupBox1.Controls.Add(this.regenerateDashboardsButton);
             this.groupBox1.Controls.Add(this.loadDashboardLabel);
-            this.groupBox1.Controls.Add(this.refreshDashboardsList);
+            this.groupBox1.Controls.Add(this.refreshDashboardsListButton);
             this.groupBox1.Controls.Add(this.loadDashboardComboBox);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -131,17 +131,19 @@
             resources.ApplyResources(this.loadDashboardLabel, "loadDashboardLabel");
             this.loadDashboardLabel.Name = "loadDashboardLabel";
             // 
-            // refreshDashboardsList
+            // refreshDashboardsListButton
             // 
-            resources.ApplyResources(this.refreshDashboardsList, "refreshDashboardsList");
-            this.refreshDashboardsList.Name = "refreshDashboardsList";
-            this.refreshDashboardsList.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.refreshDashboardsListButton, "refreshDashboardsListButton");
+            this.refreshDashboardsListButton.Name = "refreshDashboardsListButton";
+            this.refreshDashboardsListButton.UseVisualStyleBackColor = true;
+            this.refreshDashboardsListButton.Click += new System.EventHandler(this.refreshDashboardListButton_Click);
             // 
             // loadDashboardComboBox
             // 
             resources.ApplyResources(this.loadDashboardComboBox, "loadDashboardComboBox");
             this.loadDashboardComboBox.FormattingEnabled = true;
             this.loadDashboardComboBox.Name = "loadDashboardComboBox";
+            this.loadDashboardComboBox.SelectedIndexChanged += new System.EventHandler(this.loadDashboardComboBox_SelectedIndexChanged);
             // 
             // openDisplaysFolderButton
             // 
@@ -177,14 +179,14 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // imomsDisplayMockupFramework
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.displaysGroupBox);
-            this.Name = "Form1";
+            this.Name = "imomsDisplayMockupFramework";
             this.displaysGroupBox.ResumeLayout(false);
             this.displaysGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -206,7 +208,7 @@
         private System.Windows.Forms.Button createDashboardButton;
         private System.Windows.Forms.Button regenerateDashboardsButton;
         private System.Windows.Forms.Label loadDashboardLabel;
-        private System.Windows.Forms.Button refreshDashboardsList;
+        private System.Windows.Forms.Button refreshDashboardsListButton;
         private System.Windows.Forms.ComboBox loadDashboardComboBox;
         private System.Windows.Forms.Button openDisplaysFolderButton;
         private System.Windows.Forms.Button openDashboardsFolderButton;

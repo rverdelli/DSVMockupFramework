@@ -16,13 +16,16 @@ namespace IMOMS_Display_Mockup_Framework
     public partial class imomsDisplayMockupFramework : Form
     {
         List<string> availableDisplays = new List<string>();
+        List<string> availableDashboards = new List<string>();
         private string displayConfigFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"];
+        private string dashboardConfigFolder = ConfigurationManager.AppSettings["DashboardConfigFilesFolder"];
 
         public imomsDisplayMockupFramework()
         {
             InitializeComponent();
 
             refreshDisplaysList();
+            refreshDashboardsList();
         }
 
         public void refreshDisplaysList()
@@ -36,11 +39,16 @@ namespace IMOMS_Display_Mockup_Framework
             loadDisplayComboBox.Items.AddRange(availableDisplays.ToArray());
             loadDisplayComboBox.Text = "";
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public void refreshDashboardsList()
         {
-            Form f2 = new ImagePreview();
-            f2.Show();
+            availableDashboards = Directory.GetFiles(dashboardConfigFolder).ToList();
+
+            for (int i = 0; i < availableDashboards.Count; i++)
+                availableDashboards[i] = Path.GetFileNameWithoutExtension(availableDashboards[i]);
+
+            loadDashboardComboBox.Items.Clear();
+            loadDashboardComboBox.Items.AddRange(availableDashboards.ToArray());
+            loadDashboardComboBox.Text = "";
         }
 
         private void newDisplay_Click(object sender, EventArgs e)
@@ -53,9 +61,19 @@ namespace IMOMS_Display_Mockup_Framework
             new DisplayConfig(displayConfigFolder + "\\" + loadDisplayComboBox.Text + ".csv").Show();
         }
 
+        private void loadDashboardComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            new DashboardConfig(dashboardConfigFolder + "\\" + loadDashboardComboBox.Text + ".csv").Show();
+        }
+
         private void refreshDisplayListButton_Click(object sender, EventArgs e)
         {
             refreshDisplaysList();
+        }
+
+        private void refreshDashboardListButton_Click(object sender, EventArgs e)
+        {
+            refreshDashboardsList();
         }
 
         private void regenerateDisplaysButton_Click(object sender, EventArgs e)
