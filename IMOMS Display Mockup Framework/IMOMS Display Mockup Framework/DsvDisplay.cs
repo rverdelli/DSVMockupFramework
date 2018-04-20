@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Configuration;
+using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace IMOMS_Display_Mockup_Framework
 {
@@ -25,6 +27,51 @@ namespace IMOMS_Display_Mockup_Framework
         [Obsolete("this Method should be avoided, Quality Impact Warning ")]
         public static Bitmap resizeToComponentSize(Bitmap source) => new Bitmap(source, IMOMSGlobalCongigs.ComponentSize);
 
+
+        [Description("Create the displays Images from a list on n components")]
+        public static int createDisplay(List<string> components, string displayName)
+        {
+            Queue<Bitmap> compCallReady = new Queue<Bitmap>();
+
+            int slideNumber = 1;
+            //Render images in groups of 6 components 
+            while (components.Count > 6)
+            {
+                List<string> compDisplay = components.GetRange(0, 6);
+                components.RemoveRange(0, 6);
+                for (int i = 0; i < compDisplay.Count; i++)
+                {
+                    //for #Size #Quality issue please double check this
+                    try
+                    {
+                        compCallReady.Enqueue(new Bitmap(Image.FromFile(compDisplay.ElementAt(i)), ComponentSize));
+                    }
+                    catch (System.IO.FileNotFoundException ex)
+                    {
+                        MessageBox.Show("File: " + compDisplay.ElementAt(i) + "was not found", "Error :(");
+                    }
+                    
+                }
+                
+                Bitmap Display = setComponents(compCallReady);
+                Display.Save(displayName + slideNumber.ToString()); //maybe MISSING FORMAT 
+                slideNumber++;
+                compCallReady.Clear();//reset
+            }
+            //Remaining component in quantity < 6
+            for (int i = 0; i < components.Count; i++)
+            {
+                try
+                {
+                    compCallReady.Enqueue(new Bitmap(Image.FromFile(components.ElementAt(i)), ComponentSize));
+                }
+                catch
+                {
+                    MessageBox.Show("File: " + components.ElementAt(i) + "was not found", "Error :(");
+                }
+            }
+            return 1;
+        }
 
         //Set this to private once the setComponents(List<String>) will be available
         public static Bitmap setComponents(Queue<Bitmap> Components)

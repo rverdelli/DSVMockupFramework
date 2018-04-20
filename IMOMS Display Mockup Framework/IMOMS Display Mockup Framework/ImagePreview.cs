@@ -15,6 +15,15 @@ namespace IMOMS_Display_Mockup_Framework
         public ImagePreview()
         {
             InitializeComponent();
+            List<string> list= new List<string>();
+            list.Add("haa");
+            list.Add("gaa");
+            list.Add("faa");
+            list.Add("eaa");
+            list.Add("daa");
+            list.Add("caa");
+            list.Add("baa");
+            DsvDisplay.createDisplay(list, "NomeDashboard");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
