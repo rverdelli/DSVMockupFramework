@@ -19,7 +19,7 @@ namespace IMOMS_Display_Mockup_Framework
             OrderID = orderId;
             ComponentId = componentId;
             MoveUp = "UP";
-            MoveDown = "Down";
+            MoveDown = "DOWN";
             Remove = "X";
         }
 
