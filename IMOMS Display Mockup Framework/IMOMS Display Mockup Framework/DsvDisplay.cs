@@ -126,7 +126,7 @@ namespace IMOMS_Display_Mockup_Framework
                     {
                         if (Components.Count > 0)
                         {
-                            gr.DrawImage((Image)Components.Dequeue(), new Point(cols[c], rows[r]));
+                            gr.DrawImage((Image)Components.Dequeue(), cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
                         }
                     }
                 }

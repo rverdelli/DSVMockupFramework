@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.newDisplay = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.loadDisplayLabel = new System.Windows.Forms.Label();
             this.refreshDisplayListButton = new System.Windows.Forms.Button();
             this.regenerateDisplaysButton = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -63,7 +65,11 @@
             resources.ApplyResources(this.loadDisplayLabel, "loadDisplayLabel");
             this.loadDisplayLabel.Name = "loadDisplayLabel";
             // 
+            // notifyIcon1
             // refreshDisplayListButton
+            // 
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            // 
             // 
             resources.ApplyResources(this.refreshDisplayListButton, "refreshDisplayListButton");
             this.refreshDisplayListButton.Name = "refreshDisplayListButton";
@@ -101,6 +107,7 @@
         private System.Windows.Forms.Label loadDisplayLabel;
         private System.Windows.Forms.Button refreshDisplayListButton;
         private System.Windows.Forms.Button regenerateDisplaysButton;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
