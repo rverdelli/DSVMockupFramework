@@ -143,7 +143,35 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            string displayUniqueIdentifier = displayUniqueIdentifierTextBox.Text;
+            if (displayUniqueIdentifier == "")
+                MessageBox.Show("Display unique identified cannot be blank", "ERROR");
 
+            string displayConfigFilesFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"]; ;
+            string configFileFullPath = displayConfigFilesFolder + "\\" + displayUniqueIdentifier + ".csv";
+
+            if (!Directory.Exists(displayConfigFilesFolder))
+                Directory.CreateDirectory(displayConfigFilesFolder);
+
+            if(File.Exists(configFileFullPath))
+                MessageBox.Show("Display unique identifier already exists: " + configFileFullPath, "ERROR");
+
+            File.Create(configFileFullPath).Close();
+            StreamWriter sw = new StreamWriter(configFileFullPath);
+
+            sw.WriteLine(displayUniqueIdentifier);
+            sw.WriteLine();
+
+            for (int i = 0; i < selectedComponents.Count; i++)
+            {
+                if(i == selectedComponents.Count - 1)
+                    sw.Write(selectedComponents[i].ComponentId);
+                else
+                    sw.WriteLine(selectedComponents[i].ComponentId);
+            }
+
+            sw.Close();
+            this.Close();
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.displayUniqueIdentifierTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.addComponentsCB = new System.Windows.Forms.ComboBox();
             this.selectedComponentsGridView = new System.Windows.Forms.DataGridView();
@@ -52,14 +52,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Display unique identifier:";
             // 
-            // textBox1
+            // displayUniqueIdentifierTextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.displayUniqueIdentifierTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(141, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 20);
-            this.textBox1.TabIndex = 1;
+            this.displayUniqueIdentifierTextBox.Location = new System.Drawing.Point(141, 13);
+            this.displayUniqueIdentifierTextBox.Name = "displayUniqueIdentifierTextBox";
+            this.displayUniqueIdentifierTextBox.Size = new System.Drawing.Size(372, 20);
+            this.displayUniqueIdentifierTextBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -168,7 +168,7 @@
             this.Controls.Add(this.selectedComponentsGridView);
             this.Controls.Add(this.addComponentsCB);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.displayUniqueIdentifierTextBox);
             this.Controls.Add(this.label1);
             this.Name = "DisplayConfig";
             this.Text = "DisplayConfig";
@@ -181,7 +181,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox displayUniqueIdentifierTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox addComponentsCB;
         private System.Windows.Forms.DataGridView selectedComponentsGridView;
