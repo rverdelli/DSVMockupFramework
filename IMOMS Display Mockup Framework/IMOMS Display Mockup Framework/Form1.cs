@@ -25,7 +25,7 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form fRob = new DisplayConfig();
+            Form fRob = new DisplayConfig(@"C:\DSVMockupFramework\DisplayConfigFilesFolder\qwe.csv");
             fRob.Show();
         }
     }
