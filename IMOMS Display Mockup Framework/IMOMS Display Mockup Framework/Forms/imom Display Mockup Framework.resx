@@ -135,7 +135,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 31</value>
+    <value>340, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
@@ -166,7 +166,7 @@
     <value>119, 57</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 21</value>
+    <value>196, 21</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -181,7 +181,7 @@
     <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;loadDisplayComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="loadDisplayLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -211,10 +211,10 @@
     <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;loadDisplayLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="refreshDisplayListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Top, Right</value>
   </data>
   <data name="refreshDisplayListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -238,7 +238,7 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 56</value>
+    <value>322, 56</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
@@ -256,37 +256,7 @@
     <value>displaysGroupBox</value>
   </data>
   <data name="&gt;&gt;refreshDisplayListButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="regenerateDisplaysButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="regenerateDisplaysButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="regenerateDisplaysButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 86</value>
-  </data>
-  <data name="regenerateDisplaysButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 31</value>
-  </data>
-  <data name="regenerateDisplaysButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="regenerateDisplaysButton.Text" xml:space="preserve">
-    <value>Regenerate all displays</value>
-  </data>
-  <data name="&gt;&gt;regenerateDisplaysButton.Name" xml:space="preserve">
-    <value>regenerateDisplaysButton</value>
-  </data>
-  <data name="&gt;&gt;regenerateDisplaysButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;regenerateDisplaysButton.Parent" xml:space="preserve">
-    <value>displaysGroupBox</value>
-  </data>
-  <data name="&gt;&gt;regenerateDisplaysButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -618,7 +588,7 @@
     <value>15, 12</value>
   </data>
   <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 130</value>
+    <value>350, 98</value>
   </data>
   <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -653,18 +623,6 @@
   <data name="&gt;&gt;createDashboardButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Name" xml:space="preserve">
-    <value>regenerateDashboardsButton</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;loadDashboardLabel.Name" xml:space="preserve">
     <value>loadDashboardLabel</value>
   </data>
@@ -675,7 +633,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;refreshDashboardsListButton.Name" xml:space="preserve">
     <value>refreshDashboardsListButton</value>
@@ -687,7 +645,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;refreshDashboardsListButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;loadDashboardComboBox.Name" xml:space="preserve">
     <value>loadDashboardComboBox</value>
@@ -699,16 +657,16 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 148</value>
+    <value>15, 116</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 130</value>
+    <value>350, 97</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -744,7 +702,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 31</value>
+    <value>340, 31</value>
   </data>
   <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -763,39 +721,6 @@
   </data>
   <data name="&gt;&gt;createDashboardButton.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="regenerateDashboardsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="regenerateDashboardsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="regenerateDashboardsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="regenerateDashboardsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 86</value>
-  </data>
-  <data name="regenerateDashboardsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 31</value>
-  </data>
-  <data name="regenerateDashboardsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="regenerateDashboardsButton.Text" xml:space="preserve">
-    <value>Regenerate all dashboards</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Name" xml:space="preserve">
-    <value>regenerateDashboardsButton</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;regenerateDashboardsButton.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="loadDashboardLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -828,10 +753,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="refreshDashboardsListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Top, Right</value>
   </data>
   <data name="refreshDashboardsListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -858,7 +783,7 @@
     <value>NoControl</value>
   </data>
   <data name="refreshDashboardsListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 56</value>
+    <value>322, 56</value>
   </data>
   <data name="refreshDashboardsListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -879,7 +804,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;refreshDashboardsListButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="loadDashboardComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -891,7 +816,7 @@
     <value>137, 57</value>
   </data>
   <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 21</value>
+    <value>178, 21</value>
   </data>
   <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -906,142 +831,486 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="openDisplaysFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="openDisplaysFolderButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="openDisplaysFolderButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
-        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
-        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
-        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
-        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
-        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
-        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
-        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
-</value>
-  </data>
-  <data name="openDisplaysFolderButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
-  </data>
-  <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 31</value>
-  </data>
-  <data name="openDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="openDisplaysFolderButton.Text" xml:space="preserve">
-    <value>Displays</value>
-  </data>
-  <data name="&gt;&gt;openDisplaysFolderButton.Name" xml:space="preserve">
-    <value>openDisplaysFolderButton</value>
-  </data>
-  <data name="&gt;&gt;openDisplaysFolderButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openDisplaysFolderButton.Parent" xml:space="preserve">
-    <value>foldersGroupBox</value>
-  </data>
-  <data name="&gt;&gt;openDisplaysFolderButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="openDashboardsFolderButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="openDashboardsFolderButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="openDashboardsFolderButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhFAAUAIUAAP//VtCdAL2KAP/jPeWyAMWSAM2aAP/jRdypAP//aP/jLNWiAP/jB///eqx5AMmW
-        AP//lv//Mf/jHdmmAP//lP//j///hv//gv//TP//kv//dv//bP//Yv//Xv/jJql2AP//mP95S//jFLOA
-        AP//Z///fv//icCNANuoAP//cf//jNekANSoG///JbmGALeEANu3MuO2FP//Fv/ugt+sAP/jNP//PP//
-        RrB9AP/uqLaMFdfX1/8zAP//////me/v7yH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAA/ACwAAAAAFAAU
-        AAAI1AB/CBxIsKDBgwgP8kiIcKFDhgZD8AhBgAANBBMWJOTBkQcBEBdIYIggIwDDEDEuopgwYcWCBQFi
-        BjAAY+BCBD1y6tyZc8aJHQRR9PBBtCiEChYabFAgAOjACUOL+oCQwUSJFBw8NCW4IipREBRUXNBAAoAE
-        F04FLvA6FanSDhgkvEj7I4BXqlaxArAhYgRdu1/Djk0A4EYEBjj+Rj2adANcGy0YOKBrIMeBywMG1FDg
-        QYIIBgw+0GXxoHSB0ycECHgxAscHHXR/7JhNu7ZtiLhzFwwIADs=
-</value>
-  </data>
-  <data name="openDashboardsFolderButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="openDashboardsFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="openDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 19</value>
-  </data>
-  <data name="openDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 31</value>
-  </data>
-  <data name="openDashboardsFolderButton.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="openDashboardsFolderButton.Text" xml:space="preserve">
-    <value>Dashboards</value>
-  </data>
-  <data name="&gt;&gt;openDashboardsFolderButton.Name" xml:space="preserve">
-    <value>openDashboardsFolderButton</value>
-  </data>
-  <data name="&gt;&gt;openDashboardsFolderButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openDashboardsFolderButton.Parent" xml:space="preserve">
-    <value>foldersGroupBox</value>
-  </data>
-  <data name="&gt;&gt;openDashboardsFolderButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="foldersGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="utilsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dashboardsConfigFilesFolderEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="dashboardsConfigFilesFolderEdit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 204</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Name" xml:space="preserve">
+    <value>dashboardsConfigFilesFolderEdit</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 204</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="dashboardsConfigFilesFolderOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Name" xml:space="preserve">
+    <value>dashboardsConfigFilesFolderOpen</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 213</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Dashboards config files folder:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 167</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="displaysConfigFilesFolderEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Name" xml:space="preserve">
+    <value>displaysConfigFilesFolderEdit</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFilesFolderEdit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 167</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="displaysConfigFileFolderOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFileFolderOpen.Name" xml:space="preserve">
+    <value>displaysConfigFileFolderOpen</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFileFolderOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFileFolderOpen.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;displaysConfigFileFolderOpen.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 176</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Displays config files folder:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 130</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 130</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 139</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Dashboards folder:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 56</value>
+    <value>199, 93</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 31</value>
+    <value>31, 31</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Config files</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -1050,84 +1319,287 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>foldersGroupBox</value>
+    <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
-  <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="componentsFolderEditPathButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="componentsFolderEditPathButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="componentsFolderEditPathButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 56</value>
+  <data name="componentsFolderEditPathButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 56</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 31</value>
+  <data name="componentsFolderEditPathButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="componentsFolderEditPathButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Components</value>
+  <data name="&gt;&gt;componentsFolderEditPathButton.Name" xml:space="preserve">
+    <value>componentsFolderEditPathButton</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;componentsFolderEditPathButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>foldersGroupBox</value>
+  <data name="&gt;&gt;componentsFolderEditPathButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;componentsFolderEditPathButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 93</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="openComponentsFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="openComponentsFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="openComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 56</value>
+  </data>
+  <data name="openComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="openComponentsFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Name" xml:space="preserve">
+    <value>openComponentsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 102</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Displays folder:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="foldersGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Components folder: </value>
   </data>
-  <data name="foldersGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 284</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="foldersGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 101</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="foldersGroupBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="foldersGroupBox.Text" xml:space="preserve">
-    <value>Folders</value>
+  <data name="regenerateAllButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;foldersGroupBox.Name" xml:space="preserve">
-    <value>foldersGroupBox</value>
+  <data name="regenerateAllButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
-  <data name="&gt;&gt;foldersGroupBox.Type" xml:space="preserve">
+  <data name="regenerateAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="regenerateAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 31</value>
+  </data>
+  <data name="regenerateAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="regenerateAllButton.Text" xml:space="preserve">
+    <value>Regenerate all displays and dashboards</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Name" xml:space="preserve">
+    <value>regenerateAllButton</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="utilsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="utilsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 219</value>
+  </data>
+  <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 245</value>
+  </data>
+  <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="utilsGroupBox.Text" xml:space="preserve">
+    <value>Utils</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.Name" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;foldersGroupBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;utilsGroupBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;foldersGroupBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;utilsGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1137,7 +1609,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>371, 397</value>
+    <value>372, 468</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

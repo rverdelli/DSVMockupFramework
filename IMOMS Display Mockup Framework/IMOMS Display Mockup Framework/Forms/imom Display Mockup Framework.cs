@@ -17,6 +17,9 @@ namespace IMOMS_Display_Mockup_Framework
     {
         List<string> availableDisplays = new List<string>();
         List<string> availableDashboards = new List<string>();
+        private string compFolder = ConfigurationManager.AppSettings["CompFolder"];
+        private string displayFolder = ConfigurationManager.AppSettings["DisplayFolder"];
+        private string dashboardFolder = ConfigurationManager.AppSettings["DashboardFolder"];
         private string displayConfigFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"];
         private string dashboardConfigFolder = ConfigurationManager.AppSettings["DashboardConfigFilesFolder"];
 
@@ -51,6 +54,20 @@ namespace IMOMS_Display_Mockup_Framework
             loadDashboardComboBox.Text = "";
         }
 
+        private string folderPicker(string startingFolder)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                fbd.SelectedPath = startingFolder;
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                    return fbd.SelectedPath;
+
+                return "";
+            }
+        }
+
         private void newDisplay_Click(object sender, EventArgs e)
         {
             new DisplayConfig().Show();
@@ -81,7 +98,7 @@ namespace IMOMS_Display_Mockup_Framework
             refreshDashboardsList();
         }
 
-        private void regenerateDisplaysButton_Click(object sender, EventArgs e)
+        private void regenerateDisplaysAndDashboardsButton_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("This will regenerate all displays images based on displays' config files, proceed?", "PROMPT", MessageBoxButtons.OKCancel);
 
@@ -102,22 +119,92 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void openDashboardsFolderButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DashboardConfigFilesFolder"]);
+            Process.Start("explorer.exe", dashboardFolder);
         }
 
         private void openDisplaysFolderButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]); 
+            Process.Start("explorer.exe", displayFolder); 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void openComponentsFolderButton_Click_1(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["CompFolder"]);
+            Process.Start("explorer.exe", compFolder);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void openDisplayConfigFilesFolderButton_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayConfigFilesFolder"]); 
+            Process.Start("explorer.exe", displayConfigFolder);
+        }
+
+        private void openDashboardConfigFilesFolderButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", dashboardConfigFolder);
+        }
+
+        private void componentsFolderEditPathButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(compFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["CompFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            compFolder = newFolder;
+        }
+
+        private void displaysFolderEditPathButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(displayFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DisplayFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            displayFolder = newFolder;
+        }
+
+        private void dashboardsFolderEditPathButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(dashboardFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DashboardFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            dashboardFolder = newFolder;
+        }
+
+        private void displayConfigFolderEditPathButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(displayConfigFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DisplayConfigFilesFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            displayConfigFolder = newFolder;
+        }
+
+        private void dashboardsConfigFolderEditPathButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(dashboardConfigFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DashboardConfigFilesFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            dashboardConfigFolder = newFolder;
         }
     }
 }
