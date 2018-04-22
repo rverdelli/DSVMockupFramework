@@ -22,18 +22,17 @@ namespace IMOMS_Display_Mockup_Framework
         
         private static List<string> readConfig(string fileName)
         {
-            String config="";
+            String configuration="";
             try
             {
-                config = File.ReadAllText(fileName);
+                configuration = File.ReadAllText(fileName);
             }
             catch (Exception e)
             {
                 MessageBox.Show("impossible read: " + fileName + " due to " + e.Message + "DsvDashboard class", "Error :( ");
             }
             
-            //string path = ConfigurationManager.AppSettings["CompFolder"];
-            List<string> lines = new List<string>(config.Split(new[] { Environment.NewLine }, StringSplitOptions.None));
+            List<string> lines = new List<string>(configuration.Split(new[] { Environment.NewLine }, StringSplitOptions.None));
             //remove the title and the blank space from the read
             lines.RemoveRange(0, 2);
             return lines;
@@ -67,14 +66,16 @@ namespace IMOMS_Display_Mockup_Framework
             string dashboardPath = Config.dashboardFolder + "\\" + dashName;
             Directory.CreateDirectory(dashboardPath);
 
-            string displayPath = Config.displayFolder;
+            
             //for each display
             int ctr = 0;
             foreach (string disp in DisplayList)
             {
-                string fName = displayPath + "\\" + disp + ".png";//nome display
+                string fName = Config.displayFolder + "\\" + disp + ".png";//nome display
    
-                    foreach (string sourceFile in Directory.GetFiles(disp, "*", SearchOption.AllDirectories))
+                foreach (string sourceFile in Directory.GetFiles(disp, "*", SearchOption.AllDirectories))
+                {
+                    try
                     {
                         //apro immagine display
                         Bitmap img = new Bitmap(sourceFile);
@@ -82,37 +83,33 @@ namespace IMOMS_Display_Mockup_Framework
                         img = applyRibbon(img, dashName); //applico ribbon
                         //salvo nella cartella della dashboard
                         ctr++;
-                        string dashbName = dashboardPath + "\\" + ctr + " " + sourceFile.Substring(sourceFile.LastIndexOf('\\')+1);
+                        string dashbName = dashboardPath + "\\" + ctr + " " + sourceFile.Substring(sourceFile.LastIndexOf('\\') + 1);
                         img.Save(dashbName);
                     }
+                    catch(Exception e)
+                    {
+                        MessageBox.Show("Error applying the ribbon for dashboard " + dashName + ", file path " + filePath + ": " + e.Message);
+                    }
+                }
             }
-
         }
 
         public static Bitmap applyRibbon(Bitmap img, string nomeDashboard)
         {
             //get the Ribbon Path
             string ribbonPath = Config.ribbonFolder + "\\" + nomeDashboard + ".png";
-            Image ribbon= (Image)new Bitmap(10,10);
+            
             //Load the ribbon image
-            try
-            {
-                ribbon = Image.FromFile(ribbonPath);
-            }
-            catch
-            {
-                MessageBox.Show("oops someting went wrong loading the ribbon ");
-            }
+            Image ribbon = Image.FromFile(ribbonPath);
 
             using (Graphics gr = Graphics.FromImage(img))
             {
-                //gr.DrawImage((Image)BackgroundIMOMS, 0, 0, DisplaySize.Width, DisplaySize.Height);
                 gr.SmoothingMode = SmoothingMode.HighQuality;
                 gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                gr.DrawImage((Image)ribbon, 0, 0, LocalConfig.RibbonSize.Width, LocalConfig.RibbonSize.Height);//CHANGE HERE
+                gr.DrawImage(ribbon, 0, 0, LocalConfig.RibbonSize.Width, LocalConfig.RibbonSize.Height);//CHANGE HERE
             }
-           
+
             return img;
         }
     }

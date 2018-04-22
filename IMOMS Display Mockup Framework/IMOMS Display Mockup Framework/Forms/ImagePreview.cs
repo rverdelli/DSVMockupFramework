@@ -19,15 +19,15 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Queue<Bitmap> Comp = new Queue<Bitmap>();
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Comp.Enqueue(new Bitmap("Components/comp01.png"));
-            Bitmap Result = DsvDisplay.setComponents(Comp);
-            pictureBox1.Image = (Image)Result;
+            //Queue<Bitmap> Comp = new Queue<Bitmap>();
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Comp.Enqueue(new Bitmap("Components/comp01.png"));
+            //Bitmap Result = DsvDisplay.setComponents(Comp);
+            //pictureBox1.Image = (Image)Result;
         }
     }
 }

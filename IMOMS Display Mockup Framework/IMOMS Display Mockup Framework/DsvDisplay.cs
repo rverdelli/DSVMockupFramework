@@ -29,20 +29,20 @@ namespace IMOMS_Display_Mockup_Framework
         {
             //Read configuration and prepare the arguments for createDisplay
             String Configuration = File.ReadAllText(filename);
-            List<string> displayComponentsFullPaths = new List<string>(Configuration.Split(new[] { Environment.NewLine },StringSplitOptions.None));
-            displayComponentsFullPaths.RemoveAt(1);
-            for (int i = 1; i < displayComponentsFullPaths.Count; i++)
+            List<string> componentsFullPaths = new List<string>(Configuration.Split(new[] { Environment.NewLine },StringSplitOptions.None));
+            componentsFullPaths.RemoveAt(1);
+            for (int i = 1; i < componentsFullPaths.Count; i++)
             {
-                displayComponentsFullPaths[i] = Config.compFolder + "\\" + displayComponentsFullPaths[i] + ".png";
+                componentsFullPaths[i] = Config.compFolder + "\\" + componentsFullPaths[i] + ".png";
             }
             //call createDisplay with componentsPath\fullname.png and displayName
-            createDisplay(displayComponentsFullPaths.GetRange(1, displayComponentsFullPaths.Count-1), displayComponentsFullPaths.ElementAt(0));
+            createDisplay(componentsFullPaths.GetRange(1, componentsFullPaths.Count-1), componentsFullPaths.ElementAt(0));
         }
 
         [Description("Create the displays Images from a list on n components")]
         private static int createDisplay(List<string> components, string displayName)
         {
-            Queue<Bitmap> compCallReady = new Queue<Bitmap>();
+            Queue<string> compCallReady = new Queue<string>();
 
             //split the display in more images if the components are more than 6
             int slideNumber = 1;
@@ -59,7 +59,7 @@ namespace IMOMS_Display_Mockup_Framework
                     //for #Size #Quality issue please double check this
                     try
                     {
-                        compCallReady.Enqueue(new Bitmap(Image.FromFile(compDisplay.ElementAt(i))));
+                        compCallReady.Enqueue(compDisplay.ElementAt(i));
                     }
                     catch (System.IO.FileNotFoundException ex)
                     {
@@ -73,7 +73,6 @@ namespace IMOMS_Display_Mockup_Framework
 
                 Directory.CreateDirectory(Config.displayFolder + "\\" + displayName);
                 Display.Save(fileName); //maybe MISSING FORMAT 
-                //Display.Dispose();
 
                 slideNumber++;
                 compCallReady.Clear();//reset
@@ -84,7 +83,7 @@ namespace IMOMS_Display_Mockup_Framework
             {
                 try
                 {
-                    compCallReady.Enqueue(new Bitmap(Image.FromFile(components.ElementAt(i))));
+                    compCallReady.Enqueue(components.ElementAt(i));
                 }
                 catch
                 {
@@ -104,38 +103,42 @@ namespace IMOMS_Display_Mockup_Framework
         }
 
         //Set this to private once the setComponents(List<String>) will be available
-        public static Bitmap setComponents(Queue<Bitmap> Components)
+        public static Bitmap setComponents(Queue<string> Components)
         {
-            Bitmap BackgroundIMOMS = new Bitmap(ConfigurationManager.AppSettings["BackgorundImage"]); //Background Image          
-            Bitmap ResultImage = new Bitmap(DisplaySize.Width, DisplaySize.Height);//Size from config
-
-            int[] cols = new int[3];//From config File to array 
-            cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
-            cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
-            cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
-
-            int[] rows = new int[2];//From config File to array 
-            rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
-            rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
-
-            using (Graphics gr = Graphics.FromImage(ResultImage))
+            Bitmap ResultImage = new Bitmap(DisplaySize.Width, DisplaySize.Height);
+            using (Bitmap BackgroundIMOMS = new Bitmap(ConfigurationManager.AppSettings["BackgorundImage"]))
             {
-                //#scale #quality
-                gr.SmoothingMode = SmoothingMode.HighQuality;
-                gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                gr.DrawImage((Image)BackgroundIMOMS, 0, 0, DisplaySize.Width, DisplaySize.Height);
-                for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
+
+                int[] cols = new int[3];//From config File to array 
+                cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
+                cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
+                cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
+
+                int[] rows = new int[2];//From config File to array 
+                rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
+                rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
+
+                using (Graphics gr = Graphics.FromImage(ResultImage))
                 {
-                    for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
+                    //#scale #quality
+                    gr.SmoothingMode = SmoothingMode.HighQuality;
+                    gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                    gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                    gr.DrawImage((Image)BackgroundIMOMS, 0, 0, DisplaySize.Width, DisplaySize.Height);
+                    for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
                     {
-                        if (Components.Count > 0)
+                        for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
                         {
-                            //#scale #quality
-                            gr.DrawImage((Image)Components.Dequeue(), cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
+                            if (Components.Count > 0)
+                            {
+                                //#scale #quality
+                                using (Image component = Image.FromFile(Components.Dequeue()))
+                                    gr.DrawImage(component, cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
+                            }
                         }
                     }
                 }
+
             }
             //ResultImage.Dispose();
             return ResultImage;
