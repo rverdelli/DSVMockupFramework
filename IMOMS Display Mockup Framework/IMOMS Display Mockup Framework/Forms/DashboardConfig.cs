@@ -12,8 +12,6 @@ namespace IMOMS_Display_Mockup_Framework
 {
     public partial class DashboardConfig : Form
     {
-        private string displayFolder = ConfigurationManager.AppSettings["DisplayFolder"];
-        private string ribbonFolder = ConfigurationManager.AppSettings["RibbonFolder"];
         private List<string> availableDisplays;
         private BindingList<SelectedDisplay> selectedDisplays = new BindingList<SelectedDisplay>();
 
@@ -55,16 +53,16 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void checkDisplayFolderExistence()
         {
-            if (!Directory.Exists(displayFolder))
+            if (!Directory.Exists(Config.displayFolder))
             {
-                MessageBox.Show("Displays folder not found, please make sure your displays images are in the folder " + displayFolder, "ERROR");
+                MessageBox.Show("Displays folder not found, please make sure your displays images are in the folder " + Config.displayFolder, "ERROR");
                 Environment.Exit(-1);
             }
         }
 
         private void initializeComboBox()
         {
-            availableDisplays = Directory.GetDirectories(displayFolder).ToList();
+            availableDisplays = Directory.GetDirectories(Config.displayFolder).ToList();
             
             for (int i = 0; i < availableDisplays.Count; i++)
                 availableDisplays[i] = Path.GetFileNameWithoutExtension(availableDisplays[i]);
@@ -257,7 +255,7 @@ namespace IMOMS_Display_Mockup_Framework
         {
             string dashboardName = dashboardUniqueIdentifierTextBox.Text;
 
-            List<string> ribbonFiles = Directory.GetFiles(ribbonFolder)
+            List<string> ribbonFiles = Directory.GetFiles(Config.ribbonFolder)
                                                 .Select(x => Path.GetFileName(x))
                                                 .ToList();
 

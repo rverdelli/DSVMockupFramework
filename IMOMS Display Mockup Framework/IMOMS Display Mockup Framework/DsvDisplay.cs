@@ -20,6 +20,7 @@ namespace IMOMS_Display_Mockup_Framework
         public static Size ComponentSize = new Size(int.Parse(ConfigurationManager.AppSettings["CompHeight"]), int.Parse(ConfigurationManager.AppSettings["CompWidth"]));
         public static Size DisplaySize = new Size(int.Parse(ConfigurationManager.AppSettings["DispWidth"]), int.Parse(ConfigurationManager.AppSettings["DispHeight"]));
 
+
         //Methods here:
         [Obsolete("this Method should be avoided, Quality Impact Warning ")]
         public static Bitmap resizeToComponentSize(Bitmap source) => new Bitmap(source, ComponentSize);
@@ -27,16 +28,15 @@ namespace IMOMS_Display_Mockup_Framework
         public static void createDisplayFromConfiguration(string filename)
         {
             //Read configuration and prepare the arguments for createDisplay
-            string path = ConfigurationManager.AppSettings["CompFolder"];
-            String Config = File.ReadAllText(filename);
-            List<string> lines = new List<string>(Config.Split(new[] { Environment.NewLine },StringSplitOptions.None));
-            lines.RemoveAt(1);
-            for (int i = 1; i < lines.Count; i++)
+            String Configuration = File.ReadAllText(filename);
+            List<string> displayComponentsFullPaths = new List<string>(Configuration.Split(new[] { Environment.NewLine },StringSplitOptions.None));
+            displayComponentsFullPaths.RemoveAt(1);
+            for (int i = 1; i < displayComponentsFullPaths.Count; i++)
             {
-                lines[i] = path + "\\" + lines[i] + ".png";
+                displayComponentsFullPaths[i] = Config.compFolder + "\\" + displayComponentsFullPaths[i] + ".png";
             }
             //call createDisplay with componentsPath\fullname.png and displayName
-            createDisplay(lines.GetRange(1, lines.Count-1), lines.ElementAt(0));
+            createDisplay(displayComponentsFullPaths.GetRange(1, displayComponentsFullPaths.Count-1), displayComponentsFullPaths.ElementAt(0));
         }
 
         [Description("Create the displays Images from a list on n components")]
@@ -69,9 +69,9 @@ namespace IMOMS_Display_Mockup_Framework
                 }
                 
                 Display = setComponents(compCallReady);
-                fileName = ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+                fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-                Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
+                Directory.CreateDirectory(Config.displayFolder + "\\" + displayName);
                 Display.Save(fileName); //maybe MISSING FORMAT 
                 //Display.Dispose();
 
@@ -92,9 +92,9 @@ namespace IMOMS_Display_Mockup_Framework
                 }
             }
             Display = setComponents(compCallReady);
-            fileName = ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
+            fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-            Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
+            Directory.CreateDirectory(Config.displayFolder + "\\" + displayName);
             Display.Save(fileName); //maybe MISSING FORMAT 
             //Display.Dispose();
 

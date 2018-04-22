@@ -15,10 +15,6 @@ namespace IMOMS_Display_Mockup_Framework
 {
     class LocalConfig
     {
-        public static string getDashboardConfig => ConfigurationManager.AppSettings["DashboardConfigFilesFolder"];
-        public static string getDashboardFolder => ConfigurationManager.AppSettings["DashboardFolder"];
-        public static string getDisplayFolder => ConfigurationManager.AppSettings["DisplayFolder"];
-
         public static Size RibbonSize = new Size(int.Parse(ConfigurationManager.AppSettings["RibbonWidth"]), int.Parse(ConfigurationManager.AppSettings["RibbonHeight"]));
     }
     class DsvDashboard
@@ -64,14 +60,14 @@ namespace IMOMS_Display_Mockup_Framework
             //add the full path
             for (int i = 0; i < DisplayListPath.Count; i++)
             {
-                DisplayListPath[i] = LocalConfig.getDisplayFolder + "\\" + DisplayListPath[i];
+                DisplayListPath[i] = Config.displayFolder + "\\" + DisplayListPath[i];
             }            
 
             //Create DisplayFolder related to the current dashboard
-            string dashboardPath = LocalConfig.getDashboardFolder + "\\" + dashName;
+            string dashboardPath = Config.dashboardFolder + "\\" + dashName;
             Directory.CreateDirectory(dashboardPath);
 
-            string displayPath = LocalConfig.getDisplayFolder;
+            string displayPath = Config.displayFolder;
             //for each display
             int ctr = 0;
             foreach (string disp in DisplayList)
@@ -96,7 +92,7 @@ namespace IMOMS_Display_Mockup_Framework
         public static Bitmap applyRibbon(Bitmap img, string nomeDashboard)
         {
             //get the Ribbon Path
-            string ribbonPath = ConfigurationManager.AppSettings["RibbonFolder"] + "\\" + nomeDashboard + ".png";
+            string ribbonPath = Config.ribbonFolder + "\\" + nomeDashboard + ".png";
             Image ribbon= (Image)new Bitmap(10,10);
             //Load the ribbon image
             try
