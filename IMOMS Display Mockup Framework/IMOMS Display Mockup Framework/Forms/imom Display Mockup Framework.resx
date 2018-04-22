@@ -135,7 +135,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 31</value>
+    <value>401, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
@@ -166,7 +166,7 @@
     <value>119, 57</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 21</value>
+    <value>257, 21</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -238,7 +238,7 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 56</value>
+    <value>383, 56</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
@@ -588,7 +588,7 @@
     <value>15, 12</value>
   </data>
   <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 98</value>
+    <value>411, 98</value>
   </data>
   <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -611,81 +611,6 @@
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;createDashboardButton.Name" xml:space="preserve">
-    <value>createDashboardButton</value>
-  </data>
-  <data name="&gt;&gt;createDashboardButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;createDashboardButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;createDashboardButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardLabel.Name" xml:space="preserve">
-    <value>loadDashboardLabel</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardLabel.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;refreshDashboardsListButton.Name" xml:space="preserve">
-    <value>refreshDashboardsListButton</value>
-  </data>
-  <data name="&gt;&gt;refreshDashboardsListButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;refreshDashboardsListButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;refreshDashboardsListButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardComboBox.Name" xml:space="preserve">
-    <value>loadDashboardComboBox</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardComboBox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 116</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 97</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Dashboards</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="createDashboardButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -702,7 +627,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 31</value>
+    <value>401, 31</value>
   </data>
   <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -783,7 +708,7 @@
     <value>NoControl</value>
   </data>
   <data name="refreshDashboardsListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 56</value>
+    <value>383, 56</value>
   </data>
   <data name="refreshDashboardsListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -816,7 +741,7 @@
     <value>137, 57</value>
   </data>
   <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 21</value>
+    <value>239, 21</value>
   </data>
   <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -832,6 +757,33 @@
   </data>
   <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 116</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>411, 97</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="utilsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -875,7 +827,7 @@
     <value>NoControl</value>
   </data>
   <data name="editRibbonFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 167</value>
+    <value>371, 93</value>
   </data>
   <data name="editRibbonFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -926,7 +878,7 @@
     <value>NoControl</value>
   </data>
   <data name="openRibbonsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 167</value>
+    <value>334, 93</value>
   </data>
   <data name="openRibbonsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -956,7 +908,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 176</value>
+    <value>203, 102</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -1018,7 +970,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 240</value>
+    <value>371, 131</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1069,7 +1021,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 240</value>
+    <value>334, 131</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1099,16 +1051,16 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 249</value>
+    <value>203, 140</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 13</value>
+    <value>128, 13</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Dashboards config files folder:</value>
+    <value>Dashboards config folder:</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -1161,7 +1113,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 203</value>
+    <value>158, 131</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1212,7 +1164,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 203</value>
+    <value>121, 131</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1242,16 +1194,16 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 212</value>
+    <value>6, 140</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+    <value>110, 13</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Displays config files folder:</value>
+    <value>Displays config folder:</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1304,7 +1256,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 130</value>
+    <value>158, 93</value>
   </data>
   <data name="editDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1355,7 +1307,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsFodlerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 130</value>
+    <value>121, 93</value>
   </data>
   <data name="openDashboardsFodlerButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1385,7 +1337,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 139</value>
+    <value>6, 102</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 13</value>
@@ -1447,7 +1399,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 93</value>
+    <value>371, 56</value>
   </data>
   <data name="editDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1506,7 +1458,7 @@
     <value>NoControl</value>
   </data>
   <data name="editComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 56</value>
+    <value>158, 56</value>
   </data>
   <data name="editComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1557,7 +1509,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 93</value>
+    <value>334, 56</value>
   </data>
   <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1605,7 +1557,7 @@
     <value>Stretch</value>
   </data>
   <data name="openComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 56</value>
+    <value>121, 56</value>
   </data>
   <data name="openComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1635,7 +1587,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 102</value>
+    <value>203, 65</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -1698,7 +1650,7 @@
     <value>9, 19</value>
   </data>
   <data name="regenerateAllButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 31</value>
+    <value>396, 31</value>
   </data>
   <data name="regenerateAllButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1725,7 +1677,7 @@
     <value>15, 219</value>
   </data>
   <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 280</value>
+    <value>411, 169</value>
   </data>
   <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1752,7 +1704,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>372, 507</value>
+    <value>433, 395</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
