@@ -11,7 +11,6 @@ namespace IMOMS_Display_Mockup_Framework
 {
     public partial class DisplayConfig : Form
     {
-        private string compFolder = ConfigurationManager.AppSettings["CompFolder"];
         private List<string> availableComponents;
         private BindingList<SelectedComponent> selectedComponents = new BindingList<SelectedComponent>();
 
@@ -54,16 +53,16 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void checkCompFolderExistence()
         {
-            if (!Directory.Exists(compFolder))
+            if (!Directory.Exists(Config.compFolder))
             {
-                MessageBox.Show("Components folder not found, please create the folder " + compFolder + " and put components images in it.", "ERROR");
+                MessageBox.Show("Components folder not found, please create the folder " + Config.compFolder + " and put components images in it.", "ERROR");
                 Environment.Exit(-1);
             }
         }
 
         private void initializeComboBox()
         {
-            availableComponents = Directory.GetFiles(compFolder).ToList();
+            availableComponents = Directory.GetFiles(Config.compFolder).ToList();
 
             for (int i = 0; i < availableComponents.Count; i++)
                 availableComponents[i] = Path.GetFileNameWithoutExtension(availableComponents[i]);
