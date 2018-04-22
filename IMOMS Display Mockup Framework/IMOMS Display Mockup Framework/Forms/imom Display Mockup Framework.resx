@@ -135,7 +135,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 31</value>
+    <value>331, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
@@ -166,7 +166,7 @@
     <value>119, 57</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 21</value>
+    <value>187, 21</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -238,7 +238,7 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 56</value>
+    <value>313, 56</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
@@ -588,7 +588,7 @@
     <value>15, 12</value>
   </data>
   <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 98</value>
+    <value>341, 98</value>
   </data>
   <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -627,7 +627,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>401, 31</value>
+    <value>331, 31</value>
   </data>
   <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -708,7 +708,7 @@
     <value>NoControl</value>
   </data>
   <data name="refreshDashboardsListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 56</value>
+    <value>313, 56</value>
   </data>
   <data name="refreshDashboardsListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -741,7 +741,7 @@
     <value>137, 57</value>
   </data>
   <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 21</value>
+    <value>169, 21</value>
   </data>
   <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -765,7 +765,7 @@
     <value>15, 116</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 97</value>
+    <value>341, 97</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -827,7 +827,7 @@
     <value>NoControl</value>
   </data>
   <data name="editRibbonFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 93</value>
+    <value>301, 93</value>
   </data>
   <data name="editRibbonFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -878,7 +878,7 @@
     <value>NoControl</value>
   </data>
   <data name="openRibbonsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 93</value>
+    <value>264, 93</value>
   </data>
   <data name="openRibbonsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -908,16 +908,16 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 102</value>
+    <value>165, 102</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
+    <value>49, 13</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Ribbons folder:</value>
+    <value>Ribbons:</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -970,7 +970,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 131</value>
+    <value>301, 131</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1021,7 +1021,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 131</value>
+    <value>264, 131</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1051,16 +1051,16 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 140</value>
+    <value>165, 140</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 13</value>
+    <value>99, 13</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Dashboards config folder:</value>
+    <value>Dashboards config:</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -1113,7 +1113,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 131</value>
+    <value>125, 131</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1164,7 +1164,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 131</value>
+    <value>88, 131</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1197,13 +1197,13 @@
     <value>6, 140</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 13</value>
+    <value>81, 13</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Displays config folder:</value>
+    <value>Displays config:</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1256,7 +1256,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 93</value>
+    <value>125, 93</value>
   </data>
   <data name="editDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1307,7 +1307,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsFodlerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 93</value>
+    <value>88, 93</value>
   </data>
   <data name="openDashboardsFodlerButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1340,13 +1340,13 @@
     <value>6, 102</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
+    <value>67, 13</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Dashboards folder:</value>
+    <value>Dashboards:</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -1399,7 +1399,7 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 56</value>
+    <value>301, 56</value>
   </data>
   <data name="editDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1458,7 +1458,7 @@
     <value>NoControl</value>
   </data>
   <data name="editComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 56</value>
+    <value>125, 56</value>
   </data>
   <data name="editComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1509,7 +1509,7 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 56</value>
+    <value>264, 56</value>
   </data>
   <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1557,7 +1557,7 @@
     <value>Stretch</value>
   </data>
   <data name="openComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 56</value>
+    <value>88, 56</value>
   </data>
   <data name="openComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
@@ -1587,16 +1587,16 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 65</value>
+    <value>165, 65</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
+    <value>49, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Displays folder:</value>
+    <value>Displays:</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1620,13 +1620,13 @@
     <value>6, 65</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 13</value>
+    <value>72, 13</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Components folder: </value>
+    <value>Components: </value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -1650,7 +1650,7 @@
     <value>9, 19</value>
   </data>
   <data name="regenerateAllButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 31</value>
+    <value>326, 31</value>
   </data>
   <data name="regenerateAllButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1677,7 +1677,7 @@
     <value>15, 219</value>
   </data>
   <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 169</value>
+    <value>341, 169</value>
   </data>
   <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1704,7 +1704,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>433, 395</value>
+    <value>363, 395</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
