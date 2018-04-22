@@ -13,6 +13,7 @@ namespace IMOMS_Display_Mockup_Framework
     public partial class DashboardConfig : Form
     {
         private string displayFolder = ConfigurationManager.AppSettings["DisplayFolder"];
+        private string ribbonFolder = ConfigurationManager.AppSettings["RibbonFolder"];
         private List<string> availableDisplays;
         private BindingList<SelectedDisplay> selectedDisplays = new BindingList<SelectedDisplay>();
 
@@ -250,6 +251,29 @@ namespace IMOMS_Display_Mockup_Framework
             DsvDashboard.generateDashboard(configFileFullPath, dashboardUniqueIdentifier);
             //Bitmap b = new Bitmap("C:\\DsvMockupFramework\\Display\\Il display di simo\\Il display di simo1.png");
             //DsvDashboard.applyRibbon(b,  "dashboard ribbon");
+        }
+
+        private void dashboardUniqueIdentifierTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string dashboardName = dashboardUniqueIdentifierTextBox.Text;
+
+            List<string> ribbonFiles = Directory.GetFiles(ribbonFolder)
+                                                .Select(x => Path.GetFileName(x))
+                                                .ToList();
+
+            //Checking if file exists
+            ribbonFiles = ribbonFiles.Where(x => Path.GetFileNameWithoutExtension(x).Equals(dashboardName, StringComparison.CurrentCultureIgnoreCase)).ToList();
+
+            if (ribbonFiles.Count == 1)
+            {
+                ribbonFileTextBox.Text = ribbonFiles[0];
+                saveButton.Enabled = true;
+            }
+            else
+            {
+                ribbonFileTextBox.Text = "<Not found>";
+                saveButton.Enabled = false;
+            }
         }
     }
 }

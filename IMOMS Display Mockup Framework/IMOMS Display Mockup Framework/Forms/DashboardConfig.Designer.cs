@@ -33,13 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.addDisplaysCB = new System.Windows.Forms.ComboBox();
             this.selectedDisplaysGridView = new System.Windows.Forms.DataGridView();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
             this.OrderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DisplayID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoveUp = new System.Windows.Forms.DataGridViewButtonColumn();
             this.MoveDown = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ribbonFileTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.selectedDisplaysGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,11 +62,12 @@
             this.dashboardUniqueIdentifierTextBox.Name = "dashboardUniqueIdentifierTextBox";
             this.dashboardUniqueIdentifierTextBox.Size = new System.Drawing.Size(355, 20);
             this.dashboardUniqueIdentifierTextBox.TabIndex = 1;
+            this.dashboardUniqueIdentifierTextBox.TextChanged += new System.EventHandler(this.dashboardUniqueIdentifierTextBox_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 49);
+            this.label2.Location = new System.Drawing.Point(13, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 2;
@@ -77,7 +80,7 @@
             this.addDisplaysCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.addDisplaysCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.addDisplaysCB.FormattingEnabled = true;
-            this.addDisplaysCB.Location = new System.Drawing.Point(158, 46);
+            this.addDisplaysCB.Location = new System.Drawing.Point(158, 65);
             this.addDisplaysCB.Name = "addDisplaysCB";
             this.addDisplaysCB.Size = new System.Drawing.Size(355, 21);
             this.addDisplaysCB.TabIndex = 3;
@@ -95,33 +98,11 @@
             this.MoveUp,
             this.MoveDown,
             this.Remove});
-            this.selectedDisplaysGridView.Location = new System.Drawing.Point(16, 86);
+            this.selectedDisplaysGridView.Location = new System.Drawing.Point(16, 92);
             this.selectedDisplaysGridView.Name = "selectedDisplaysGridView";
-            this.selectedDisplaysGridView.Size = new System.Drawing.Size(497, 284);
+            this.selectedDisplaysGridView.Size = new System.Drawing.Size(497, 288);
             this.selectedDisplaysGridView.TabIndex = 4;
             this.selectedDisplaysGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectedDisplaysGridView_CellClick);
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cancelButton.Location = new System.Drawing.Point(437, 376);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 5;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.Location = new System.Drawing.Point(356, 376);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 6;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // OrderID
             // 
@@ -158,11 +139,55 @@
             this.Remove.ReadOnly = true;
             this.Remove.Width = 55;
             // 
+            // cancelButton
+            // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.Location = new System.Drawing.Point(437, 386);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 5;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.Location = new System.Drawing.Point(356, 386);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 6;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Ribbon file (auto-selected):";
+            // 
+            // ribbonFileTextBox
+            // 
+            this.ribbonFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ribbonFileTextBox.Location = new System.Drawing.Point(157, 39);
+            this.ribbonFileTextBox.Name = "ribbonFileTextBox";
+            this.ribbonFileTextBox.ReadOnly = true;
+            this.ribbonFileTextBox.Size = new System.Drawing.Size(355, 20);
+            this.ribbonFileTextBox.TabIndex = 8;
+            this.ribbonFileTextBox.Text = "<Not found>";
+            // 
             // DashboardConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 411);
+            this.ClientSize = new System.Drawing.Size(525, 421);
+            this.Controls.Add(this.ribbonFileTextBox);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.selectedDisplaysGridView);
@@ -192,5 +217,7 @@
         private System.Windows.Forms.DataGridViewButtonColumn MoveUp;
         private System.Windows.Forms.DataGridViewButtonColumn MoveDown;
         private System.Windows.Forms.DataGridViewButtonColumn Remove;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox ribbonFileTextBox;
     }
 }
