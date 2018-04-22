@@ -29,14 +29,14 @@ namespace IMOMS_Display_Mockup_Framework
         {
             //Read configuration and prepare the arguments for createDisplay
             String Configuration = File.ReadAllText(filename);
-            List<string> lines = new List<string>(Configuration.Split(new[] { Environment.NewLine },StringSplitOptions.None));
-            lines.RemoveAt(1);
-            for (int i = 1; i < lines.Count; i++)
+            List<string> displayComponentsFullPaths = new List<string>(Configuration.Split(new[] { Environment.NewLine },StringSplitOptions.None));
+            displayComponentsFullPaths.RemoveAt(1);
+            for (int i = 1; i < displayComponentsFullPaths.Count; i++)
             {
-                lines[i] = Config.compFolder + "\\" + lines[i] + ".png";
+                displayComponentsFullPaths[i] = Config.compFolder + "\\" + displayComponentsFullPaths[i] + ".png";
             }
             //call createDisplay with componentsPath\fullname.png and displayName
-            createDisplay(lines.GetRange(1, lines.Count-1), lines.ElementAt(0));
+            createDisplay(displayComponentsFullPaths.GetRange(1, displayComponentsFullPaths.Count-1), displayComponentsFullPaths.ElementAt(0));
         }
 
         [Description("Create the displays Images from a list on n components")]
