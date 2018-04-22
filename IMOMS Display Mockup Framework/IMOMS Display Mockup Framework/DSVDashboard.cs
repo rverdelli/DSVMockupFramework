@@ -51,11 +51,13 @@ namespace IMOMS_Display_Mockup_Framework
             }
         }
 
-        public static void generateDashboard(string filePath, string dashName)
+        public static void generateDashboard(string filePath)
         {
             //read config file
             List<string> DisplayList = readConfig(filePath);
             List<string> DisplayListPath = DisplayList;
+            string dashName = Path.GetFileNameWithoutExtension(filePath);
+
             //add the full path
             for (int i = 0; i < DisplayListPath.Count; i++)
             {

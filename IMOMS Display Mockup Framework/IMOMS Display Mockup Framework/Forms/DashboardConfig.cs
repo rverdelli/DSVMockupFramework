@@ -246,7 +246,7 @@ namespace IMOMS_Display_Mockup_Framework
             //DsvDisplay.createDisplayFromConfiguration(configFileFullPath);
             Process.Start("explorer.exe", ConfigurationManager.AppSettings["DashboardFolder"]);
 
-            DsvDashboard.generateDashboard(configFileFullPath, dashboardUniqueIdentifier);
+            DsvDashboard.generateDashboard(configFileFullPath);
             //Bitmap b = new Bitmap("C:\\DsvMockupFramework\\Display\\Il display di simo\\Il display di simo1.png");
             //DsvDashboard.applyRibbon(b,  "dashboard ribbon");
         }

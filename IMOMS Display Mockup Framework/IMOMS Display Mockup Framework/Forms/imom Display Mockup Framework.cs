@@ -127,6 +127,11 @@ namespace IMOMS_Display_Mockup_Framework
             foreach(string displayConfigFile in availableDisplays)
                 DsvDisplay.createDisplayFromConfiguration(Config.displayConfigFolder + "\\" + displayConfigFile + ".csv.");
 
+            refreshDashboardsList();
+            foreach (string dashboardConfigFile in availableDashboards)
+                DsvDashboard.generateDashboard(dashboardConfigFile);
+
+
             Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]);
         }
 
