@@ -255,7 +255,7 @@ namespace IMOMS_Display_Mockup_Framework
         {
             string dashboardName = dashboardUniqueIdentifierTextBox.Text;
 
-            List<string> ribbonFiles = Directory.GetFiles(Config.ribbonFolder)
+            List<string> ribbonFiles = Directory.GetFiles(Config.ribbonFolder, "*.png")
                                                 .Select(x => Path.GetFileName(x))
                                                 .ToList();
 

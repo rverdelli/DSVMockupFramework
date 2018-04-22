@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayConfig));
             this.label1 = new System.Windows.Forms.Label();
             this.displayUniqueIdentifierTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.addComponentsCB = new System.Windows.Forms.ComboBox();
             this.selectedComponentsGridView = new System.Windows.Forms.DataGridView();
-            this.cancelButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
             this.OrderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ComponentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoveUp = new System.Windows.Forms.DataGridViewButtonColumn();
             this.MoveDown = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.selectedComponentsGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(163, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Display unique identifier:";
             // 
@@ -56,17 +58,19 @@
             // 
             this.displayUniqueIdentifierTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.displayUniqueIdentifierTextBox.Location = new System.Drawing.Point(141, 13);
+            this.displayUniqueIdentifierTextBox.Location = new System.Drawing.Point(188, 16);
+            this.displayUniqueIdentifierTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.displayUniqueIdentifierTextBox.Name = "displayUniqueIdentifierTextBox";
-            this.displayUniqueIdentifierTextBox.Size = new System.Drawing.Size(372, 20);
+            this.displayUniqueIdentifierTextBox.Size = new System.Drawing.Size(495, 22);
             this.displayUniqueIdentifierTextBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 49);
+            this.label2.Location = new System.Drawing.Point(17, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Add component:";
             // 
@@ -77,9 +81,10 @@
             this.addComponentsCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.addComponentsCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.addComponentsCB.FormattingEnabled = true;
-            this.addComponentsCB.Location = new System.Drawing.Point(141, 46);
+            this.addComponentsCB.Location = new System.Drawing.Point(188, 57);
+            this.addComponentsCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addComponentsCB.Name = "addComponentsCB";
-            this.addComponentsCB.Size = new System.Drawing.Size(372, 21);
+            this.addComponentsCB.Size = new System.Drawing.Size(495, 24);
             this.addComponentsCB.TabIndex = 3;
             this.addComponentsCB.SelectedIndexChanged += new System.EventHandler(this.addComponentsCB_SelectedIndexChanged);
             // 
@@ -95,33 +100,12 @@
             this.MoveUp,
             this.MoveDown,
             this.Remove});
-            this.selectedComponentsGridView.Location = new System.Drawing.Point(16, 86);
+            this.selectedComponentsGridView.Location = new System.Drawing.Point(21, 106);
+            this.selectedComponentsGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectedComponentsGridView.Name = "selectedComponentsGridView";
-            this.selectedComponentsGridView.Size = new System.Drawing.Size(497, 284);
+            this.selectedComponentsGridView.Size = new System.Drawing.Size(663, 350);
             this.selectedComponentsGridView.TabIndex = 4;
             this.selectedComponentsGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectedComponentsGridView_CellClick);
-            // 
-            // cancelButton
-            // 
-            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cancelButton.Location = new System.Drawing.Point(437, 376);
-            this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 5;
-            this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.Location = new System.Drawing.Point(356, 376);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 6;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // OrderID
             // 
@@ -158,11 +142,35 @@
             this.Remove.ReadOnly = true;
             this.Remove.Width = 55;
             // 
+            // cancelButton
+            // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.Location = new System.Drawing.Point(583, 463);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(100, 28);
+            this.cancelButton.TabIndex = 5;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.Location = new System.Drawing.Point(475, 463);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(100, 28);
+            this.saveButton.TabIndex = 6;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
             // DisplayConfig
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 411);
+            this.ClientSize = new System.Drawing.Size(700, 506);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.selectedComponentsGridView);
@@ -170,6 +178,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.displayUniqueIdentifierTextBox);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DisplayConfig";
             this.Text = "DisplayConfig";
             ((System.ComponentModel.ISupportInitialize)(this.selectedComponentsGridView)).EndInit();

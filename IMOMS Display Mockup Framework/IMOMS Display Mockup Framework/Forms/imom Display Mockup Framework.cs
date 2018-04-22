@@ -30,7 +30,7 @@ namespace IMOMS_Display_Mockup_Framework
         {           
             try
             {
-                availableDisplays = Directory.GetFiles(Config.displayConfigFolder).ToList();
+                availableDisplays = Directory.GetFiles(Config.displayConfigFolder, "*.csv").ToList();
             }
             catch (System.IO.DirectoryNotFoundException ex)
             {
@@ -52,7 +52,7 @@ namespace IMOMS_Display_Mockup_Framework
         {
             try
             {
-                availableDashboards = Directory.GetFiles(Config.dashboardConfigFolder).ToList();
+                availableDashboards = Directory.GetFiles(Config.dashboardConfigFolder, "*.csv").ToList();
             }
             catch (System.IO.DirectoryNotFoundException ex)
             {

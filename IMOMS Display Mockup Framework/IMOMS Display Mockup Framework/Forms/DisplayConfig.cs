@@ -62,7 +62,7 @@ namespace IMOMS_Display_Mockup_Framework
 
         private void initializeComboBox()
         {
-            availableComponents = Directory.GetFiles(Config.compFolder).ToList();
+            availableComponents = Directory.GetFiles(Config.compFolder, "*.png").ToList();
 
             for (int i = 0; i < availableComponents.Count; i++)
                 availableComponents[i] = Path.GetFileNameWithoutExtension(availableComponents[i]);

@@ -48,6 +48,12 @@ namespace IMOMS_Display_Mockup_Framework
             int slideNumber = 1;
             string fileName;
             Bitmap Display;
+            string dirName= Config.displayFolder + "\\" + displayName;
+
+            //Best practice approach to avoid directoryNotFoundException 
+            Directory.CreateDirectory(dirName);
+            Directory.Delete(dirName, true);
+            Directory.CreateDirectory(dirName);
 
             //Render images FOR GROUPS > 6 ONLY
             while (components.Count > 6)
@@ -71,7 +77,7 @@ namespace IMOMS_Display_Mockup_Framework
                 Display = setComponents(compCallReady);
                 fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-                Directory.CreateDirectory(Config.displayFolder + "\\" + displayName);
+                Directory.CreateDirectory(dirName);
                 Display.Save(fileName); //maybe MISSING FORMAT 
 
                 slideNumber++;
@@ -93,7 +99,7 @@ namespace IMOMS_Display_Mockup_Framework
             Display = setComponents(compCallReady);
             fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
-            Directory.CreateDirectory(Config.displayFolder + "\\" + displayName);
+            Directory.CreateDirectory(dirName);
             Display.Save(fileName); //maybe MISSING FORMAT 
             //Display.Dispose();
 

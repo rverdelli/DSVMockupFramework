@@ -61,9 +61,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.regenerateAllButton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.displaysGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.utilsGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // newDisplay
@@ -289,10 +292,24 @@
             this.regenerateAllButton.UseVisualStyleBackColor = true;
             this.regenerateAllButton.Click += new System.EventHandler(this.regenerateDisplaysAndDashboardsButton_Click);
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::IMOMS_Display_Mockup_Framework.Properties.Resources.TechEdgeLogo;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // imomsDisplayMockupFramework
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.utilsGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.displaysGroupBox);
@@ -303,7 +320,9 @@
             this.groupBox1.PerformLayout();
             this.utilsGroupBox.ResumeLayout(false);
             this.utilsGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -339,6 +358,8 @@
         private System.Windows.Forms.Button editRibbonFolderButton;
         private System.Windows.Forms.Button openRibbonsFolderButton;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

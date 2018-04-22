@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardConfig));
             this.label1 = new System.Windows.Forms.Label();
             this.dashboardUniqueIdentifierTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,9 +49,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 13);
+            this.label1.Size = new System.Drawing.Size(187, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard unique identifier:";
             // 
@@ -58,18 +60,20 @@
             // 
             this.dashboardUniqueIdentifierTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dashboardUniqueIdentifierTextBox.Location = new System.Drawing.Point(158, 13);
+            this.dashboardUniqueIdentifierTextBox.Location = new System.Drawing.Point(211, 16);
+            this.dashboardUniqueIdentifierTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboardUniqueIdentifierTextBox.Name = "dashboardUniqueIdentifierTextBox";
-            this.dashboardUniqueIdentifierTextBox.Size = new System.Drawing.Size(355, 20);
+            this.dashboardUniqueIdentifierTextBox.Size = new System.Drawing.Size(472, 22);
             this.dashboardUniqueIdentifierTextBox.TabIndex = 1;
             this.dashboardUniqueIdentifierTextBox.TextChanged += new System.EventHandler(this.dashboardUniqueIdentifierTextBox_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 68);
+            this.label2.Location = new System.Drawing.Point(17, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Add display:";
             // 
@@ -80,9 +84,10 @@
             this.addDisplaysCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.addDisplaysCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.addDisplaysCB.FormattingEnabled = true;
-            this.addDisplaysCB.Location = new System.Drawing.Point(158, 65);
+            this.addDisplaysCB.Location = new System.Drawing.Point(211, 80);
+            this.addDisplaysCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addDisplaysCB.Name = "addDisplaysCB";
-            this.addDisplaysCB.Size = new System.Drawing.Size(355, 21);
+            this.addDisplaysCB.Size = new System.Drawing.Size(472, 24);
             this.addDisplaysCB.TabIndex = 3;
             this.addDisplaysCB.SelectedIndexChanged += new System.EventHandler(this.addDisplaysCB_SelectedIndexChanged);
             // 
@@ -98,9 +103,10 @@
             this.MoveUp,
             this.MoveDown,
             this.Remove});
-            this.selectedDisplaysGridView.Location = new System.Drawing.Point(16, 92);
+            this.selectedDisplaysGridView.Location = new System.Drawing.Point(21, 113);
+            this.selectedDisplaysGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectedDisplaysGridView.Name = "selectedDisplaysGridView";
-            this.selectedDisplaysGridView.Size = new System.Drawing.Size(497, 288);
+            this.selectedDisplaysGridView.Size = new System.Drawing.Size(663, 354);
             this.selectedDisplaysGridView.TabIndex = 4;
             this.selectedDisplaysGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectedDisplaysGridView_CellClick);
             // 
@@ -142,9 +148,10 @@
             // cancelButton
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cancelButton.Location = new System.Drawing.Point(437, 386);
+            this.cancelButton.Location = new System.Drawing.Point(583, 475);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(100, 28);
             this.cancelButton.TabIndex = 5;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -153,9 +160,10 @@
             // saveButton
             // 
             this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.Location = new System.Drawing.Point(356, 386);
+            this.saveButton.Location = new System.Drawing.Point(475, 475);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.Size = new System.Drawing.Size(100, 28);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -164,9 +172,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 42);
+            this.label3.Location = new System.Drawing.Point(17, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.Size = new System.Drawing.Size(179, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Ribbon file (auto-selected):";
             // 
@@ -174,18 +183,19 @@
             // 
             this.ribbonFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ribbonFileTextBox.Location = new System.Drawing.Point(157, 39);
+            this.ribbonFileTextBox.Location = new System.Drawing.Point(209, 48);
+            this.ribbonFileTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonFileTextBox.Name = "ribbonFileTextBox";
             this.ribbonFileTextBox.ReadOnly = true;
-            this.ribbonFileTextBox.Size = new System.Drawing.Size(355, 20);
+            this.ribbonFileTextBox.Size = new System.Drawing.Size(472, 22);
             this.ribbonFileTextBox.TabIndex = 8;
             this.ribbonFileTextBox.Text = "<Not found>";
             // 
             // DashboardConfig
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 421);
+            this.ClientSize = new System.Drawing.Size(700, 518);
             this.Controls.Add(this.ribbonFileTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.saveButton);
@@ -195,6 +205,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dashboardUniqueIdentifierTextBox);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashboardConfig";
             this.Text = "DisplayConfig";
             ((System.ComponentModel.ISupportInitialize)(this.selectedDisplaysGridView)).EndInit();

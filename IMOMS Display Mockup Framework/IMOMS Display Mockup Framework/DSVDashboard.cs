@@ -64,8 +64,10 @@ namespace IMOMS_Display_Mockup_Framework
 
             //Create DisplayFolder related to the current dashboard
             string dashboardPath = Config.dashboardFolder + "\\" + dashName;
+            //Best practice approach to avoid directoryNotFoundException 
             Directory.CreateDirectory(dashboardPath);
-
+            Directory.Delete(dashboardPath, true);
+            Directory.CreateDirectory(dashboardPath);
             
             //for each display
             int ctr = 0;
