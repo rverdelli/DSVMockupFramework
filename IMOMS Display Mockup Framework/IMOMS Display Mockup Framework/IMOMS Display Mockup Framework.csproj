@@ -61,6 +61,7 @@
       <DependentUpon>DisplayConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="DsvDisplay.cs" />
+    <Compile Include="DSVDashboard.cs" />
     <Compile Include="Forms\imom Display Mockup Framework.cs">
       <SubType>Form</SubType>
     </Compile>

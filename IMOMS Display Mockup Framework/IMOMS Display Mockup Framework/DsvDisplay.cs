@@ -40,7 +40,7 @@ namespace IMOMS_Display_Mockup_Framework
         }
 
         [Description("Create the displays Images from a list on n components")]
-        public static int createDisplay(List<string> components, string displayName)
+        private static int createDisplay(List<string> components, string displayName)
         {
             Queue<Bitmap> compCallReady = new Queue<Bitmap>();
 
@@ -73,6 +73,7 @@ namespace IMOMS_Display_Mockup_Framework
 
                 Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
                 Display.Save(fileName); //maybe MISSING FORMAT 
+                //Display.Dispose();
 
                 slideNumber++;
                 compCallReady.Clear();//reset
@@ -95,6 +96,7 @@ namespace IMOMS_Display_Mockup_Framework
 
             Directory.CreateDirectory(ConfigurationManager.AppSettings["DisplayFolder"] + "\\" + displayName);
             Display.Save(fileName); //maybe MISSING FORMAT 
+            //Display.Dispose();
 
             slideNumber++;
             compCallReady.Clear();//reset
@@ -119,8 +121,10 @@ namespace IMOMS_Display_Mockup_Framework
             using (Graphics gr = Graphics.FromImage(ResultImage))
             {
                 //#scale #quality
-                gr.DrawImage((Image)BackgroundIMOMS, 0,0, DisplaySize.Width, DisplaySize.Height);
-                //gr.DrawImage((Image)BackgroundIMOMS, 0, 0);
+                gr.SmoothingMode = SmoothingMode.HighQuality;
+                gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                gr.DrawImage((Image)BackgroundIMOMS, 0, 0, DisplaySize.Width, DisplaySize.Height);
                 for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
                 {
                     for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
@@ -128,17 +132,12 @@ namespace IMOMS_Display_Mockup_Framework
                         if (Components.Count > 0)
                         {
                             //#scale #quality
-                            gr.SmoothingMode = SmoothingMode.HighQuality;
-                            gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                            gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
                             gr.DrawImage((Image)Components.Dequeue(), cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
-                            //Bitmap Res = ResizeImage((Image)Components.Dequeue(), 515, 337);
-                            //gr.DrawImage((Image)Res, cols[c], rows[r]);
                         }
                     }
                 }
-               // gr.DrawImage(immagine, new Point(50, 50));
             }
+            //ResultImage.Dispose();
             return ResultImage;
         }
     }

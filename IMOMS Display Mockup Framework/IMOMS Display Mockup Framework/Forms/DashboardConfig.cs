@@ -6,6 +6,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace IMOMS_Display_Mockup_Framework
 {
@@ -245,6 +246,10 @@ namespace IMOMS_Display_Mockup_Framework
 
             //DsvDisplay.createDisplayFromConfiguration(configFileFullPath);
             Process.Start("explorer.exe", ConfigurationManager.AppSettings["DashboardFolder"]);
+
+            DsvDashboard.generateDashboard(configFileFullPath, dashboardUniqueIdentifier);
+            //Bitmap b = new Bitmap("C:\\DsvMockupFramework\\Display\\Il display di simo\\Il display di simo1.png");
+            //DsvDashboard.applyRibbon(b,  "dashboard ribbon");
         }
     }
 }

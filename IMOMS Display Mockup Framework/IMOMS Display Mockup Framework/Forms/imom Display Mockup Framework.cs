@@ -32,8 +32,19 @@ namespace IMOMS_Display_Mockup_Framework
         }
 
         public void refreshDisplaysList()
-        {
-            availableDisplays = Directory.GetFiles(displayConfigFolder).ToList();
+        {           
+            try
+            {
+                availableDisplays = Directory.GetFiles(displayConfigFolder).ToList();
+            }
+            catch (System.IO.DirectoryNotFoundException ex)
+            {
+                MessageBox.Show("Unable to find the folder: " + dashboardConfigFolder, "Error :(");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error :(");
+            }
 
             for (int i = 0; i < availableDisplays.Count; i++)
                 availableDisplays[i] = Path.GetFileNameWithoutExtension(availableDisplays[i]);
@@ -44,7 +55,19 @@ namespace IMOMS_Display_Mockup_Framework
         }
         public void refreshDashboardsList()
         {
-            availableDashboards = Directory.GetFiles(dashboardConfigFolder).ToList();
+            try
+            {
+                availableDashboards = Directory.GetFiles(dashboardConfigFolder).ToList();
+            }
+            catch (System.IO.DirectoryNotFoundException ex)
+            {
+                MessageBox.Show("Unable to find the folder: " + dashboardConfigFolder, "Error :(");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error :(");
+            }
+            
 
             for (int i = 0; i < availableDashboards.Count; i++)
                 availableDashboards[i] = Path.GetFileNameWithoutExtension(availableDashboards[i]);
