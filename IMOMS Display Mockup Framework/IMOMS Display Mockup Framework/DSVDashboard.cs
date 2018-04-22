@@ -64,7 +64,7 @@ namespace IMOMS_Display_Mockup_Framework
             //add the full path
             for (int i = 0; i < DisplayListPath.Count; i++)
             {
-                DisplayListPath[i] = LocalConfig.getDisplayFolder + DisplayListPath[i];
+                DisplayListPath[i] = LocalConfig.getDisplayFolder + "\\" + DisplayListPath[i];
             }            
 
             //Create DisplayFolder related to the current dashboard
@@ -77,34 +77,19 @@ namespace IMOMS_Display_Mockup_Framework
             foreach (string disp in DisplayList)
             {
                 string fName = displayPath + "\\" + disp + ".png";//nome display
-
-
+   
+                    foreach (string sourceFile in Directory.GetFiles(disp, "*", SearchOption.AllDirectories))
+                    {
                         //apro immagine display
-                        Bitmap img = new Bitmap(fName);
+                        Bitmap img = new Bitmap(sourceFile);
                         //aggiungo ribbon
                         img = applyRibbon(img, dashName); //applico ribbon
                         //salvo nella cartella della dashboard
                         ctr++;
-                        string dashbName = dashboardPath + "\\" + ctr + " " + fName.Substring(fName.LastIndexOf('\\')+1);
+                        string dashbName = dashboardPath + "\\" + ctr + " " + sourceFile.Substring(sourceFile.LastIndexOf('\\')+1);
                         img.Save(dashbName);
-                    
-                
+                    }
             }
-            //applyRibbon
-            //int ctr = 1;
-            foreach (string file in Directory.GetFiles(dashboardPath, "*", SearchOption.AllDirectories))
-            {
-                Bitmap img = new Bitmap(file);
-                //applica ribbon
-                img = applyRibbon(img, dashName);
-
-                //File.Delete(file);
-                string fName = file.Replace(".png", "-new.png");
-                //if (File.Exists(fName))
-                    //File.Delete(fName);
-                img.Save(fName);//#rename here
-            }
-
 
         }
 
