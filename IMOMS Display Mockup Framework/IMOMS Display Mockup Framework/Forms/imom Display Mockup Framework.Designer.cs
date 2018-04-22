@@ -42,22 +42,25 @@
             this.refreshDashboardsListButton = new System.Windows.Forms.Button();
             this.loadDashboardComboBox = new System.Windows.Forms.ComboBox();
             this.utilsGroupBox = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.editRibbonFolderButton = new System.Windows.Forms.Button();
+            this.openRibbonsFolderButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.editDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.openDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.editDisplaysConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.openDisplaysConfigFileFolderButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.editDashboardsFolderButton = new System.Windows.Forms.Button();
+            this.openDashboardsFodlerButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.componentsFolderEditPathButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.editDisplaysFolderButton = new System.Windows.Forms.Button();
+            this.editComponentsFolderButton = new System.Windows.Forms.Button();
+            this.openDisplaysFolderButton = new System.Windows.Forms.Button();
             this.openComponentsFolderButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.regenerateAllButton = new System.Windows.Forms.Button();
-            this.displaysConfigFilesFolderEdit = new System.Windows.Forms.Button();
-            this.displaysConfigFileFolderOpen = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dashboardsConfigFilesFolderEdit = new System.Windows.Forms.Button();
-            this.dashboardsConfigFilesFolderOpen = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.displaysGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.utilsGroupBox.SuspendLayout();
@@ -143,18 +146,21 @@
             // utilsGroupBox
             // 
             resources.ApplyResources(this.utilsGroupBox, "utilsGroupBox");
-            this.utilsGroupBox.Controls.Add(this.dashboardsConfigFilesFolderEdit);
-            this.utilsGroupBox.Controls.Add(this.dashboardsConfigFilesFolderOpen);
+            this.utilsGroupBox.Controls.Add(this.editRibbonFolderButton);
+            this.utilsGroupBox.Controls.Add(this.openRibbonsFolderButton);
+            this.utilsGroupBox.Controls.Add(this.label6);
+            this.utilsGroupBox.Controls.Add(this.editDashboardsConfigFilesFolderButton);
+            this.utilsGroupBox.Controls.Add(this.openDashboardsConfigFilesFolderButton);
             this.utilsGroupBox.Controls.Add(this.label5);
-            this.utilsGroupBox.Controls.Add(this.displaysConfigFilesFolderEdit);
-            this.utilsGroupBox.Controls.Add(this.displaysConfigFileFolderOpen);
+            this.utilsGroupBox.Controls.Add(this.editDisplaysConfigFilesFolderButton);
+            this.utilsGroupBox.Controls.Add(this.openDisplaysConfigFileFolderButton);
             this.utilsGroupBox.Controls.Add(this.label4);
-            this.utilsGroupBox.Controls.Add(this.button4);
-            this.utilsGroupBox.Controls.Add(this.button5);
+            this.utilsGroupBox.Controls.Add(this.editDashboardsFolderButton);
+            this.utilsGroupBox.Controls.Add(this.openDashboardsFodlerButton);
             this.utilsGroupBox.Controls.Add(this.label3);
-            this.utilsGroupBox.Controls.Add(this.button2);
-            this.utilsGroupBox.Controls.Add(this.componentsFolderEditPathButton);
-            this.utilsGroupBox.Controls.Add(this.button3);
+            this.utilsGroupBox.Controls.Add(this.editDisplaysFolderButton);
+            this.utilsGroupBox.Controls.Add(this.editComponentsFolderButton);
+            this.utilsGroupBox.Controls.Add(this.openDisplaysFolderButton);
             this.utilsGroupBox.Controls.Add(this.openComponentsFolderButton);
             this.utilsGroupBox.Controls.Add(this.label2);
             this.utilsGroupBox.Controls.Add(this.label1);
@@ -162,43 +168,102 @@
             this.utilsGroupBox.Name = "utilsGroupBox";
             this.utilsGroupBox.TabStop = false;
             // 
-            // button4
+            // editRibbonFolderButton
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.editRibbonFolderButton, "editRibbonFolderButton");
+            this.editRibbonFolderButton.Name = "editRibbonFolderButton";
+            this.editRibbonFolderButton.UseVisualStyleBackColor = true;
+            this.editRibbonFolderButton.Click += new System.EventHandler(this.editRibbonsFolderButton_Click);
             // 
-            // button5
+            // openRibbonsFolderButton
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
+            resources.ApplyResources(this.openRibbonsFolderButton, "openRibbonsFolderButton");
+            this.openRibbonsFolderButton.Name = "openRibbonsFolderButton";
+            this.openRibbonsFolderButton.UseVisualStyleBackColor = true;
+            this.openRibbonsFolderButton.Click += new System.EventHandler(this.openRibbonsFolderButton_Click);
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // editDashboardsConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.editDashboardsConfigFilesFolderButton, "editDashboardsConfigFilesFolderButton");
+            this.editDashboardsConfigFilesFolderButton.Name = "editDashboardsConfigFilesFolderButton";
+            this.editDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.editDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.editDashboardsConfigFolderButton_Click);
+            // 
+            // openDashboardsConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.openDashboardsConfigFilesFolderButton, "openDashboardsConfigFilesFolderButton");
+            this.openDashboardsConfigFilesFolderButton.Name = "openDashboardsConfigFilesFolderButton";
+            this.openDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.openDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.openDashboardConfigFilesFolderButton_Click);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // editDisplaysConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.editDisplaysConfigFilesFolderButton, "editDisplaysConfigFilesFolderButton");
+            this.editDisplaysConfigFilesFolderButton.Name = "editDisplaysConfigFilesFolderButton";
+            this.editDisplaysConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.editDisplaysConfigFilesFolderButton.Click += new System.EventHandler(this.editDisplayConfigFolderButton_Click);
+            // 
+            // openDisplaysConfigFileFolderButton
+            // 
+            resources.ApplyResources(this.openDisplaysConfigFileFolderButton, "openDisplaysConfigFileFolderButton");
+            this.openDisplaysConfigFileFolderButton.Name = "openDisplaysConfigFileFolderButton";
+            this.openDisplaysConfigFileFolderButton.UseVisualStyleBackColor = true;
+            this.openDisplaysConfigFileFolderButton.Click += new System.EventHandler(this.openDisplayConfigFilesFolderButton_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // editDashboardsFolderButton
+            // 
+            resources.ApplyResources(this.editDashboardsFolderButton, "editDashboardsFolderButton");
+            this.editDashboardsFolderButton.Name = "editDashboardsFolderButton";
+            this.editDashboardsFolderButton.UseVisualStyleBackColor = true;
+            this.editDashboardsFolderButton.Click += new System.EventHandler(this.editDashboardsFolderButton_Click);
+            // 
+            // openDashboardsFodlerButton
+            // 
+            resources.ApplyResources(this.openDashboardsFodlerButton, "openDashboardsFodlerButton");
+            this.openDashboardsFodlerButton.Name = "openDashboardsFodlerButton";
+            this.openDashboardsFodlerButton.UseVisualStyleBackColor = true;
+            this.openDashboardsFodlerButton.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // button2
+            // editDisplaysFolderButton
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.editDisplaysFolderButton, "editDisplaysFolderButton");
+            this.editDisplaysFolderButton.Name = "editDisplaysFolderButton";
+            this.editDisplaysFolderButton.UseVisualStyleBackColor = true;
+            this.editDisplaysFolderButton.Click += new System.EventHandler(this.editDisplaysFolderButton_Click);
             // 
-            // componentsFolderEditPathButton
+            // editComponentsFolderButton
             // 
-            resources.ApplyResources(this.componentsFolderEditPathButton, "componentsFolderEditPathButton");
-            this.componentsFolderEditPathButton.Name = "componentsFolderEditPathButton";
-            this.componentsFolderEditPathButton.UseVisualStyleBackColor = true;
-            this.componentsFolderEditPathButton.Click += new System.EventHandler(this.componentsFolderEditPathButton_Click);
+            resources.ApplyResources(this.editComponentsFolderButton, "editComponentsFolderButton");
+            this.editComponentsFolderButton.Name = "editComponentsFolderButton";
+            this.editComponentsFolderButton.UseVisualStyleBackColor = true;
+            this.editComponentsFolderButton.Click += new System.EventHandler(this.editComponentsFolderButton_Click);
             // 
-            // button3
+            // openDisplaysFolderButton
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.ClientSizeChanged += new System.EventHandler(this.openDisplaysFolderButton_Click);
+            resources.ApplyResources(this.openDisplaysFolderButton, "openDisplaysFolderButton");
+            this.openDisplaysFolderButton.Name = "openDisplaysFolderButton";
+            this.openDisplaysFolderButton.UseVisualStyleBackColor = true;
+            this.openDisplaysFolderButton.Click += new System.EventHandler(this.openDisplaysFolderButton_Click);
             // 
             // openComponentsFolderButton
             // 
@@ -223,44 +288,6 @@
             this.regenerateAllButton.Name = "regenerateAllButton";
             this.regenerateAllButton.UseVisualStyleBackColor = true;
             this.regenerateAllButton.Click += new System.EventHandler(this.regenerateDisplaysAndDashboardsButton_Click);
-            // 
-            // displaysConfigFilesFolderEdit
-            // 
-            resources.ApplyResources(this.displaysConfigFilesFolderEdit, "displaysConfigFilesFolderEdit");
-            this.displaysConfigFilesFolderEdit.Name = "displaysConfigFilesFolderEdit";
-            this.displaysConfigFilesFolderEdit.UseVisualStyleBackColor = true;
-            this.displaysConfigFilesFolderEdit.Click += new System.EventHandler(this.displayConfigFolderEditPathButton_Click);
-            // 
-            // displaysConfigFileFolderOpen
-            // 
-            resources.ApplyResources(this.displaysConfigFileFolderOpen, "displaysConfigFileFolderOpen");
-            this.displaysConfigFileFolderOpen.Name = "displaysConfigFileFolderOpen";
-            this.displaysConfigFileFolderOpen.UseVisualStyleBackColor = true;
-            this.displaysConfigFileFolderOpen.Click += new System.EventHandler(this.openDisplayConfigFilesFolderButton_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // dashboardsConfigFilesFolderEdit
-            // 
-            resources.ApplyResources(this.dashboardsConfigFilesFolderEdit, "dashboardsConfigFilesFolderEdit");
-            this.dashboardsConfigFilesFolderEdit.Name = "dashboardsConfigFilesFolderEdit";
-            this.dashboardsConfigFilesFolderEdit.UseVisualStyleBackColor = true;
-            this.dashboardsConfigFilesFolderEdit.Click += new System.EventHandler(this.dashboardsConfigFolderEditPathButton_Click);
-            // 
-            // dashboardsConfigFilesFolderOpen
-            // 
-            resources.ApplyResources(this.dashboardsConfigFilesFolderOpen, "dashboardsConfigFilesFolderOpen");
-            this.dashboardsConfigFilesFolderOpen.Name = "dashboardsConfigFilesFolderOpen";
-            this.dashboardsConfigFilesFolderOpen.UseVisualStyleBackColor = true;
-            this.dashboardsConfigFilesFolderOpen.Click += new System.EventHandler(this.openDashboardConfigFilesFolderButton_Click);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
             // 
             // imomsDisplayMockupFramework
             // 
@@ -296,19 +323,22 @@
         private System.Windows.Forms.Button openComponentsFolderButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button regenerateAllButton;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button editDashboardsFolderButton;
+        private System.Windows.Forms.Button openDashboardsFodlerButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button componentsFolderEditPathButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button editDisplaysFolderButton;
+        private System.Windows.Forms.Button editComponentsFolderButton;
+        private System.Windows.Forms.Button openDisplaysFolderButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button dashboardsConfigFilesFolderEdit;
-        private System.Windows.Forms.Button dashboardsConfigFilesFolderOpen;
+        private System.Windows.Forms.Button editDashboardsConfigFilesFolderButton;
+        private System.Windows.Forms.Button openDashboardsConfigFilesFolderButton;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button displaysConfigFilesFolderEdit;
-        private System.Windows.Forms.Button displaysConfigFileFolderOpen;
+        private System.Windows.Forms.Button editDisplaysConfigFilesFolderButton;
+        private System.Windows.Forms.Button openDisplaysConfigFileFolderButton;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button editRibbonFolderButton;
+        private System.Windows.Forms.Button openRibbonsFolderButton;
+        private System.Windows.Forms.Label label6;
     }
 }
 

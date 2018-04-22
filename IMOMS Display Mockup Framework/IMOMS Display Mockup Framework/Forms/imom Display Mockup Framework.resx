@@ -836,7 +836,7 @@
   <data name="utilsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editRibbonFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABidJREFUWEfF
         lglQ1FUcx83UoslGTdcZJ03H23GcKY9QEcRi1GoyNZ2xRglE5VpAQfBAVMQLUFSE5VA0M7zySisbMSxI
@@ -868,34 +868,34 @@
         dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="editRibbonFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="editRibbonFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 204</value>
+  <data name="editRibbonFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 167</value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="editRibbonFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="dashboardsConfigFilesFolderEdit.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="editRibbonFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Name" xml:space="preserve">
-    <value>dashboardsConfigFilesFolderEdit</value>
+  <data name="&gt;&gt;editRibbonFolderButton.Name" xml:space="preserve">
+    <value>editRibbonFolderButton</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Type" xml:space="preserve">
+  <data name="&gt;&gt;editRibbonFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editRibbonFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderEdit.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;editRibbonFolderButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="openRibbonsFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
         ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
@@ -919,32 +919,175 @@
         pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="openRibbonsFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="openRibbonsFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 204</value>
+  <data name="openRibbonsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 167</value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="openRibbonsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="dashboardsConfigFilesFolderOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="openRibbonsFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Name" xml:space="preserve">
-    <value>dashboardsConfigFilesFolderOpen</value>
+  <data name="&gt;&gt;openRibbonsFolderButton.Name" xml:space="preserve">
+    <value>openRibbonsFolderButton</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Type" xml:space="preserve">
+  <data name="&gt;&gt;openRibbonsFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.Parent" xml:space="preserve">
+  <data name="&gt;&gt;openRibbonsFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;dashboardsConfigFilesFolderOpen.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;openRibbonsFolderButton.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 176</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ribbons folder:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 240</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>editDashboardsConfigFilesFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
+        ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
+        yBgeEWAgjcd4kMmD6VU+JEYgsHff3/bj4A5Wd3K//up99/pju+9vr/e++3x/+3H+61BHH3XjFHEeYF4u
+        LKs+5zwk1vLCxKncXI9Mfp9nlvOI52fOI+6Zgh5pGjdbmrooZLZMnMaN8s4UTkl0/I3MW/cesZa/yS3j
+        8eGVBRIoK5fC3yizsabaG4E1KxBkehKqkmXw/Mi5X5LGDZLouJF+uXJraEUApFpeBPMx9xA1535pKvdj
+        Ra4I/lVESlCdsxd4xuiFdTU+eL7WFy/UKRHREIDoC0HwL1DAL3eZdU/ri9hcGbiwAuTbfLoyXwLFKRHc
+        M50GxKm8IvLtst2O8mtlXwgn1nwnx8Y6PyJfa5PHNodgZ0s4ElqjkdQRi8iqDY4LAJz7TGrOg44g8i2y
+        rMVYku7UKdUuUnHIeuZSW1x0j/BJoWO+OR7WqAvrEdMUjB0tYUQehb3tMdjftQtbq0PmL6AmW1v54YrK
+        3u/VmI/Ws6/CM5V/c8kR3nnBMcHDzGXzhh7Mp3O9rHFEvtschdds8p041L0HMaZN8xcwaKhDlh/fxujN
+        UofoshQTWu1iFXOJw9AD99RJ2dQr5kgktr+EfZ07cLA7Ae/1JmF7TfjcAkSubCwKmrp9LR3/xPWBFFRk
+        ePeWaoVRjgjTOR2nBy7evAWJbdvwRmccDv68G+/27sXh/jcRd37z3AL6FOHXfwy+jju/7P9Xfu2Kh+WH
+        yHk5UeoP5Wk5GboI0BOf1P4yDpD17/Qk4oO+fdD0v0V2IGJugdJkqviv4a1YKGfqA5GQ7+2Q6AzKKtHx
+        8kSax6SM2h56B8YHAzDN2OW1rFCfI5uaPlFFs2/HdIHJAS/QXDa6o618O7pNSaxSdzJg8luNC2UrYEgR
+        FVktAtBczHPFnatajP2ezipNJcHWiunjPLtAfbYnRq/sYh3jJ7JLNjkdg0ZUSMsn+wRozFtFFsSyysjA
+        Nhg0knxGT8+AqGCqX4Abzc7oLFeRiY5mlWstwSC7foDRzxSwnHPBcOM6jA2Hs0pvlQoGrehZRm/7CfLp
+        AuZCV9zu2YCxoRBWaS70wVm1kMfobUN4mi7QkC3F+NBzrFNz3P0qo7aHLjB5iQxgzlLcJTciNhknN6Qz
+        WrGBUduj11B5t1qc0WGQk0VKVrlu9iUnQPQ+o7aHLjBYTQawdjkmBnxZxVItJyeACmHU9uhTqK/aiskA
+        dtAFfFjFXOyBcrWrkFHbQ54HTjV8SWG0S8Y6tSdEt+hHP0ZtD13gYr4C45YIVrlrCUfZEbGR0c5En0x9
+        01W6HKMdSla50WQbwDRGOxP9Yco0ZJTjz47VrHLFpCAFqEhGOxN9sqhxsHY9fvsplFVaS1ajLNnVndHO
+        pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 240</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 31</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>openDashboardsConfigFilesFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -956,7 +1099,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 213</value>
+    <value>6, 249</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 13</value>
@@ -977,9 +1120,9 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editDisplaysConfigFilesFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABidJREFUWEfF
         lglQ1FUcx83UoslGTdcZJ03H23GcKY9QEcRi1GoyNZ2xRglE5VpAQfBAVMQLUFSE5VA0M7zySisbMSxI
@@ -1011,34 +1154,34 @@
         dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="editDisplaysConfigFilesFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="editDisplaysConfigFilesFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 167</value>
+  <data name="editDisplaysConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 203</value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="editDisplaysConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="displaysConfigFilesFolderEdit.TabIndex" type="System.Int32, mscorlib">
+  <data name="editDisplaysConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Name" xml:space="preserve">
-    <value>displaysConfigFilesFolderEdit</value>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>editDisplaysConfigFilesFolderButton</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Type" xml:space="preserve">
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFilesFolderEdit.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFilesFolderEdit.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="displaysConfigFileFolderOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="openDisplaysConfigFileFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
         ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
@@ -1062,32 +1205,32 @@
         pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="displaysConfigFileFolderOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="openDisplaysConfigFileFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="displaysConfigFileFolderOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="openDisplaysConfigFileFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="displaysConfigFileFolderOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 167</value>
+  <data name="openDisplaysConfigFileFolderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 203</value>
   </data>
-  <data name="displaysConfigFileFolderOpen.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="openDisplaysConfigFileFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="displaysConfigFileFolderOpen.TabIndex" type="System.Int32, mscorlib">
+  <data name="openDisplaysConfigFileFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFileFolderOpen.Name" xml:space="preserve">
-    <value>displaysConfigFileFolderOpen</value>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Name" xml:space="preserve">
+    <value>openDisplaysConfigFileFolderButton</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFileFolderOpen.Type" xml:space="preserve">
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFileFolderOpen.Parent" xml:space="preserve">
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;displaysConfigFileFolderOpen.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1099,7 +1242,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 176</value>
+    <value>6, 212</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 13</value>
@@ -1120,9 +1263,9 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
-  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editDashboardsFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABidJREFUWEfF
         lglQ1FUcx83UoslGTdcZJ03H23GcKY9QEcRi1GoyNZ2xRglE5VpAQfBAVMQLUFSE5VA0M7zySisbMSxI
@@ -1154,34 +1297,34 @@
         dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="editDashboardsFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="editDashboardsFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="editDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 130</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="editDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="editDashboardsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;editDashboardsFolderButton.Name" xml:space="preserve">
+    <value>editDashboardsFolderButton</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;editDashboardsFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editDashboardsFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;editDashboardsFolderButton.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="openDashboardsFodlerButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
         ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
@@ -1205,32 +1348,32 @@
         pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="openDashboardsFodlerButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="openDashboardsFodlerButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="openDashboardsFodlerButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>162, 130</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="openDashboardsFodlerButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="openDashboardsFodlerButton.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;openDashboardsFodlerButton.Name" xml:space="preserve">
+    <value>openDashboardsFodlerButton</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;openDashboardsFodlerButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;openDashboardsFodlerButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;openDashboardsFodlerButton.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1263,9 +1406,9 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editDisplaysFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABidJREFUWEfF
         lglQ1FUcx83UoslGTdcZJ03H23GcKY9QEcRi1GoyNZ2xRglE5VpAQfBAVMQLUFSE5VA0M7zySisbMSxI
@@ -1297,34 +1440,34 @@
         dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="editDisplaysFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="editDisplaysFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="editDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 93</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="editDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="editDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;editDisplaysFolderButton.Name" xml:space="preserve">
+    <value>editDisplaysFolderButton</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;editDisplaysFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editDisplaysFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;editDisplaysFolderButton.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="componentsFolderEditPathButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="editComponentsFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABidJREFUWEfF
         lglQ1FUcx83UoslGTdcZJ03H23GcKY9QEcRi1GoyNZ2xRglE5VpAQfBAVMQLUFSE5VA0M7zySisbMSxI
@@ -1356,34 +1499,34 @@
         dOE2rnbt/gHUT+VE+lmPsQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="componentsFolderEditPathButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="editComponentsFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="componentsFolderEditPathButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="editComponentsFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="componentsFolderEditPathButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="editComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>199, 56</value>
   </data>
-  <data name="componentsFolderEditPathButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="editComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="componentsFolderEditPathButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="editComponentsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;componentsFolderEditPathButton.Name" xml:space="preserve">
-    <value>componentsFolderEditPathButton</value>
+  <data name="&gt;&gt;editComponentsFolderButton.Name" xml:space="preserve">
+    <value>editComponentsFolderButton</value>
   </data>
-  <data name="&gt;&gt;componentsFolderEditPathButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;editComponentsFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;componentsFolderEditPathButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;editComponentsFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;componentsFolderEditPathButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;editComponentsFolderButton.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="openDisplaysFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABFVJREFUWEft
         ln1Q03Ucx9fTX13ltqMh7LcHCXDgHOqFXWykJJIdmDwokAaJSmIkpZnWVUvGBioXRXVY3oVgyENQbBgn
@@ -1407,32 +1550,32 @@
         pDztCSH5P4hnm7IUYSij/D9MOJy/AbgATL/1s8ezAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="openDisplaysFolderButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="openDisplaysFolderButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>162, 93</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 31</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="openDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;openDisplaysFolderButton.Name" xml:space="preserve">
+    <value>openDisplaysFolderButton</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;openDisplaysFolderButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;openDisplaysFolderButton.Parent" xml:space="preserve">
     <value>utilsGroupBox</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;openDisplaysFolderButton.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="openComponentsFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1480,7 +1623,7 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;openComponentsFolderButton.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1513,7 +1656,7 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1543,7 +1686,7 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="regenerateAllButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1573,7 +1716,7 @@
     <value>utilsGroupBox</value>
   </data>
   <data name="&gt;&gt;regenerateAllButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="utilsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -1582,7 +1725,7 @@
     <value>15, 219</value>
   </data>
   <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 245</value>
+    <value>350, 280</value>
   </data>
   <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1609,7 +1752,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>372, 468</value>
+    <value>372, 507</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

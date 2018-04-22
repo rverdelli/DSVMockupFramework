@@ -20,6 +20,7 @@ namespace IMOMS_Display_Mockup_Framework
         private string compFolder = ConfigurationManager.AppSettings["CompFolder"];
         private string displayFolder = ConfigurationManager.AppSettings["DisplayFolder"];
         private string dashboardFolder = ConfigurationManager.AppSettings["DashboardFolder"];
+        private string ribbonFolder = ConfigurationManager.AppSettings["RibbonFolder"];
         private string displayConfigFolder = ConfigurationManager.AppSettings["DisplayConfigFilesFolder"];
         private string dashboardConfigFolder = ConfigurationManager.AppSettings["DashboardConfigFilesFolder"];
 
@@ -155,6 +156,11 @@ namespace IMOMS_Display_Mockup_Framework
             Process.Start("explorer.exe", compFolder);
         }
 
+        private void openRibbonsFolderButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", ribbonFolder);
+        }
+
         private void openDisplayConfigFilesFolderButton_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", displayConfigFolder);
@@ -165,7 +171,7 @@ namespace IMOMS_Display_Mockup_Framework
             Process.Start("explorer.exe", dashboardConfigFolder);
         }
 
-        private void componentsFolderEditPathButton_Click(object sender, EventArgs e)
+        private void editComponentsFolderButton_Click(object sender, EventArgs e)
         {
             string newFolder = folderPicker(compFolder);
 
@@ -178,7 +184,7 @@ namespace IMOMS_Display_Mockup_Framework
             compFolder = newFolder;
         }
 
-        private void displaysFolderEditPathButton_Click(object sender, EventArgs e)
+        private void editDisplaysFolderButton_Click(object sender, EventArgs e)
         {
             string newFolder = folderPicker(displayFolder);
 
@@ -191,7 +197,7 @@ namespace IMOMS_Display_Mockup_Framework
             displayFolder = newFolder;
         }
 
-        private void dashboardsFolderEditPathButton_Click(object sender, EventArgs e)
+        private void editDashboardsFolderButton_Click(object sender, EventArgs e)
         {
             string newFolder = folderPicker(dashboardFolder);
 
@@ -204,7 +210,20 @@ namespace IMOMS_Display_Mockup_Framework
             dashboardFolder = newFolder;
         }
 
-        private void displayConfigFolderEditPathButton_Click(object sender, EventArgs e)
+        private void editRibbonsFolderButton_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(ribbonFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["RibbonFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            ribbonFolder = newFolder;
+        }
+
+        private void editDisplayConfigFolderButton_Click(object sender, EventArgs e)
         {
             string newFolder = folderPicker(displayConfigFolder);
 
@@ -217,7 +236,7 @@ namespace IMOMS_Display_Mockup_Framework
             displayConfigFolder = newFolder;
         }
 
-        private void dashboardsConfigFolderEditPathButton_Click(object sender, EventArgs e)
+        private void editDashboardsConfigFolderButton_Click(object sender, EventArgs e)
         {
             string newFolder = folderPicker(dashboardConfigFolder);
 
