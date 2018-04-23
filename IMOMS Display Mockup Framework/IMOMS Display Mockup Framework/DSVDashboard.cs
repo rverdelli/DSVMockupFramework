@@ -79,10 +79,11 @@ namespace IMOMS_Display_Mockup_Framework
    
                 foreach (string sourceFile in Directory.GetFiles(disp, "*", SearchOption.AllDirectories))
                 {
+  
                     try
                     {
                         //apro immagine display
-                        Bitmap img = new Bitmap(sourceFile);
+                        Image img = Image.FromFile(sourceFile);
                         //aggiungo ribbon
                         img = applyRibbon(img, dashName); //applico ribbon
                         //salvo nella cartella della dashboard
@@ -98,7 +99,7 @@ namespace IMOMS_Display_Mockup_Framework
             }
         }
 
-        public static Bitmap applyRibbon(Bitmap img, string nomeDashboard)
+        public static Image applyRibbon(Image img, string nomeDashboard)
         {
             //get the Ribbon Path
             string ribbonPath = Config.ribbonFolder + "\\" + nomeDashboard + ".png";
