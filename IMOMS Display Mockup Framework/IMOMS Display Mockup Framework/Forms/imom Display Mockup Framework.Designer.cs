@@ -63,10 +63,31 @@
             this.regenerateAllButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.utilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.componentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaysToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ribbonsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.configsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.utilsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.componentsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaysToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ribbonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.displaysToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.displaysGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.utilsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // newDisplay
@@ -304,10 +325,153 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton1,
+            this.toolStripDropDownButton3,
+            this.toolStripDropDownButton2});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.Name = "toolStrip1";
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.utilsToolStripMenuItem,
+            this.configsToolStripMenuItem});
+            resources.ApplyResources(this.toolStripDropDownButton1, "toolStripDropDownButton1");
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            // 
+            // utilsToolStripMenuItem
+            // 
+            this.utilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentsToolStripMenuItem,
+            this.displaysToolStripMenuItem1,
+            this.dashboardsToolStripMenuItem1,
+            this.ribbonsToolStripMenuItem1});
+            this.utilsToolStripMenuItem.Name = "utilsToolStripMenuItem";
+            resources.ApplyResources(this.utilsToolStripMenuItem, "utilsToolStripMenuItem");
+            // 
+            // componentsToolStripMenuItem
+            // 
+            this.componentsToolStripMenuItem.Name = "componentsToolStripMenuItem";
+            resources.ApplyResources(this.componentsToolStripMenuItem, "componentsToolStripMenuItem");
+            this.componentsToolStripMenuItem.Click += new System.EventHandler(this.componentsToolStripMenuItem_Click);
+            // 
+            // displaysToolStripMenuItem1
+            // 
+            this.displaysToolStripMenuItem1.Name = "displaysToolStripMenuItem1";
+            resources.ApplyResources(this.displaysToolStripMenuItem1, "displaysToolStripMenuItem1");
+            this.displaysToolStripMenuItem1.Click += new System.EventHandler(this.displaysToolStripMenuItem1_Click);
+            // 
+            // dashboardsToolStripMenuItem1
+            // 
+            this.dashboardsToolStripMenuItem1.Name = "dashboardsToolStripMenuItem1";
+            resources.ApplyResources(this.dashboardsToolStripMenuItem1, "dashboardsToolStripMenuItem1");
+            this.dashboardsToolStripMenuItem1.Click += new System.EventHandler(this.dashboardsToolStripMenuItem1_Click);
+            // 
+            // ribbonsToolStripMenuItem1
+            // 
+            this.ribbonsToolStripMenuItem1.Name = "ribbonsToolStripMenuItem1";
+            resources.ApplyResources(this.ribbonsToolStripMenuItem1, "ribbonsToolStripMenuItem1");
+            this.ribbonsToolStripMenuItem1.Click += new System.EventHandler(this.ribbonsToolStripMenuItem1_Click);
+            // 
+            // configsToolStripMenuItem
+            // 
+            this.configsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dashboardsToolStripMenuItem,
+            this.displaysToolStripMenuItem});
+            this.configsToolStripMenuItem.Name = "configsToolStripMenuItem";
+            resources.ApplyResources(this.configsToolStripMenuItem, "configsToolStripMenuItem");
+            // 
+            // dashboardsToolStripMenuItem
+            // 
+            this.dashboardsToolStripMenuItem.Name = "dashboardsToolStripMenuItem";
+            resources.ApplyResources(this.dashboardsToolStripMenuItem, "dashboardsToolStripMenuItem");
+            this.dashboardsToolStripMenuItem.Click += new System.EventHandler(this.dashboardsToolStripMenuItem_Click);
+            // 
+            // displaysToolStripMenuItem
+            // 
+            this.displaysToolStripMenuItem.Name = "displaysToolStripMenuItem";
+            resources.ApplyResources(this.displaysToolStripMenuItem, "displaysToolStripMenuItem");
+            this.displaysToolStripMenuItem.Click += new System.EventHandler(this.displaysToolStripMenuItem_Click);
+            // 
+            // toolStripDropDownButton3
+            // 
+            this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.utilsToolStripMenuItem1,
+            this.configsToolStripMenuItem1});
+            resources.ApplyResources(this.toolStripDropDownButton3, "toolStripDropDownButton3");
+            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
+            // 
+            // utilsToolStripMenuItem1
+            // 
+            this.utilsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentsToolStripMenuItem1,
+            this.displaysToolStripMenuItem3,
+            this.dashboardsToolStripMenuItem3,
+            this.ribbonsToolStripMenuItem});
+            this.utilsToolStripMenuItem1.Name = "utilsToolStripMenuItem1";
+            resources.ApplyResources(this.utilsToolStripMenuItem1, "utilsToolStripMenuItem1");
+            // 
+            // componentsToolStripMenuItem1
+            // 
+            this.componentsToolStripMenuItem1.Name = "componentsToolStripMenuItem1";
+            resources.ApplyResources(this.componentsToolStripMenuItem1, "componentsToolStripMenuItem1");
+            this.componentsToolStripMenuItem1.Click += new System.EventHandler(this.componentsToolStripMenuItem1_Click);
+            // 
+            // displaysToolStripMenuItem3
+            // 
+            this.displaysToolStripMenuItem3.Name = "displaysToolStripMenuItem3";
+            resources.ApplyResources(this.displaysToolStripMenuItem3, "displaysToolStripMenuItem3");
+            this.displaysToolStripMenuItem3.Click += new System.EventHandler(this.displaysToolStripMenuItem3_Click);
+            // 
+            // dashboardsToolStripMenuItem3
+            // 
+            this.dashboardsToolStripMenuItem3.Name = "dashboardsToolStripMenuItem3";
+            resources.ApplyResources(this.dashboardsToolStripMenuItem3, "dashboardsToolStripMenuItem3");
+            this.dashboardsToolStripMenuItem3.Click += new System.EventHandler(this.dashboardsToolStripMenuItem3_Click);
+            // 
+            // ribbonsToolStripMenuItem
+            // 
+            this.ribbonsToolStripMenuItem.Name = "ribbonsToolStripMenuItem";
+            resources.ApplyResources(this.ribbonsToolStripMenuItem, "ribbonsToolStripMenuItem");
+            this.ribbonsToolStripMenuItem.Click += new System.EventHandler(this.ribbonsToolStripMenuItem_Click);
+            // 
+            // configsToolStripMenuItem1
+            // 
+            this.configsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.displaysToolStripMenuItem2,
+            this.dashboardsToolStripMenuItem2});
+            this.configsToolStripMenuItem1.Name = "configsToolStripMenuItem1";
+            resources.ApplyResources(this.configsToolStripMenuItem1, "configsToolStripMenuItem1");
+            // 
+            // displaysToolStripMenuItem2
+            // 
+            this.displaysToolStripMenuItem2.Name = "displaysToolStripMenuItem2";
+            resources.ApplyResources(this.displaysToolStripMenuItem2, "displaysToolStripMenuItem2");
+            this.displaysToolStripMenuItem2.Click += new System.EventHandler(this.displaysToolStripMenuItem2_Click);
+            // 
+            // dashboardsToolStripMenuItem2
+            // 
+            this.dashboardsToolStripMenuItem2.Name = "dashboardsToolStripMenuItem2";
+            resources.ApplyResources(this.dashboardsToolStripMenuItem2, "dashboardsToolStripMenuItem2");
+            this.dashboardsToolStripMenuItem2.Click += new System.EventHandler(this.dashboardsToolStripMenuItem2_Click);
+            // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            resources.ApplyResources(this.toolStripDropDownButton2, "toolStripDropDownButton2");
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            // 
             // imomsDisplayMockupFramework
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.utilsGroupBox);
@@ -321,6 +485,8 @@
             this.utilsGroupBox.ResumeLayout(false);
             this.utilsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,6 +526,26 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
+        private System.Windows.Forms.ToolStripMenuItem utilsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem componentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displaysToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dashboardsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ribbonsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem configsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dashboardsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displaysToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
+        private System.Windows.Forms.ToolStripMenuItem utilsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem componentsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem displaysToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem dashboardsToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem ribbonsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem displaysToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem dashboardsToolStripMenuItem2;
     }
 }
 

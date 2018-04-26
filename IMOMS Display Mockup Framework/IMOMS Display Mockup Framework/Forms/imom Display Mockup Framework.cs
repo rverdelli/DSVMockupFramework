@@ -129,7 +129,7 @@ namespace IMOMS_Display_Mockup_Framework
 
             refreshDashboardsList();
             foreach (string dashboardConfigFile in availableDashboards)
-                DsvDashboard.generateDashboard(dashboardConfigFile);
+                DsvDashboard.generateDashboard(Config.dashboardConfigFolder + "\\" +  dashboardConfigFile + ".csv");
 
 
             Process.Start("explorer.exe", ConfigurationManager.AppSettings["DisplayFolder"]);
@@ -246,6 +246,114 @@ namespace IMOMS_Display_Mockup_Framework
             config.AppSettings.Settings["DashboardConfigFilesFolder"].Value = newFolder;
             config.Save(ConfigurationSaveMode.Modified);
             Config.dashboardConfigFolder = newFolder;
+        }
+
+        private void componentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.compFolder);
+        }
+
+        private void dashboardsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.dashboardFolder);
+        }
+
+        private void displaysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.displayConfigFolder);
+        }
+
+        private void dashboardsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.dashboardConfigFolder);
+        }
+
+        private void componentsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.compFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["CompFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.compFolder = newFolder;
+        }
+
+        private void displaysToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.displayFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DisplayFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.displayFolder = newFolder;
+        }
+
+        private void dashboardsToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.dashboardFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DashboardFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.dashboardFolder = newFolder;
+        }
+
+        private void ribbonsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.ribbonFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["RibbonFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.ribbonFolder = newFolder;
+        }
+
+        private void displaysToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.displayConfigFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DisplayConfigFilesFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.displayConfigFolder = newFolder;
+        }
+
+        private void dashboardsToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            string newFolder = folderPicker(Config.dashboardConfigFolder);
+
+            if (string.IsNullOrWhiteSpace(newFolder))
+                return;
+
+            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["DashboardConfigFilesFolder"].Value = newFolder;
+            config.Save(ConfigurationSaveMode.Modified);
+            Config.dashboardConfigFolder = newFolder;
+        }
+
+        private void displaysToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.displayFolder);
+        }
+
+        private void ribbonsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Config.ribbonFolder);
         }
     }
 }

@@ -129,13 +129,13 @@
     <value>NoControl</value>
   </data>
   <data name="newDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 18</value>
+    <value>7, 22</value>
   </data>
   <data name="newDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="newDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 31</value>
+    <value>441, 38</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="newDisplay.TabIndex" type="System.Int32, mscorlib">
@@ -163,10 +163,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDisplayComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 57</value>
+    <value>159, 70</value>
+  </data>
+  <data name="loadDisplayComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="loadDisplayComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 21</value>
+    <value>248, 25</value>
   </data>
   <data name="loadDisplayComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -190,10 +193,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDisplayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 60</value>
+    <value>8, 74</value>
+  </data>
+  <data name="loadDisplayLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="loadDisplayLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
+    <value>143, 17</value>
   </data>
   <data name="loadDisplayLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -238,10 +244,13 @@
     <value>Stretch</value>
   </data>
   <data name="refreshDisplayListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 56</value>
+    <value>417, 69</value>
+  </data>
+  <data name="refreshDisplayListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="refreshDisplayListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+    <value>31, 28</value>
   </data>
   <data name="refreshDisplayListButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -585,10 +594,16 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="displaysGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 12</value>
+    <value>19, 42</value>
+  </data>
+  <data name="displaysGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="displaysGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="displaysGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 98</value>
+    <value>455, 121</value>
   </data>
   <data name="displaysGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -606,10 +621,91 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;displaysGroupBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Name" xml:space="preserve">
+    <value>createDashboardButton</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;createDashboardButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Name" xml:space="preserve">
+    <value>loadDashboardLabel</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsListButton.Name" xml:space="preserve">
+    <value>refreshDashboardsListButton</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsListButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsListButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;refreshDashboardsListButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Name" xml:space="preserve">
+    <value>loadDashboardComboBox</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 170</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 119</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="createDashboardButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -621,13 +717,13 @@
     <value>NoControl</value>
   </data>
   <data name="createDashboardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 18</value>
+    <value>7, 22</value>
   </data>
   <data name="createDashboardButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="createDashboardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 31</value>
+    <value>441, 38</value>
   </data>
   <data name="createDashboardButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -657,10 +753,13 @@
     <value>NoControl</value>
   </data>
   <data name="loadDashboardLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 60</value>
+    <value>8, 74</value>
+  </data>
+  <data name="loadDashboardLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="loadDashboardLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 13</value>
+    <value>167, 17</value>
   </data>
   <data name="loadDashboardLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -708,13 +807,13 @@
     <value>NoControl</value>
   </data>
   <data name="refreshDashboardsListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 56</value>
+    <value>417, 69</value>
   </data>
   <data name="refreshDashboardsListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="refreshDashboardsListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+    <value>31, 28</value>
   </data>
   <data name="refreshDashboardsListButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -738,10 +837,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="loadDashboardComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 57</value>
+    <value>183, 70</value>
+  </data>
+  <data name="loadDashboardComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="loadDashboardComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 21</value>
+    <value>224, 25</value>
   </data>
   <data name="loadDashboardComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -758,35 +860,269 @@
   <data name="&gt;&gt;loadDashboardComboBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 116</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 97</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Dashboards</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="utilsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;editRibbonFolderButton.Name" xml:space="preserve">
+    <value>editRibbonFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editRibbonFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editRibbonFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editRibbonFolderButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;openRibbonsFolderButton.Name" xml:space="preserve">
+    <value>openRibbonsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openRibbonsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openRibbonsFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openRibbonsFolderButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>editDashboardsConfigFilesFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>openDashboardsConfigFilesFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Name" xml:space="preserve">
+    <value>editDisplaysConfigFilesFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysConfigFilesFolderButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Name" xml:space="preserve">
+    <value>openDisplaysConfigFileFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysConfigFileFolderButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsFolderButton.Name" xml:space="preserve">
+    <value>editDashboardsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDashboardsFolderButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFodlerButton.Name" xml:space="preserve">
+    <value>openDashboardsFodlerButton</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFodlerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFodlerButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openDashboardsFodlerButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysFolderButton.Name" xml:space="preserve">
+    <value>editDisplaysFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDisplaysFolderButton.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;editComponentsFolderButton.Name" xml:space="preserve">
+    <value>editComponentsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;editComponentsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editComponentsFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editComponentsFolderButton.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Name" xml:space="preserve">
+    <value>openDisplaysFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openDisplaysFolderButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Name" xml:space="preserve">
+    <value>openComponentsFolderButton</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;openComponentsFolderButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Name" xml:space="preserve">
+    <value>regenerateAllButton</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.Parent" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;regenerateAllButton.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="utilsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="utilsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 297</value>
+  </data>
+  <data name="utilsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="utilsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 208</value>
+  </data>
+  <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="utilsGroupBox.Text" xml:space="preserve">
+    <value>Utils</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.Name" xml:space="preserve">
+    <value>utilsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;utilsGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="editRibbonFolderButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -827,10 +1163,13 @@
     <value>NoControl</value>
   </data>
   <data name="editRibbonFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 93</value>
+    <value>401, 114</value>
+  </data>
+  <data name="editRibbonFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editRibbonFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editRibbonFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -878,10 +1217,13 @@
     <value>NoControl</value>
   </data>
   <data name="openRibbonsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 93</value>
+    <value>352, 114</value>
+  </data>
+  <data name="openRibbonsFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openRibbonsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openRibbonsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -908,10 +1250,13 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 102</value>
+    <value>220, 126</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>64, 17</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -970,10 +1315,13 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 131</value>
+    <value>401, 161</value>
+  </data>
+  <data name="editDashboardsConfigFilesFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editDashboardsConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1021,10 +1369,13 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 131</value>
+    <value>352, 161</value>
+  </data>
+  <data name="openDashboardsConfigFilesFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openDashboardsConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -1051,10 +1402,13 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 140</value>
+    <value>220, 172</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
+    <value>131, 17</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1113,10 +1467,13 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 131</value>
+    <value>167, 161</value>
+  </data>
+  <data name="editDisplaysConfigFilesFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editDisplaysConfigFilesFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1164,10 +1521,13 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 131</value>
+    <value>117, 161</value>
+  </data>
+  <data name="openDisplaysConfigFileFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openDisplaysConfigFileFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -1194,10 +1554,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 140</value>
+    <value>8, 172</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
+    <value>107, 17</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1256,10 +1619,13 @@
     <value>NoControl</value>
   </data>
   <data name="editDashboardsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 93</value>
+    <value>167, 114</value>
+  </data>
+  <data name="editDashboardsFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editDashboardsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editDashboardsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1307,10 +1673,13 @@
     <value>NoControl</value>
   </data>
   <data name="openDashboardsFodlerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 93</value>
+    <value>117, 114</value>
+  </data>
+  <data name="openDashboardsFodlerButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openDashboardsFodlerButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openDashboardsFodlerButton.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1337,10 +1706,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 102</value>
+    <value>8, 126</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
+    <value>89, 17</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1399,10 +1771,13 @@
     <value>NoControl</value>
   </data>
   <data name="editDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 56</value>
+    <value>401, 69</value>
+  </data>
+  <data name="editDisplaysFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1458,10 +1833,13 @@
     <value>NoControl</value>
   </data>
   <data name="editComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 56</value>
+    <value>167, 69</value>
+  </data>
+  <data name="editComponentsFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="editComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="editComponentsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1509,10 +1887,13 @@
     <value>NoControl</value>
   </data>
   <data name="openDisplaysFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 56</value>
+    <value>352, 69</value>
+  </data>
+  <data name="openDisplaysFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openDisplaysFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openDisplaysFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1557,10 +1938,13 @@
     <value>Stretch</value>
   </data>
   <data name="openComponentsFolderButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 56</value>
+    <value>117, 69</value>
+  </data>
+  <data name="openComponentsFolderButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="openComponentsFolderButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 31</value>
+    <value>41, 38</value>
   </data>
   <data name="openComponentsFolderButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1587,10 +1971,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 65</value>
+    <value>220, 80</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>65, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1617,10 +2004,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 65</value>
+    <value>8, 80</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 13</value>
+    <value>95, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1647,10 +2037,13 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="regenerateAllButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
+    <value>12, 23</value>
+  </data>
+  <data name="regenerateAllButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="regenerateAllButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 31</value>
+    <value>435, 38</value>
   </data>
   <data name="regenerateAllButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1670,33 +2063,6 @@
   <data name="&gt;&gt;regenerateAllButton.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="utilsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="utilsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 219</value>
-  </data>
-  <data name="utilsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 169</value>
-  </data>
-  <data name="utilsGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="utilsGroupBox.Text" xml:space="preserve">
-    <value>Utils</value>
-  </data>
-  <data name="&gt;&gt;utilsGroupBox.Name" xml:space="preserve">
-    <value>utilsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;utilsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;utilsGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;utilsGroupBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -1707,13 +2073,10 @@
     <value>Mistral, 10.8pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 393</value>
-  </data>
-  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>371, 519</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
+    <value>77, 22</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1731,19 +2094,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 392</value>
+    <value>454, 517</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 20</value>
+    <value>20, 25</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1761,16 +2124,211 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>150, 17</value>
+  </metadata>
+  <data name="componentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="componentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="displaysToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="displaysToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="ribbonsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="ribbonsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Ribbons</value>
+  </data>
+  <data name="utilsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="utilsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Utils</value>
+  </data>
+  <data name="configsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="configsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configs</value>
+  </data>
+  <data name="toolStripDropDownButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripDropDownButton1.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripDropDownButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 24</value>
+  </data>
+  <data name="toolStripDropDownButton1.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripDropDownButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripDropDownButton3.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripDropDownButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="toolStripDropDownButton3.Text" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="toolStripDropDownButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripDropDownButton2.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripDropDownButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="toolStripDropDownButton2.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>485, 27</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="displaysToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="displaysToolStripMenuItem.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="utilsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="utilsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Utils</value>
+  </data>
+  <data name="componentsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="componentsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="displaysToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="displaysToolStripMenuItem3.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem3.Text" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="ribbonsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="ribbonsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ribbons</value>
+  </data>
+  <data name="configsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="configsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Configs</value>
+  </data>
+  <data name="displaysToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="displaysToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Displays</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="dashboardsToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Dashboards</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>364, 419</value>
+    <value>485, 550</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2084,10 +2642,10 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>380, 458</value>
+    <value>501, 553</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>IMOMS Mockup Framework v1.0</value>
@@ -2097,6 +2655,120 @@
   </data>
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton1.Name" xml:space="preserve">
+    <value>toolStripDropDownButton1</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;utilsToolStripMenuItem.Name" xml:space="preserve">
+    <value>utilsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;utilsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;componentsToolStripMenuItem.Name" xml:space="preserve">
+    <value>componentsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;componentsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem1.Name" xml:space="preserve">
+    <value>displaysToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>dashboardsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ribbonsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>ribbonsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;ribbonsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configsToolStripMenuItem.Name" xml:space="preserve">
+    <value>configsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;configsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem.Name" xml:space="preserve">
+    <value>dashboardsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem.Name" xml:space="preserve">
+    <value>displaysToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton3.Name" xml:space="preserve">
+    <value>toolStripDropDownButton3</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;utilsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>utilsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;utilsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;componentsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>componentsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;componentsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem3.Name" xml:space="preserve">
+    <value>displaysToolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem3.Name" xml:space="preserve">
+    <value>dashboardsToolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ribbonsToolStripMenuItem.Name" xml:space="preserve">
+    <value>ribbonsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ribbonsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>configsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;configsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem2.Name" xml:space="preserve">
+    <value>displaysToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;displaysToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem2.Name" xml:space="preserve">
+    <value>dashboardsToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;dashboardsToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton2.Name" xml:space="preserve">
+    <value>toolStripDropDownButton2</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>imomsDisplayMockupFramework</value>
