@@ -33,37 +33,23 @@
             this.newDisplay = new System.Windows.Forms.Button();
             this.loadDisplayComboBox = new System.Windows.Forms.ComboBox();
             this.loadDisplayLabel = new System.Windows.Forms.Label();
-            this.refreshDisplayListButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.displaysGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.createDashboardButton = new System.Windows.Forms.Button();
             this.loadDashboardLabel = new System.Windows.Forms.Label();
-            this.refreshDashboardsListButton = new System.Windows.Forms.Button();
             this.loadDashboardComboBox = new System.Windows.Forms.ComboBox();
             this.utilsGroupBox = new System.Windows.Forms.GroupBox();
-            this.editRibbonFolderButton = new System.Windows.Forms.Button();
-            this.openRibbonsFolderButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.editDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
-            this.openDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.editDisplaysConfigFilesFolderButton = new System.Windows.Forms.Button();
-            this.openDisplaysConfigFileFolderButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.editDashboardsFolderButton = new System.Windows.Forms.Button();
-            this.openDashboardsFodlerButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.editDisplaysFolderButton = new System.Windows.Forms.Button();
-            this.editComponentsFolderButton = new System.Windows.Forms.Button();
-            this.openDisplaysFolderButton = new System.Windows.Forms.Button();
-            this.openComponentsFolderButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.regenerateAllButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.utilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.componentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,11 +69,29 @@
             this.displaysToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.dashboardsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.editRibbonFolderButton = new System.Windows.Forms.Button();
+            this.openRibbonsFolderButton = new System.Windows.Forms.Button();
+            this.editDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.openDashboardsConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.editDisplaysConfigFilesFolderButton = new System.Windows.Forms.Button();
+            this.openDisplaysConfigFileFolderButton = new System.Windows.Forms.Button();
+            this.editDashboardsFolderButton = new System.Windows.Forms.Button();
+            this.openDashboardsFodlerButton = new System.Windows.Forms.Button();
+            this.editDisplaysFolderButton = new System.Windows.Forms.Button();
+            this.editComponentsFolderButton = new System.Windows.Forms.Button();
+            this.openDisplaysFolderButton = new System.Windows.Forms.Button();
+            this.openComponentsFolderButton = new System.Windows.Forms.Button();
+            this.refreshDashboardsListButton = new System.Windows.Forms.Button();
+            this.refreshDisplayListButton = new System.Windows.Forms.Button();
+            this.componentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displaysGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.utilsGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // newDisplay
@@ -108,13 +112,6 @@
             // 
             resources.ApplyResources(this.loadDisplayLabel, "loadDisplayLabel");
             this.loadDisplayLabel.Name = "loadDisplayLabel";
-            // 
-            // refreshDisplayListButton
-            // 
-            resources.ApplyResources(this.refreshDisplayListButton, "refreshDisplayListButton");
-            this.refreshDisplayListButton.Name = "refreshDisplayListButton";
-            this.refreshDisplayListButton.UseVisualStyleBackColor = true;
-            this.refreshDisplayListButton.Click += new System.EventHandler(this.refreshDisplayListButton_Click);
             // 
             // notifyIcon1
             // 
@@ -153,13 +150,6 @@
             resources.ApplyResources(this.loadDashboardLabel, "loadDashboardLabel");
             this.loadDashboardLabel.Name = "loadDashboardLabel";
             // 
-            // refreshDashboardsListButton
-            // 
-            resources.ApplyResources(this.refreshDashboardsListButton, "refreshDashboardsListButton");
-            this.refreshDashboardsListButton.Name = "refreshDashboardsListButton";
-            this.refreshDashboardsListButton.UseVisualStyleBackColor = true;
-            this.refreshDashboardsListButton.Click += new System.EventHandler(this.refreshDashboardListButton_Click);
-            // 
             // loadDashboardComboBox
             // 
             resources.ApplyResources(this.loadDashboardComboBox, "loadDashboardComboBox");
@@ -192,109 +182,25 @@
             this.utilsGroupBox.Name = "utilsGroupBox";
             this.utilsGroupBox.TabStop = false;
             // 
-            // editRibbonFolderButton
-            // 
-            resources.ApplyResources(this.editRibbonFolderButton, "editRibbonFolderButton");
-            this.editRibbonFolderButton.Name = "editRibbonFolderButton";
-            this.editRibbonFolderButton.UseVisualStyleBackColor = true;
-            this.editRibbonFolderButton.Click += new System.EventHandler(this.editRibbonsFolderButton_Click);
-            // 
-            // openRibbonsFolderButton
-            // 
-            resources.ApplyResources(this.openRibbonsFolderButton, "openRibbonsFolderButton");
-            this.openRibbonsFolderButton.Name = "openRibbonsFolderButton";
-            this.openRibbonsFolderButton.UseVisualStyleBackColor = true;
-            this.openRibbonsFolderButton.Click += new System.EventHandler(this.openRibbonsFolderButton_Click);
-            // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            // 
-            // editDashboardsConfigFilesFolderButton
-            // 
-            resources.ApplyResources(this.editDashboardsConfigFilesFolderButton, "editDashboardsConfigFilesFolderButton");
-            this.editDashboardsConfigFilesFolderButton.Name = "editDashboardsConfigFilesFolderButton";
-            this.editDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
-            this.editDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.editDashboardsConfigFolderButton_Click);
-            // 
-            // openDashboardsConfigFilesFolderButton
-            // 
-            resources.ApplyResources(this.openDashboardsConfigFilesFolderButton, "openDashboardsConfigFilesFolderButton");
-            this.openDashboardsConfigFilesFolderButton.Name = "openDashboardsConfigFilesFolderButton";
-            this.openDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
-            this.openDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.openDashboardConfigFilesFolderButton_Click);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // editDisplaysConfigFilesFolderButton
-            // 
-            resources.ApplyResources(this.editDisplaysConfigFilesFolderButton, "editDisplaysConfigFilesFolderButton");
-            this.editDisplaysConfigFilesFolderButton.Name = "editDisplaysConfigFilesFolderButton";
-            this.editDisplaysConfigFilesFolderButton.UseVisualStyleBackColor = true;
-            this.editDisplaysConfigFilesFolderButton.Click += new System.EventHandler(this.editDisplayConfigFolderButton_Click);
-            // 
-            // openDisplaysConfigFileFolderButton
-            // 
-            resources.ApplyResources(this.openDisplaysConfigFileFolderButton, "openDisplaysConfigFileFolderButton");
-            this.openDisplaysConfigFileFolderButton.Name = "openDisplaysConfigFileFolderButton";
-            this.openDisplaysConfigFileFolderButton.UseVisualStyleBackColor = true;
-            this.openDisplaysConfigFileFolderButton.Click += new System.EventHandler(this.openDisplayConfigFilesFolderButton_Click);
-            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // editDashboardsFolderButton
-            // 
-            resources.ApplyResources(this.editDashboardsFolderButton, "editDashboardsFolderButton");
-            this.editDashboardsFolderButton.Name = "editDashboardsFolderButton";
-            this.editDashboardsFolderButton.UseVisualStyleBackColor = true;
-            this.editDashboardsFolderButton.Click += new System.EventHandler(this.editDashboardsFolderButton_Click);
-            // 
-            // openDashboardsFodlerButton
-            // 
-            resources.ApplyResources(this.openDashboardsFodlerButton, "openDashboardsFodlerButton");
-            this.openDashboardsFodlerButton.Name = "openDashboardsFodlerButton";
-            this.openDashboardsFodlerButton.UseVisualStyleBackColor = true;
-            this.openDashboardsFodlerButton.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // editDisplaysFolderButton
-            // 
-            resources.ApplyResources(this.editDisplaysFolderButton, "editDisplaysFolderButton");
-            this.editDisplaysFolderButton.Name = "editDisplaysFolderButton";
-            this.editDisplaysFolderButton.UseVisualStyleBackColor = true;
-            this.editDisplaysFolderButton.Click += new System.EventHandler(this.editDisplaysFolderButton_Click);
-            // 
-            // editComponentsFolderButton
-            // 
-            resources.ApplyResources(this.editComponentsFolderButton, "editComponentsFolderButton");
-            this.editComponentsFolderButton.Name = "editComponentsFolderButton";
-            this.editComponentsFolderButton.UseVisualStyleBackColor = true;
-            this.editComponentsFolderButton.Click += new System.EventHandler(this.editComponentsFolderButton_Click);
-            // 
-            // openDisplaysFolderButton
-            // 
-            resources.ApplyResources(this.openDisplaysFolderButton, "openDisplaysFolderButton");
-            this.openDisplaysFolderButton.Name = "openDisplaysFolderButton";
-            this.openDisplaysFolderButton.UseVisualStyleBackColor = true;
-            this.openDisplaysFolderButton.Click += new System.EventHandler(this.openDisplaysFolderButton_Click);
-            // 
-            // openComponentsFolderButton
-            // 
-            resources.ApplyResources(this.openComponentsFolderButton, "openComponentsFolderButton");
-            this.openComponentsFolderButton.Name = "openComponentsFolderButton";
-            this.openComponentsFolderButton.UseVisualStyleBackColor = true;
-            this.openComponentsFolderButton.Click += new System.EventHandler(this.openComponentsFolderButton_Click_1);
             // 
             // label2
             // 
@@ -318,22 +224,22 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::IMOMS_Display_Mockup_Framework.Properties.Resources.TechEdgeLogo;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1,
             this.toolStripDropDownButton3,
-            this.toolStripDropDownButton2});
+            this.toolStripDropDownButton2,
+            this.toolStripSeparator1,
+            this.toolStripDropDownButton4});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripDropDownButton1
             // 
@@ -467,6 +373,131 @@
             resources.ApplyResources(this.toolStripDropDownButton2, "toolStripDropDownButton2");
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
             // 
+            // toolStripDropDownButton4
+            // 
+            this.toolStripDropDownButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentToolStripMenuItem,
+            this.displayToolStripMenuItem});
+            this.toolStripDropDownButton4.Image = global::IMOMS_Display_Mockup_Framework.Properties.Resources.search;
+            resources.ApplyResources(this.toolStripDropDownButton4, "toolStripDropDownButton4");
+            this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::IMOMS_Display_Mockup_Framework.Properties.Resources.TechEdgeLogo;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // editRibbonFolderButton
+            // 
+            resources.ApplyResources(this.editRibbonFolderButton, "editRibbonFolderButton");
+            this.editRibbonFolderButton.Name = "editRibbonFolderButton";
+            this.editRibbonFolderButton.UseVisualStyleBackColor = true;
+            this.editRibbonFolderButton.Click += new System.EventHandler(this.editRibbonsFolderButton_Click);
+            // 
+            // openRibbonsFolderButton
+            // 
+            resources.ApplyResources(this.openRibbonsFolderButton, "openRibbonsFolderButton");
+            this.openRibbonsFolderButton.Name = "openRibbonsFolderButton";
+            this.openRibbonsFolderButton.UseVisualStyleBackColor = true;
+            this.openRibbonsFolderButton.Click += new System.EventHandler(this.openRibbonsFolderButton_Click);
+            // 
+            // editDashboardsConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.editDashboardsConfigFilesFolderButton, "editDashboardsConfigFilesFolderButton");
+            this.editDashboardsConfigFilesFolderButton.Name = "editDashboardsConfigFilesFolderButton";
+            this.editDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.editDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.editDashboardsConfigFolderButton_Click);
+            // 
+            // openDashboardsConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.openDashboardsConfigFilesFolderButton, "openDashboardsConfigFilesFolderButton");
+            this.openDashboardsConfigFilesFolderButton.Name = "openDashboardsConfigFilesFolderButton";
+            this.openDashboardsConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.openDashboardsConfigFilesFolderButton.Click += new System.EventHandler(this.openDashboardConfigFilesFolderButton_Click);
+            // 
+            // editDisplaysConfigFilesFolderButton
+            // 
+            resources.ApplyResources(this.editDisplaysConfigFilesFolderButton, "editDisplaysConfigFilesFolderButton");
+            this.editDisplaysConfigFilesFolderButton.Name = "editDisplaysConfigFilesFolderButton";
+            this.editDisplaysConfigFilesFolderButton.UseVisualStyleBackColor = true;
+            this.editDisplaysConfigFilesFolderButton.Click += new System.EventHandler(this.editDisplayConfigFolderButton_Click);
+            // 
+            // openDisplaysConfigFileFolderButton
+            // 
+            resources.ApplyResources(this.openDisplaysConfigFileFolderButton, "openDisplaysConfigFileFolderButton");
+            this.openDisplaysConfigFileFolderButton.Name = "openDisplaysConfigFileFolderButton";
+            this.openDisplaysConfigFileFolderButton.UseVisualStyleBackColor = true;
+            this.openDisplaysConfigFileFolderButton.Click += new System.EventHandler(this.openDisplayConfigFilesFolderButton_Click);
+            // 
+            // editDashboardsFolderButton
+            // 
+            resources.ApplyResources(this.editDashboardsFolderButton, "editDashboardsFolderButton");
+            this.editDashboardsFolderButton.Name = "editDashboardsFolderButton";
+            this.editDashboardsFolderButton.UseVisualStyleBackColor = true;
+            this.editDashboardsFolderButton.Click += new System.EventHandler(this.editDashboardsFolderButton_Click);
+            // 
+            // openDashboardsFodlerButton
+            // 
+            resources.ApplyResources(this.openDashboardsFodlerButton, "openDashboardsFodlerButton");
+            this.openDashboardsFodlerButton.Name = "openDashboardsFodlerButton";
+            this.openDashboardsFodlerButton.UseVisualStyleBackColor = true;
+            this.openDashboardsFodlerButton.Click += new System.EventHandler(this.openDashboardsFolderButton_Click);
+            // 
+            // editDisplaysFolderButton
+            // 
+            resources.ApplyResources(this.editDisplaysFolderButton, "editDisplaysFolderButton");
+            this.editDisplaysFolderButton.Name = "editDisplaysFolderButton";
+            this.editDisplaysFolderButton.UseVisualStyleBackColor = true;
+            this.editDisplaysFolderButton.Click += new System.EventHandler(this.editDisplaysFolderButton_Click);
+            // 
+            // editComponentsFolderButton
+            // 
+            resources.ApplyResources(this.editComponentsFolderButton, "editComponentsFolderButton");
+            this.editComponentsFolderButton.Name = "editComponentsFolderButton";
+            this.editComponentsFolderButton.UseVisualStyleBackColor = true;
+            this.editComponentsFolderButton.Click += new System.EventHandler(this.editComponentsFolderButton_Click);
+            // 
+            // openDisplaysFolderButton
+            // 
+            resources.ApplyResources(this.openDisplaysFolderButton, "openDisplaysFolderButton");
+            this.openDisplaysFolderButton.Name = "openDisplaysFolderButton";
+            this.openDisplaysFolderButton.UseVisualStyleBackColor = true;
+            this.openDisplaysFolderButton.Click += new System.EventHandler(this.openDisplaysFolderButton_Click);
+            // 
+            // openComponentsFolderButton
+            // 
+            resources.ApplyResources(this.openComponentsFolderButton, "openComponentsFolderButton");
+            this.openComponentsFolderButton.Name = "openComponentsFolderButton";
+            this.openComponentsFolderButton.UseVisualStyleBackColor = true;
+            this.openComponentsFolderButton.Click += new System.EventHandler(this.openComponentsFolderButton_Click_1);
+            // 
+            // refreshDashboardsListButton
+            // 
+            resources.ApplyResources(this.refreshDashboardsListButton, "refreshDashboardsListButton");
+            this.refreshDashboardsListButton.Name = "refreshDashboardsListButton";
+            this.refreshDashboardsListButton.UseVisualStyleBackColor = true;
+            this.refreshDashboardsListButton.Click += new System.EventHandler(this.refreshDashboardListButton_Click);
+            // 
+            // refreshDisplayListButton
+            // 
+            resources.ApplyResources(this.refreshDisplayListButton, "refreshDisplayListButton");
+            this.refreshDisplayListButton.Name = "refreshDisplayListButton";
+            this.refreshDisplayListButton.UseVisualStyleBackColor = true;
+            this.refreshDisplayListButton.Click += new System.EventHandler(this.refreshDisplayListButton_Click);
+            // 
+            // componentToolStripMenuItem
+            // 
+            this.componentToolStripMenuItem.Name = "componentToolStripMenuItem";
+            resources.ApplyResources(this.componentToolStripMenuItem, "componentToolStripMenuItem");
+            this.componentToolStripMenuItem.Click += new System.EventHandler(this.componentToolStripMenuItem_Click);
+            // 
+            // displayToolStripMenuItem
+            // 
+            this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
+            resources.ApplyResources(this.displayToolStripMenuItem, "displayToolStripMenuItem");
+            // 
             // imomsDisplayMockupFramework
             // 
             resources.ApplyResources(this, "$this");
@@ -477,16 +508,18 @@
             this.Controls.Add(this.utilsGroupBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.displaysGroupBox);
+            this.KeyPreview = true;
             this.Name = "imomsDisplayMockupFramework";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.imomsDisplayMockupFramework_KeyDown);
             this.displaysGroupBox.ResumeLayout(false);
             this.displaysGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.utilsGroupBox.ResumeLayout(false);
             this.utilsGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -546,6 +579,10 @@
         private System.Windows.Forms.ToolStripMenuItem configsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem displaysToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem dashboardsToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton4;
+        private System.Windows.Forms.ToolStripMenuItem componentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
     }
 }
 

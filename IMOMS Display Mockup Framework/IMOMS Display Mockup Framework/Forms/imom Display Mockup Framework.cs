@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMOMS_Display_Mockup_Framework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -354,6 +355,22 @@ namespace IMOMS_Display_Mockup_Framework
         private void ribbonsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Process.Start("explorer.exe", Config.ribbonFolder);
+        }
+
+        private void componentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //string compName = Microsoft.VisualBasic.Interaction.InputBox("Type component name:","Component Search","Gross Margin");
+            Form fSearch = new SearchComponentForm();
+            fSearch.Show();
+        }
+
+        private void imomsDisplayMockupFramework_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Modifiers == Keys.Control && e.KeyCode == Keys.C) || (e.Modifiers == Keys.Control && e.KeyCode == Keys.V))
+            {
+                Form fAbout = new AboutForm();
+                fAbout.Show();
+            }
         }
     }
 }
