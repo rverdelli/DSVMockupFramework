@@ -69,30 +69,32 @@ namespace IMOMS_Display_Mockup_Framework.Forms
         {
             string selectedComponentId = addComponentsCB.Text;
             List<string> foundDisplays = new List<string>();
+            List<string> foundDashboards = new List<string>();
 
-            foreach (string sourceFile in Directory.GetFiles(Config.displayConfigFolder, "*", SearchOption.AllDirectories))
+            foreach (string sourceFile in Directory.GetFiles(Config.displayConfigFolder, "*.csv", SearchOption.AllDirectories))
             {
                 String Configuration = File.ReadAllText(sourceFile);
-                List<string> componentsFullPaths = new List<string>(Configuration.Split(new[] { Environment.NewLine }, StringSplitOptions.None));
+                List<string> componentsNames = new List<string>(Configuration.Split(new[] { Environment.NewLine }, StringSplitOptions.None));
 
-                if (componentsFullPaths.Contains(selectedComponentId))
+                if (componentsNames.Contains(selectedComponentId))
                     foundDisplays.Add(Path.GetFileNameWithoutExtension(sourceFile));//add display name to be shown
             }
 
             listBox1.DataSource = foundDisplays;
 
+            foreach (string sourceFile in Directory.GetFiles(Config.dashboardConfigFolder,"*.csv", SearchOption.AllDirectories))
+            {
+                String Configuration = File.ReadAllText(sourceFile);
+                List<string> displayNames = new List<string>(Configuration.Split(new[] { Environment.NewLine }, StringSplitOptions.None));
 
-
-            //Clear combo box selecte value and refresh selectable componenents list
-            //addComponentsCB.Text = "";
-            //addComponentsCB.Items.Clear();
-            //availableComponents = availableComponents.Where(x => !x.Equals(selectedComponentId)).ToList();
-            //addComponentsCB.Items.AddRange(availableComponents.ToArray());
-
-            //SelectedComponent sc = new SelectedComponent(selectedComponents.Count + 1, selectedComponentId);
-            //selectedComponents.Add(sc);
-
-            //selectedComponentsGridView.Update();
+                foreach (string involvedDisplay in foundDisplays)
+                {
+                    if (displayNames.Contains(involvedDisplay) && !(foundDashboards.Contains(Path.GetFileNameWithoutExtension(sourceFile))))
+                        foundDashboards.Add(Path.GetFileNameWithoutExtension(sourceFile));
+                }
+            }
+            listBox2.DataSource = foundDashboards;
+            
         }
     }
 }
