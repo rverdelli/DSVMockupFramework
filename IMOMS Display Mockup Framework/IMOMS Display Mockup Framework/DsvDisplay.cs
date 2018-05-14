@@ -46,6 +46,7 @@ namespace IMOMS_Display_Mockup_Framework
 
             //split the display in more images if the components are more than 6
             int slideNumber = 1;
+            int SlideMaxNumber = (components.Count()-1) / 6 + 1;
             string fileName;
             Bitmap Display;
             string dirName= Config.displayFolder + "\\" + displayName;
@@ -74,7 +75,7 @@ namespace IMOMS_Display_Mockup_Framework
                     
                 }
                 
-                Display = setComponents(compCallReady);
+                Display = setComponents(compCallReady, slideNumber, SlideMaxNumber);
                 fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
                 Directory.CreateDirectory(dirName);
@@ -96,7 +97,7 @@ namespace IMOMS_Display_Mockup_Framework
                     MessageBox.Show("File: " + components.ElementAt(i) + "was not found", "Error :(");
                 }
             }
-            Display = setComponents(compCallReady);
+            Display = setComponents(compCallReady, slideNumber, SlideMaxNumber);
             fileName = Config.displayFolder + "\\" + displayName + "\\" + displayName + slideNumber.ToString() + ".png";
 
             Directory.CreateDirectory(dirName);
@@ -108,8 +109,8 @@ namespace IMOMS_Display_Mockup_Framework
             return 1;
         }
 
-        //Set this to private once the setComponents(List<String>) will be available
-        public static Bitmap setComponents(Queue<string> Components)
+       
+        private static Bitmap setComponents(Queue<string> Components)
         {
             Bitmap ResultImage = new Bitmap(DisplaySize.Width, DisplaySize.Height);
             using (Bitmap BackgroundIMOMS = new Bitmap(ConfigurationManager.AppSettings["BackgorundImage"]))
@@ -145,6 +146,140 @@ namespace IMOMS_Display_Mockup_Framework
                     }
                 }
 
+            }
+            //ResultImage.Dispose();
+            return ResultImage;
+        }
+
+        private static Bitmap setComponents(Queue<string> Components, int pagNum, int pagMax)
+        {
+            Bitmap ResultImage = new Bitmap(DisplaySize.Width, DisplaySize.Height);
+
+            if (pagMax == 2)
+            {
+                #region PagMax=2 Code
+                using (Bitmap BackgroundIMOMS1 = new Bitmap(ConfigurationManager.AppSettings["BackgorundFolderScroll2Pag"] + "\\IMOMS1.png"))
+                using (Bitmap BackgroundIMOMS2 = new Bitmap(ConfigurationManager.AppSettings["BackgorundFolderScroll2Pag"] + "\\IMOMS2.png"))
+                {
+                    int[] cols = new int[3];//From config File to array 
+                    cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
+                    cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
+                    cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
+
+                    int[] rows = new int[2];//From config File to array 
+                    rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
+                    rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
+
+                    using (Graphics gr = Graphics.FromImage(ResultImage))
+                    {
+                        //#scale #quality
+                        gr.SmoothingMode = SmoothingMode.HighQuality;
+                        gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                        gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                        if (pagNum == 1)
+                            gr.DrawImage((Image)BackgroundIMOMS1, 0, 0, DisplaySize.Width, DisplaySize.Height);
+                        else
+                            gr.DrawImage((Image)BackgroundIMOMS2, 0, 0, DisplaySize.Width, DisplaySize.Height);
+
+                        for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
+                        {
+                            for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
+                            {
+                                if (Components.Count > 0)
+                                {
+                                    //#scale #quality
+                                    using (Image component = Image.FromFile(Components.Dequeue()))
+                                        gr.DrawImage(component, cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
+                                }
+                            }
+                        }
+                    }
+                }
+                #endregion
+            }
+            else if (pagMax == 3)
+            {
+                #region pagMax=3 Code
+                using (Bitmap BackgroundIMOMS1 = new Bitmap(ConfigurationManager.AppSettings["BackgorundFolderScroll3Pag"] + "\\IMOMS1.png"))
+                using (Bitmap BackgroundIMOMS2 = new Bitmap(ConfigurationManager.AppSettings["BackgorundFolderScroll3Pag"] + "\\IMOMS2.png"))
+                using (Bitmap BackgroundIMOMS3 = new Bitmap(ConfigurationManager.AppSettings["BackgorundFolderScroll3Pag"] + "\\IMOMS3.png"))
+                {
+                    int[] cols = new int[3];//From config File to array 
+                    cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
+                    cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
+                    cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
+
+                    int[] rows = new int[2];//From config File to array 
+                    rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
+                    rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
+
+                    using (Graphics gr = Graphics.FromImage(ResultImage))
+                    {
+                        //#scale #quality
+                        gr.SmoothingMode = SmoothingMode.HighQuality;
+                        gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                        gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                        if (pagNum == 1)
+                            gr.DrawImage((Image)BackgroundIMOMS1, 0, 0, DisplaySize.Width, DisplaySize.Height);
+                        else if (pagNum == 2 )
+                            gr.DrawImage((Image)BackgroundIMOMS2, 0, 0, DisplaySize.Width, DisplaySize.Height);
+                        else
+                            gr.DrawImage((Image)BackgroundIMOMS3, 0, 0, DisplaySize.Width, DisplaySize.Height);
+
+                        for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
+                        {
+                            for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
+                            {
+                                if (Components.Count > 0)
+                                {
+                                    //#scale #quality
+                                    using (Image component = Image.FromFile(Components.Dequeue()))
+                                        gr.DrawImage(component, cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
+                                }
+                            }
+                        }
+                    }
+                }
+                #endregion
+            }
+            else
+            {
+                using (Bitmap BackgroundIMOMS = new Bitmap(ConfigurationManager.AppSettings["BackgorundImage"]))
+                {
+
+                    int[] cols = new int[3];//From config File to array 
+                    cols[0] = int.Parse(ConfigurationManager.AppSettings["Col1"]);
+                    cols[1] = int.Parse(ConfigurationManager.AppSettings["Col2"]);
+                    cols[2] = int.Parse(ConfigurationManager.AppSettings["Col3"]);
+
+                    int[] rows = new int[2];//From config File to array 
+                    rows[0] = int.Parse(ConfigurationManager.AppSettings["Row1"]);
+                    rows[1] = int.Parse(ConfigurationManager.AppSettings["Row2"]);
+
+                    using (Graphics gr = Graphics.FromImage(ResultImage))
+                    {
+                        //#scale #quality
+                        gr.SmoothingMode = SmoothingMode.HighQuality;
+                        gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                        gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                        gr.DrawImage((Image)BackgroundIMOMS, 0, 0, DisplaySize.Width, DisplaySize.Height);
+                        for (int r = 0; r < rows.Length && (Components.Count > 0); r++)
+                        {
+                            for (int c = 0; c < cols.Length && (Components.Count > 0); c++)
+                            {
+                                if (Components.Count > 0)
+                                {
+                                    //#scale #quality
+                                    using (Image component = Image.FromFile(Components.Dequeue()))
+                                        gr.DrawImage(component, cols[c], rows[r], int.Parse(ConfigurationManager.AppSettings["CompWidth"]), int.Parse(ConfigurationManager.AppSettings["CompHeight"]));
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
             //ResultImage.Dispose();
             return ResultImage;
